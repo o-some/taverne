@@ -1,13 +1,37 @@
 document.documentElement.classList.add('has-js');
 const translations = {
   el: {
-    skip:'Μετάβαση στο περιεχόμενο',menuLabel:'Άνοιγμα μενού',navExperience:'Η εμπειρία',navFlavours:'Οι γεύσεις',navGallery:'Εικόνες',navVisit:'Ελάτε κοντά μας',heroEyebrow:'ΑΓΙΟΣ ΙΩΑΝΝΗΣ · ΣΕΡΡΕΣ',heroTitle:'Εκεί που η φωτιά συναντά το νερό.',heroSub:'Ελάτε για τη γεύση. Μείνετε για τη στιγμή.',discover:'Ανακαλύψτε',visualNote:'Εικαστικές εικόνες · πραγματικές φωτογραφίες θα προστεθούν',experienceLabel:'Η ΕΜΠΕΙΡΙΑ',introEyebrow:'ΚΑΛΩΣ ΗΡΘΑΤΕ',introTitle:'Μια θέση στο τραπέζι, μια ανάσα δροσιάς.',introBody:'Στον Άγιο Ιωάννη Σερρών, το νερό και τα πλατάνια δίνουν τον ρυθμό. Η φωτιά του ψησίματος φέρνει την παρέα γύρω από το τραπέζι. Εδώ, η απόλαυση δεν βιάζεται.',fireTitle:'Η φωτιά έχει τον δικό της τρόπο.',fireBody:'Σουβλάκια πάνω στα κάρβουνα. Η μυρωδιά που σου ανοίγει την όρεξη πριν καθίσεις.',waterTitle:'Το νερό κρατά τη στιγμή ζωντανή.',waterBody:'Μια βόλτα στις ξύλινες γέφυρες, οι χαμηλοί καταρράκτες και οι πάπιες στο νερό. Σκιά κάτω από τα πλατάνια και χρόνος για κουβέντα.',quote:'Το καλύτερο τραπέζι είναι εκείνο που δεν θέλεις να τελειώσει.',flavoursLabel:'ΟΙ ΓΕΥΣΕΙΣ',flavoursTitle:'Η όρεξη αρχίζει στη φωτιά.',flavoursLead:'Καπνός από τα κάρβουνα, λεμόνι στο τραπέζι, πιάτα για τη μέση. Η ελληνική ταβέρνα όπως πρέπει να τη νιώθεις.',foodOne:'Για την παρέα',foodTwo:'Σουβλάκι & φωτιά',foodThree:'Η στιγμή του ψησίματος',menuNote:'Η πραγματική κάρτα και οι τιμές θα προστεθούν όταν δοθούν από την ταβέρνα.',placeLabel:'Ο ΤΟΠΟΣ',placeTitle:'Λίγο έξω από τις Σέρρες. Ακριβώς εκεί που θέλεις να είσαι.',placeBody:'Ο Άγιος Ιωάννης είναι γνωστός για τα τρεχούμενα νερά, τους μικρούς καταρράκτες και την πράσινη σκιά του. Μια μικρή απόδραση που γίνεται μεγάλη ανάμνηση.',exploreArea:'Δείτε την περιοχή στον χάρτη',galleryLabel:'ΕΙΚΟΝΕΣ',galleryTitle:'Μια γεύση πριν φτάσετε.',galleryLead:'Είκοσι κινηματογραφικές εικόνες για την ατμόσφαιρα, τις γεύσεις και τον τόπο.',galleryDisclosure:'Οι εικόνες είναι δημιουργημένες εικαστικές προσεγγίσεις και δεν απεικονίζουν πιστά τον πραγματικό χώρο ή τα πιάτα.',visitLabel:'Η ΠΡΟΣΚΛΗΣΗ',visitTitle:'Το τραπέζι σάς περιμένει.',visitBody:'Στον Άγιο Ιωάννη Σερρών, ανάμεσα στη φωτιά και το νερό. Ελάτε να μοιραστούμε μια όμορφη στιγμή.',mapButton:'Δείτε την περιοχή',visitNote:'Η ακριβής διεύθυνση, το τηλέφωνο και οι ώρες λειτουργίας θα προστεθούν σύντομα.',backTop:'Πάνω ↑',footerDisclosure:'Προσωρινή παρουσίαση. Εικαστικές εικόνες· πραγματικά στοιχεία και φωτογραφίες θα προστεθούν.',galleryAlt:'Εικαστική εικόνα ελληνικής ταβέρνας',close:'Κλείσιμο εικόνας',previous:'Προηγούμενη εικόνα',next:'Επόμενη εικόνα'
+    skip:'Μετάβαση στο περιεχόμενο',menuLabel:'Άνοιγμα μενού',navExperience:'Ο τόπος',navFlavours:'Η φωτιά',navGallery:'Εικόνες',navVisit:'Ελάτε κοντά μας',
+    heroEyebrow:'ΑΓΙΟΣ ΙΩΑΝΝΗΣ · ΣΕΡΡΕΣ',heroLine1:'Η ΦΩΤΙΑ',heroLine2:'ΤΟ ΝΕΡΟ',heroLine3:'ΤΟ ΤΡΑΠΕΖΙ.',heroSub:'Σουβλάκι στη σχάρα. Δροσιά κάτω από τα πλατάνια. Όλα όσα κάνουν μια στιγμή να κρατήσει.',discover:'Ανακαλύψτε τον τόπο',heroPhotoLabel:'ΔΙΠΛΑ ΣΤΟ ΝΕΡΟ',visualNote:'Εικαστικές εικόνες · πραγματικές φωτογραφίες θα προστεθούν',
+    experienceLabel:'Ο ΤΟΠΟΣ',introEyebrow:'ΣΤΟΝ ΑΓΙΟ ΙΩΑΝΝΗ',introTitle:'Ένα τραπέζι εκεί όπου κυλά το νερό.',introBody:'Στα νερά του Αγίου Ιωάννη, οι ξύλινες γέφυρες και τα πλατάνια δίνουν τον ρυθμό. Ο ήχος της σχάρας σε καλεί να καθίσεις. Και η παρέα σε κάνει να μείνεις.',
+    flavoursLabel:'Η ΦΩΤΙΑ',fireEyebrow:'ΑΠΟ ΤΗ ΣΧΑΡΑ',fireTitle:'Η μυρωδιά σε βρίσκει πριν βρεις το τραπέζι.',fireBody:'Σουβλάκια πάνω στα κάρβουνα, λεμόνι και ζεστό ψωμί στη μέση. Η πιο ωραία αρχή είναι αυτή που μοιράζεται.',fireCaption:'Η στιγμή πάνω στη σχάρα',flavoursTitle:'Φτιαγμένο για την παρέα.',
+    waterLabel:'ΤΟ ΝΕΡΟ',waterTitle:'Λίγα βήματα από το τραπέζι, ένας άλλος ρυθμός.',waterBody:'Μικροί καταρράκτες, ξύλινες γέφυρες, πάπιες στο νερό. Κάτω από τα πλατάνια, ο χρόνος κυλά λίγο πιο αργά.',exploreArea:'Η περιοχή στον χάρτη',
+    tableLabel:'ΣΤΟ ΤΡΑΠΕΖΙ',tableTitle:'Καθίστε. Τα υπόλοιπα ας περιμένουν.',tableLead:'Μια ελληνική ταβέρνα είναι τα πιάτα στη μέση, οι φωνές γύρω από το τραπέζι και η τελευταία μπουκιά που κανείς δεν θέλει να πάρει.',foodOne:'Για την παρέα',foodTwo:'Σουβλάκι & φωτιά',foodThree:'Στη μέση του τραπεζιού',menuNote:'Η πραγματική κάρτα και οι τιμές θα προστεθούν όταν δοθούν από την ταβέρνα.',
+    placeLabel:'Ο ΤΟΠΟΣ',placeTitle:'Σκιά από πλατάνια. Το νερό δίπλα σου. Η παρέα απέναντι.',placeBody:'Αυτό είναι το σκηνικό του Αγίου Ιωάννη Σερρών: μικρές γέφυρες, τρεχούμενο νερό και μια ανάσα πράσινο γύρω από το τραπέζι.',
+    galleryLabel:'ΕΙΚΟΝΕΣ',galleryTitle:'Μια γεύση πριν φτάσετε.',galleryLead:'Είκοσι κινηματογραφικές στιγμές από τον τόπο, την κουζίνα και το τραπέζι.',galleryDisclosure:'Οι εικόνες είναι δημιουργημένες εικαστικές προσεγγίσεις και δεν απεικονίζουν πιστά τον πραγματικό χώρο ή τα πιάτα.',
+    visitLabel:'Η ΠΡΟΣΚΛΗΣΗ',visitTitle:'Έχουμε κρατήσει μια θέση για εσάς.',visitBody:'Στον Άγιο Ιωάννη Σερρών, ανάμεσα στη φωτιά και το νερό. Ελάτε να μοιραστούμε μια όμορφη στιγμή.',mapButton:'Δείτε την περιοχή',visitNote:'Η ακριβής διεύθυνση, το τηλέφωνο και οι ώρες λειτουργίας θα προστεθούν σύντομα.',backTop:'Πάνω ↑',footerDisclosure:'Προσωρινή παρουσίαση. Εικαστικές εικόνες· πραγματικά στοιχεία και φωτογραφίες θα προστεθούν.',galleryAlt:'Εικαστική εικόνα ελληνικής ταβέρνας',close:'Κλείσιμο εικόνας',previous:'Προηγούμενη εικόνα',next:'Επόμενη εικόνα'
   },
   en: {
-    skip:'Skip to content',menuLabel:'Open menu',navExperience:'The experience',navFlavours:'The flavours',navGallery:'Gallery',navVisit:'Visit us',heroEyebrow:'AGIOS IOANNIS · SERRES',heroTitle:'Where fire meets water.',heroSub:'Come for the flavour. Stay for the moment.',discover:'Discover',visualNote:'Concept imagery · real photographs to follow',experienceLabel:'THE EXPERIENCE',introEyebrow:'WELCOME',introTitle:'A place at the table. A breath of fresh air.',introBody:'In Agios Ioannis near Serres, running water and plane trees set the pace. The warmth of the grill brings everyone around the table. Here, good moments take their time.',fireTitle:'The fire has its own way.',fireBody:'Souvlaki over glowing charcoal. The aroma that makes you hungry before you even sit down.',waterTitle:'Water keeps the moment alive.',waterBody:'A walk past the wooden footbridges, ducks on the water and the low cascades. Shade beneath the plane trees and time for conversation.',quote:'The best table is the one you never want to leave.',flavoursLabel:'THE FLAVOURS',flavoursTitle:'Appetite begins at the grill.',flavoursLead:'Charcoal smoke, lemon on the table, plates made for sharing. A Greek taverna as you want to feel it.',foodOne:'Made for sharing',foodTwo:'Souvlaki & fire',foodThree:'The moment at the grill',menuNote:'The real menu and prices will be added when supplied by the taverna.',placeLabel:'THE PLACE',placeTitle:'Just outside Serres. Exactly where you want to be.',placeBody:'Agios Ioannis is known for its running water, small cascades and leafy shade. A short escape that stays with you.',exploreArea:'Explore the area on the map',galleryLabel:'GALLERY',galleryTitle:'A taste before you arrive.',galleryLead:'Twenty cinematic images of atmosphere, food and place.',galleryDisclosure:'These are created concept images and do not faithfully show the actual venue or dishes.',visitLabel:'THE INVITATION',visitTitle:'There is a place for you at the table.',visitBody:'In Agios Ioannis near Serres, between fire and water. Come share a good moment with us.',mapButton:'Explore the area',visitNote:'The exact address, phone number and opening hours will be added soon.',backTop:'Back to top ↑',footerDisclosure:'Preview presentation. Concept imagery; real details and photographs will be added.',galleryAlt:'Concept image of a Greek taverna',close:'Close image',previous:'Previous image',next:'Next image'
+    skip:'Skip to content',menuLabel:'Open menu',navExperience:'The place',navFlavours:'The fire',navGallery:'Gallery',navVisit:'Visit us',
+    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'THE FIRE',heroLine2:'THE WATER',heroLine3:'THE TABLE.',heroSub:'Souvlaki on the grill. Cool shade beneath the plane trees. The kind of moment you wish would last.',discover:'Discover the place',heroPhotoLabel:'BESIDE THE WATER',visualNote:'Concept imagery · real photographs to follow',
+    experienceLabel:'THE PLACE',introEyebrow:'IN AGIOS IOANNIS',introTitle:'A table where the water flows.',introBody:'In Agios Ioannis, timber footbridges and plane trees set the pace. The sound of the grill invites you to sit. Good company makes you stay.',
+    flavoursLabel:'THE FIRE',fireEyebrow:'FROM THE GRILL',fireTitle:'The aroma finds you before you find your table.',fireBody:'Souvlaki over charcoal, lemon and warm bread in the middle. The best beginning is one you share.',fireCaption:'The moment at the grill',flavoursTitle:'Made for sharing.',
+    waterLabel:'THE WATER',waterTitle:'A few steps from the table, a different rhythm.',waterBody:'Small cascades, wooden bridges, ducks on the water. Beneath the plane trees, time moves a little more slowly.',exploreArea:'Explore the area',
+    tableLabel:'AT THE TABLE',tableTitle:'Take a seat. Everything else can wait.',tableLead:'A Greek taverna is plates in the middle, voices around the table and the last bite nobody wants to take.',foodOne:'For the company',foodTwo:'Souvlaki & fire',foodThree:'In the middle of the table',menuNote:'The actual menu and prices will be added when supplied by the taverna.',
+    placeLabel:'THE PLACE',placeTitle:'Shade from plane trees. Water beside you. Friends across the table.',placeBody:'This is the setting in Agios Ioannis near Serres: little bridges, running water and a breath of green around the table.',
+    galleryLabel:'GALLERY',galleryTitle:'A taste before you arrive.',galleryLead:'Twenty cinematic glimpses of the place, the cooking and the table.',galleryDisclosure:'These are created concept images and do not faithfully show the actual venue or dishes.',
+    visitLabel:'THE INVITATION',visitTitle:'There is a place for you here.',visitBody:'In Agios Ioannis near Serres, between fire and water. Come share a good moment with us.',mapButton:'Explore the area',visitNote:'The exact address, phone number and opening hours will be added soon.',backTop:'Back to top ↑',footerDisclosure:'Preview presentation. Concept imagery; real details and photographs will be added.',galleryAlt:'Concept image of a Greek taverna',close:'Close image',previous:'Previous image',next:'Next image'
   },
   de: {
-    skip:'Zum Inhalt springen',menuLabel:'Menü öffnen',navExperience:'Das Erlebnis',navFlavours:'Die Küche',navGallery:'Bilder',navVisit:'Besuch',heroEyebrow:'AGIOS IOANNIS · SERRES',heroTitle:'Wo Feuer auf Wasser trifft.',heroSub:'Komm für den Geschmack. Bleib für den Moment.',discover:'Entdecken',visualNote:'Visualisierungen · echte Fotos folgen',experienceLabel:'DAS ERLEBNIS',introEyebrow:'WILLKOMMEN',introTitle:'Ein Platz am Tisch. Eine Brise Frische.',introBody:'In Agios Ioannis bei Serres geben fließendes Wasser und Platanen den Rhythmus vor. Die Wärme vom Grill bringt alle an einen Tisch. Hier darf ein guter Moment dauern.',fireTitle:'Das Feuer hat seinen eigenen Rhythmus.',fireBody:'Souvlaki über glühender Holzkohle. Ein Duft, der Appetit macht, noch bevor du Platz nimmst.',waterTitle:'Das Wasser hält den Moment lebendig.',waterBody:'Ein Spaziergang über die Holzbrücken, Enten im Wasser und niedrige Wasserstufen. Dazu Schatten unter Platanen und Zeit für ein gutes Gespräch.',quote:'Der schönste Tisch ist der, den man nicht verlassen möchte.',flavoursLabel:'DIE KÜCHE',flavoursTitle:'Appetit beginnt am Grill.',flavoursLead:'Holzkohleduft, Zitrone auf dem Tisch und Teller zum Teilen. Eine griechische Taverne, wie sie sich anfühlen soll.',foodOne:'Für die gemeinsame Zeit',foodTwo:'Souvlaki & Feuer',foodThree:'Der Moment am Grill',menuNote:'Die echte Speisekarte und Preise folgen, sobald sie von der Taverne vorliegen.',placeLabel:'DER ORT',placeTitle:'Ganz nah bei Serres. Genau da, wo du sein möchtest.',placeBody:'Agios Ioannis ist bekannt für fließendes Wasser, kleine Wasserfälle und grüne Schattenplätze. Ein kurzer Ausflug, der lange bleibt.',exploreArea:'Die Gegend auf der Karte ansehen',galleryLabel:'BILDER',galleryTitle:'Ein Vorgeschmack vor dem Besuch.',galleryLead:'Zwanzig filmische Bilder von Atmosphäre, Essen und Ort.',galleryDisclosure:'Diese Bilder wurden als Gestaltungsidee erstellt. Sie zeigen weder den echten Gastraum noch die Gerichte verlässlich.',visitLabel:'DIE EINLADUNG',visitTitle:'Ein Platz am Tisch wartet.',visitBody:'In Agios Ioannis bei Serres, zwischen Feuer und Wasser. Komm vorbei und teile einen schönen Moment mit uns.',mapButton:'Die Gegend ansehen',visitNote:'Die genaue Adresse, Telefonnummer und Öffnungszeiten folgen in Kürze.',backTop:'Nach oben ↑',footerDisclosure:'Vorläufige Präsentation. Visualisierungen; echte Angaben und Fotos werden ergänzt.',galleryAlt:'Visualisierung einer griechischen Taverne',close:'Bild schließen',previous:'Vorheriges Bild',next:'Nächstes Bild'
+    skip:'Zum Inhalt springen',menuLabel:'Menü öffnen',navExperience:'Der Ort',navFlavours:'Das Feuer',navGallery:'Bilder',navVisit:'Besuch',
+    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'DAS FEUER',heroLine2:'DAS WASSER',heroLine3:'DER TISCH.',heroSub:'Souvlaki vom Grill. Kühle unter den Platanen. Ein Moment, der gerne länger dauern darf.',discover:'Den Ort entdecken',heroPhotoLabel:'DIREKT AM WASSER',visualNote:'Visualisierungen · echte Fotos folgen',
+    experienceLabel:'DER ORT',introEyebrow:'IN AGIOS IOANNIS',introTitle:'Ein Tisch dort, wo das Wasser fließt.',introBody:'In Agios Ioannis geben Holzbrücken und Platanen den Rhythmus vor. Der Klang vom Grill lädt zum Hinsetzen ein. Die Gesellschaft lässt dich bleiben.',
+    flavoursLabel:'DAS FEUER',fireEyebrow:'VOM GRILL',fireTitle:'Der Duft findet dich, bevor du deinen Tisch findest.',fireBody:'Souvlaki über Holzkohle, Zitrone und warmes Brot in der Mitte. Der schönste Anfang ist einer zum Teilen.',fireCaption:'Der Moment am Grill',flavoursTitle:'Für gemeinsame Stunden.',
+    waterLabel:'DAS WASSER',waterTitle:'Ein paar Schritte vom Tisch entfernt beginnt ein anderer Rhythmus.',waterBody:'Kleine Wasserstufen, Holzbrücken und Enten im Bach. Unter den Platanen vergeht die Zeit ein wenig langsamer.',exploreArea:'Die Gegend auf der Karte',
+    tableLabel:'AM TISCH',tableTitle:'Setz dich. Alles andere kann warten.',tableLead:'Eine griechische Taverne ist: Teller in der Mitte, Stimmen rund um den Tisch und der letzte Bissen, den keiner nehmen will.',foodOne:'Für die Runde',foodTwo:'Souvlaki & Feuer',foodThree:'Mitten auf dem Tisch',menuNote:'Die echte Speisekarte und Preise folgen, sobald sie von der Taverne vorliegen.',
+    placeLabel:'DER ORT',placeTitle:'Schatten von Platanen. Wasser neben dir. Freunde gegenüber.',placeBody:'Das ist die Kulisse von Agios Ioannis bei Serres: kleine Brücken, fließendes Wasser und viel Grün rund um den Tisch.',
+    galleryLabel:'BILDER',galleryTitle:'Ein Vorgeschmack vor dem Besuch.',galleryLead:'Zwanzig filmische Eindrücke von Ort, Küche und Tisch.',galleryDisclosure:'Diese Bilder sind gestaltete Visualisierungen. Sie zeigen den tatsächlichen Ort und die Gerichte nicht verlässlich.',
+    visitLabel:'DIE EINLADUNG',visitTitle:'Ein Platz am Tisch wartet auf dich.',visitBody:'In Agios Ioannis bei Serres, zwischen Feuer und Wasser. Komm vorbei und teile einen schönen Moment mit uns.',mapButton:'Die Gegend ansehen',visitNote:'Die genaue Adresse, Telefonnummer und Öffnungszeiten folgen in Kürze.',backTop:'Nach oben ↑',footerDisclosure:'Vorläufige Präsentation. Visualisierungen; echte Angaben und Fotos werden ergänzt.',galleryAlt:'Visualisierung einer griechischen Taverne',close:'Bild schließen',previous:'Vorheriges Bild',next:'Nächstes Bild'
   }
 };
 
@@ -26,9 +50,9 @@ const dialogImage = document.querySelector('#lightbox-image');
 const dialogCaption = document.querySelector('#lightbox-caption');
 let language = 'el';
 let activeImage = 0;
+const imagePath = index => `assets/images/${images[index]}.jpg`;
+const imageDescription = index => `${translations[language].galleryAlt} ${index + 1}`;
 
-function imagePath(index) { return `assets/images/${images[index]}.jpg`; }
-function imageDescription(index) { return `${translations[language].galleryAlt} ${index + 1}`; }
 function setLanguage(next) {
   if (!translations[next]) return;
   language = next;
@@ -41,15 +65,23 @@ function setLanguage(next) {
   document.querySelectorAll('.lightbox-arrow')[0].setAttribute('aria-label', translations[next].previous);
   document.querySelectorAll('.lightbox-arrow')[1].setAttribute('aria-label', translations[next].next);
   if (dialog.open) showImage(activeImage);
-  try { localStorage.setItem('taverna-language', next); } catch { /* Storage may be disabled. */ }
+  try { localStorage.setItem('taverna-language', next); } catch {}
 }
 
 images.forEach((name, index) => {
   const button = document.createElement('button');
   button.className = 'gallery-item';
   button.type = 'button';
-  button.setAttribute('aria-label', `${translations[language].galleryAlt} ${index + 1}`);
-  button.innerHTML = `<img src="${imagePath(index)}" alt="" loading="lazy" width="1672" height="941"><span>${String(index + 1).padStart(2, '0')} / 20</span>`;
+  button.setAttribute('aria-label', imageDescription(index));
+  const img = document.createElement('img');
+  img.src = imagePath(index);
+  img.alt = imageDescription(index);
+  img.loading = 'lazy';
+  img.width = 1672;
+  img.height = 941;
+  const label = document.createElement('span');
+  label.textContent = `${String(index + 1).padStart(2, '0')} / 20`;
+  button.append(img, label);
   button.addEventListener('click', () => { showImage(index); dialog.showModal(); document.body.classList.add('lightbox-open'); });
   gallery.append(button);
 });
@@ -60,17 +92,15 @@ function showImage(index) {
   dialogImage.alt = imageDescription(activeImage);
   dialogCaption.textContent = `${String(activeImage + 1).padStart(2, '0')} / 20`;
 }
-
 function updateGalleryCount() {
   const items = [...gallery.children];
-  const mid = gallery.scrollLeft + gallery.clientWidth / 2;
-  const closest = items.reduce((best, item, index) => Math.abs(item.offsetLeft + item.clientWidth / 2 - mid) < Math.abs(items[best].offsetLeft + items[best].clientWidth / 2 - mid) ? index : best, 0);
-  count.textContent = `${String(closest + 1).padStart(2, '0')} / 20`;
+  const middle = gallery.scrollLeft + gallery.clientWidth / 2;
+  const nearest = items.reduce((best, item, index) => Math.abs(item.offsetLeft + item.clientWidth / 2 - middle) < Math.abs(items[best].offsetLeft + items[best].clientWidth / 2 - middle) ? index : best, 0);
+  count.textContent = `${String(nearest + 1).padStart(2, '0')} / 20`;
 }
-
 document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
-document.querySelector('#gallery-prev').addEventListener('click', () => gallery.scrollBy({left: -gallery.clientWidth * .75, behavior:'smooth'}));
-document.querySelector('#gallery-next').addEventListener('click', () => gallery.scrollBy({left: gallery.clientWidth * .75, behavior:'smooth'}));
+document.querySelector('#gallery-prev').addEventListener('click', () => gallery.scrollBy({left: -gallery.clientWidth * .8, behavior:'smooth'}));
+document.querySelector('#gallery-next').addEventListener('click', () => gallery.scrollBy({left: gallery.clientWidth * .8, behavior:'smooth'}));
 gallery.addEventListener('scroll', updateGalleryCount, {passive:true});
 document.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
 document.querySelector('.lightbox-arrow.prev').addEventListener('click', () => showImage(activeImage - 1));
@@ -78,29 +108,27 @@ document.querySelector('.lightbox-arrow.next').addEventListener('click', () => s
 dialog.addEventListener('close', () => document.body.classList.remove('lightbox-open'));
 dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
 dialog.addEventListener('keydown', event => { if (event.key === 'ArrowLeft') showImage(activeImage - 1); if (event.key === 'ArrowRight') showImage(activeImage + 1); });
-
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
 menuButton.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') !== 'true'; menuButton.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open); });
 nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }));
-
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-const reveals = document.querySelectorAll('.reveal');
+const reveals = document.querySelectorAll('.reveal,.reveal-image');
 if (reduceMotion.matches || !('IntersectionObserver' in window)) reveals.forEach(item => item.classList.add('is-visible'));
 else {
-  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), {threshold:.09, rootMargin:'0px 0px -40px 0px'});
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), {threshold:.06,rootMargin:'0px 0px -30px 0px'});
   reveals.forEach(item => observer.observe(item));
 }
-
-const sceneObserver = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('scene-visible'); sceneObserver.unobserve(entry.target); } }), {threshold:.12});
-if (!reduceMotion.matches) document.querySelectorAll('.duality-panel').forEach(panel => sceneObserver.observe(panel));
-
 const progress = document.querySelector('.scroll-line');
 let scheduled = false;
 window.addEventListener('scroll', () => {
   if (scheduled) return;
   scheduled = true;
-  requestAnimationFrame(() => { const end = document.documentElement.scrollHeight - innerHeight; progress.style.transform = `scaleX(${end > 0 ? scrollY / end : 0})`; if (!reduceMotion.matches && innerWidth > 760) { const hero = document.querySelector('.hero-image'); const visit = document.querySelector('.visit-background img'); hero.style.transform = `translateY(${Math.min(scrollY * .12, 110)}px) scale(1.04)`; const rect = document.querySelector('.visit-section').getBoundingClientRect(); if (rect.top < innerHeight && rect.bottom > 0) visit.style.transform = `translateY(${(rect.top - innerHeight / 2) * -.06}px) scale(1.07)`; } scheduled = false; });
+  requestAnimationFrame(() => {
+    const end = document.documentElement.scrollHeight - innerHeight;
+    progress.style.transform = `scaleX(${end > 0 ? scrollY / end : 0})`;
+    scheduled = false;
+  });
 }, {passive:true});
 document.querySelector('#year').textContent = new Date().getFullYear();
 try { setLanguage(localStorage.getItem('taverna-language') || 'el'); } catch { setLanguage('el'); }

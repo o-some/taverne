@@ -1,8 +1,9 @@
 document.documentElement.classList.add('has-js');
 const translations = {
   el: {
-    skip:'Μετάβαση στο περιεχόμενο',menuLabel:'Άνοιγμα μενού',navExperience:'Ο τόπος',navFlavours:'Γεύσεις',navGallery:'Εικόνες',navVisit:'Ελάτε κοντά μας',
-    heroEyebrow:'ΑΓΙΟΣ ΙΩΑΝΝΗΣ · ΣΕΡΡΕΣ',heroLine1:'Η ΦΩΤΙΑ',heroLine2:'ΤΟ ΝΕΡΟ',heroLine3:'ΤΟ ΤΡΑΠΕΖΙ.',heroSub:'Σουβλάκι στη σχάρα. Δροσιά κάτω από τα πλατάνια. Όλα όσα κάνουν μια στιγμή να κρατήσει.',discover:'Ανακαλύψτε τον τόπο',heroPhotoLabel:'ΔΙΠΛΑ ΣΤΟ ΝΕΡΟ',visualNote:'Εικαστικές εικόνες · πραγματικές φωτογραφίες θα προστεθούν',
+    pageTitle:'Ταβέρνα · Άγιος Ιωάννης Σερρών',pageDescription:'Μια πρόσκληση για φαγητό δίπλα στο νερό, στον Άγιο Ιωάννη Σερρών. Φωτιά, παρέα και γεύσεις ελληνικής ταβέρνας.',skip:'Μετάβαση στο περιεχόμενο',menuLabel:'Άνοιγμα μενού',navExperience:'Ο τόπος',navFlavours:'Γεύσεις',navGallery:'Εικόνες',navVisit:'Ελάτε κοντά μας',
+    heroEyebrow:'ΑΓΙΟΣ ΙΩΑΝΝΗΣ · ΣΕΡΡΕΣ',heroLine1:'Έλα για τη σχάρα.',heroLine2:'Μείνε για το νερό.',heroSub:'Σουβλάκι στα κάρβουνα, δροσιά κάτω από τα πλατάνια και μια παρέα που δεν βιάζεται να φύγει.',discover:'Γνωρίστε τον τόπο',heroPhotoLabel:'ΔΙΠΛΑ ΣΤΟ ΝΕΡΟ',visualNote:'Εικαστικές εικόνες · πραγματικές φωτογραφίες θα προστεθούν',
+    storyEyebrow:'ΣΗΜΕΙΩΣΕΙΣ ΑΠΟ ΤΟΝ ΑΓΙΟ ΙΩΑΝΝΗ',storyIntroTitle:'Ο τόπος έχει τον δικό του ρυθμό.',storyIntroBody:'Μόλις δύο χιλιόμετρα από τις Σέρρες, το νερό, τα πλατάνια και οι μικροί καταρράκτες αλλάζουν την αίσθηση του χρόνου.',storyOneTitle:'Δύο χιλιόμετρα. Άλλος κόσμος.',storyOneBody:'Ο Άγιος Ιωάννης βρίσκεται μόλις δύο χιλιόμετρα από την πόλη των Σερρών. Κάτω από τα αιωνόβια πλατάνια, το τρεχούμενο νερό γίνεται η πρώτη πρόσκληση για μια στάση.',storyTwoTitle:'Το νερό πέφτει σε μικρές στάσεις.',storyTwoBody:'Τα άφθονα νερά σχηματίζουν σε πολλά σημεία μικρούς καταρράκτες και λιμνούλες. Ο δήμος καταγράφει επίσης πηγές κοντά στο παρεκκλήσι του Αγίου Γεωργίου.',storyThreeTitle:'Ένα μέρος για να μείνεις.',storyThreeBody:'Λιμνούλες, πάπιες, πλατάνια και τραπέζια στη σκιά κάνουν τον Αη Γιάννη αγαπημένη απόδραση. Το 2017, ο δήμος γιόρτασε εδώ το νερό με μια τοπική γιορτή.',storyOriginLabel:'ΠΙΣΩ ΑΠΟ ΤΗΝ ΕΙΚΟΝΑ',storyOriginTitle:'Γιατί είναι ξεχωριστοί αυτοί οι μικροί καταρράκτες;',storyOriginBody:'Η ομορφιά τους βρίσκεται στην κλίμακα: πολλά χαμηλά περάσματα νερού μέσα σε έναν πράσινο χώρο δίπλα στην πόλη. Οι διαθέσιμες δημοτικές πηγές περιγράφουν το νερό και τις πηγές, δεν τεκμηριώνουν όμως πότε διαμορφώθηκε κάθε μικρή βαθμίδα.',sourceLead:'ΠΗΓΕΣ ΓΙΑ ΤΟΝ ΤΟΠΟ',sourceMunicipality:'Δήμος Σερρών',sourceTourism:'Τουριστικός οδηγός Σερρών',sourceWaterFestival:'Γιορτή Νερού, 2017',
     experienceLabel:'Ο ΤΟΠΟΣ',introEyebrow:'ΣΤΟΝ ΑΓΙΟ ΙΩΑΝΝΗ',introTitle:'Ένα τραπέζι εκεί όπου κυλά το νερό.',introBody:'Στα νερά του Αγίου Ιωάννη, οι ξύλινες γέφυρες και τα πλατάνια δίνουν τον ρυθμό. Ο ήχος της σχάρας σε καλεί να καθίσεις. Και η παρέα σε κάνει να μείνεις.',
     flavoursLabel:'Η ΦΩΤΙΑ',fireEyebrow:'ΑΠΟ ΤΗ ΣΧΑΡΑ',fireTitle:'Η μυρωδιά σε βρίσκει πριν βρεις το τραπέζι.',fireBody:'Σουβλάκια πάνω στα κάρβουνα, λεμόνι και ζεστό ψωμί στη μέση. Η πιο ωραία αρχή είναι αυτή που μοιράζεται.',fireCaption:'Η στιγμή πάνω στη σχάρα',flavoursTitle:'Φτιαγμένο για την παρέα.',
     waterLabel:'ΤΟ ΝΕΡΟ',waterTitle:'Λίγα βήματα από το τραπέζι, ένας άλλος ρυθμός.',waterBody:'Μικροί καταρράκτες, ξύλινες γέφυρες, πάπιες στο νερό. Κάτω από τα πλατάνια, ο χρόνος κυλά λίγο πιο αργά.',exploreArea:'Η περιοχή στον χάρτη',
@@ -13,8 +14,9 @@ const translations = {
     visitLabel:'Η ΠΡΟΣΚΛΗΣΗ',visitTitle:'Έχουμε κρατήσει μια θέση για εσάς.',visitBody:'Στον Άγιο Ιωάννη Σερρών, ανάμεσα στη φωτιά και το νερό. Ελάτε να μοιραστούμε μια όμορφη στιγμή.',mapButton:'Δείτε την περιοχή',visitNote:'Η ακριβής διεύθυνση, το τηλέφωνο και οι ώρες λειτουργίας θα προστεθούν σύντομα.',backTop:'Πάνω ↑',footerDisclosure:'Προσωρινή παρουσίαση. Εικαστικές εικόνες· πραγματικά στοιχεία και φωτογραφίες θα προστεθούν.',galleryAlt:'Εικαστική εικόνα ελληνικής ταβέρνας',close:'Κλείσιμο εικόνας',previous:'Προηγούμενη εικόνα',next:'Επόμενη εικόνα'
   },
   en: {
-    skip:'Skip to content',menuLabel:'Open menu',navExperience:'The place',navFlavours:'The food',navGallery:'Gallery',navVisit:'Visit us',
-    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'THE FIRE',heroLine2:'THE WATER',heroLine3:'THE TABLE.',heroSub:'Souvlaki on the grill. Cool shade beneath the plane trees. The kind of moment you wish would last.',discover:'Discover the place',heroPhotoLabel:'BESIDE THE WATER',visualNote:'Concept imagery · real photographs to follow',
+    pageTitle:'Taverna · Agios Ioannis, Serres',pageDescription:'A Greek taverna by the water in Agios Ioannis near Serres. Fire from the grill, cool shade and time together.',skip:'Skip to content',menuLabel:'Open menu',navExperience:'The place',navFlavours:'The food',navGallery:'Gallery',navVisit:'Visit us',
+    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'Come for the grill.',heroLine2:'Stay for the water.',heroSub:'Souvlaki over charcoal, cool shade under the plane trees, and company that makes you linger.',discover:'Discover the place',heroPhotoLabel:'BESIDE THE WATER',visualNote:'Concept imagery · real photographs to follow',
+    storyEyebrow:'NOTES FROM AGIOS IOANNIS',storyIntroTitle:'This place moves at its own pace.',storyIntroBody:'Just two kilometres from Serres, running water, plane trees and small cascades change the pace of the day.',storyOneTitle:'Two kilometres. Another world.',storyOneBody:'Agios Ioannis sits just two kilometres from the city of Serres. Beneath centuries-old plane trees, running water is the first invitation to pause.',storyTwoTitle:'Water, in gentle steps.',storyTwoBody:'Abundant water forms small waterfalls and ponds in several places. The municipality also describes springs near the chapel of Agios Georgios.',storyThreeTitle:'A place to linger.',storyThreeBody:'Ponds, ducks, plane trees and tables in the shade make Agios Ioannis a cherished local escape. In 2017 the municipality held a Water Festival here.',storyOriginLabel:'BEHIND THE VIEW',storyOriginTitle:'What makes these little waterfalls special?',storyOriginBody:'Their charm lies in their scale: a series of low cascades in a green refuge so close to the city. Municipal sources describe the water and springs, but do not establish when each small water step took shape.',sourceLead:'SOURCES ON THE PLACE',sourceMunicipality:'Municipality of Serres',sourceTourism:'Serres tourism guide',sourceWaterFestival:'Water Festival, 2017',
     experienceLabel:'THE PLACE',introEyebrow:'IN AGIOS IOANNIS',introTitle:'A table where the water flows.',introBody:'In Agios Ioannis, timber footbridges and plane trees set the pace. The sound of the grill invites you to sit. Good company makes you stay.',
     flavoursLabel:'THE FIRE',fireEyebrow:'FROM THE GRILL',fireTitle:'The aroma finds you before you find your table.',fireBody:'Souvlaki over charcoal, lemon and warm bread in the middle. The best beginning is one you share.',fireCaption:'The moment at the grill',flavoursTitle:'Made for sharing.',
     waterLabel:'THE WATER',waterTitle:'A few steps from the table, a different rhythm.',waterBody:'Small cascades, wooden bridges, ducks on the water. Beneath the plane trees, time moves a little more slowly.',exploreArea:'Explore the area',
@@ -25,8 +27,9 @@ const translations = {
     visitLabel:'THE INVITATION',visitTitle:'There is a place for you here.',visitBody:'In Agios Ioannis near Serres, between fire and water. Come share a good moment with us.',mapButton:'Explore the area',visitNote:'The exact address, phone number and opening hours will be added soon.',backTop:'Back to top ↑',footerDisclosure:'Preview presentation. Concept imagery; real details and photographs will be added.',galleryAlt:'Concept image of a Greek taverna',close:'Close image',previous:'Previous image',next:'Next image'
   },
   de: {
-    skip:'Zum Inhalt springen',menuLabel:'Menü öffnen',navExperience:'Der Ort',navFlavours:'Die Küche',navGallery:'Bilder',navVisit:'Besuch',
-    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'DAS FEUER',heroLine2:'DAS WASSER',heroLine3:'DER TISCH.',heroSub:'Souvlaki vom Grill. Kühle unter den Platanen. Ein Moment, der gerne länger dauern darf.',discover:'Den Ort entdecken',heroPhotoLabel:'DIREKT AM WASSER',visualNote:'Visualisierungen · echte Fotos folgen',
+    pageTitle:'Taverne · Agios Ioannis bei Serres',pageDescription:'Eine griechische Taverne am Wasser in Agios Ioannis bei Serres. Grill, Schatten unter Platanen und gemeinsame Zeit.',skip:'Zum Inhalt springen',menuLabel:'Menü öffnen',navExperience:'Der Ort',navFlavours:'Die Küche',navGallery:'Bilder',navVisit:'Besuch',
+    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'Komm wegen des Grills.',heroLine2:'Bleib wegen des Wassers.',heroSub:'Souvlaki über Holzkohle, kühler Schatten unter Platanen und eine Runde, die noch lange sitzen bleibt.',discover:'Den Ort entdecken',heroPhotoLabel:'DIREKT AM WASSER',visualNote:'Visualisierungen · echte Fotos folgen',
+    storyEyebrow:'NOTIZEN AUS AGIOS IOANNIS',storyIntroTitle:'Dieser Ort hat seinen eigenen Rhythmus.',storyIntroBody:'Nur zwei Kilometer von Serres entfernt verändern Wasser, Platanen und kleine Wasserfälle das Gefühl für Zeit.',storyOneTitle:'Zwei Kilometer. Eine andere Welt.',storyOneBody:'Agios Ioannis liegt nur zwei Kilometer von der Stadt Serres entfernt. Unter jahrhundertealten Platanen lädt das fließende Wasser zuerst zum Innehalten ein.',storyTwoTitle:'Wasser in kleinen Stufen.',storyTwoBody:'Das reichlich vorhandene Wasser bildet an mehreren Stellen kleine Wasserfälle und Teiche. Die Stadt beschreibt auch Quellen nahe der Kapelle Agios Georgios.',storyThreeTitle:'Ein Ort zum Bleiben.',storyThreeBody:'Teiche, Enten, Platanen und Tische im Schatten machen Agios Ioannis zu einem beliebten Ausflugsziel. 2017 veranstaltete die Stadt hier ein Wasserfest.',storyOriginLabel:'HINTER DEM BILD',storyOriginTitle:'Was macht diese kleinen Wasserfälle besonders?',storyOriginBody:'Ihr Reiz liegt im Maßstab: mehrere niedrige Wasserstufen in einem grünen Rückzugsort direkt bei der Stadt. Die städtischen Quellen beschreiben Wasser und Quellen, belegen aber nicht, wann jede einzelne Stufe entstand.',sourceLead:'QUELLEN ZUM ORT',sourceMunicipality:'Stadt Serres',sourceTourism:'Tourismusführer Serres',sourceWaterFestival:'Wasserfest, 2017',
     experienceLabel:'DER ORT',introEyebrow:'IN AGIOS IOANNIS',introTitle:'Ein Tisch dort, wo das Wasser fließt.',introBody:'In Agios Ioannis geben Holzbrücken und Platanen den Rhythmus vor. Der Klang vom Grill lädt zum Hinsetzen ein. Die Gesellschaft lässt dich bleiben.',
     flavoursLabel:'DAS FEUER',fireEyebrow:'VOM GRILL',fireTitle:'Der Duft findet dich, bevor du deinen Tisch findest.',fireBody:'Souvlaki über Holzkohle, Zitrone und warmes Brot in der Mitte. Der schönste Anfang ist einer zum Teilen.',fireCaption:'Der Moment am Grill',flavoursTitle:'Für gemeinsame Stunden.',
     waterLabel:'DAS WASSER',waterTitle:'Ein paar Schritte vom Tisch entfernt beginnt ein anderer Rhythmus.',waterBody:'Kleine Wasserstufen, Holzbrücken und Enten im Bach. Unter den Platanen vergeht die Zeit ein wenig langsamer.',exploreArea:'Die Gegend auf der Karte',
@@ -67,6 +70,8 @@ function setLanguage(next) {
   if (!translations[next]) return;
   language = next;
   document.documentElement.lang = next;
+  document.title = translations[next].pageTitle;
+  document.querySelector('meta[name="description"]').content = translations[next].pageDescription;
   document.querySelectorAll('[data-i18n]').forEach(node => { node.textContent = translations[next][node.dataset.i18n]; });
   document.querySelectorAll('[data-i18n-aria]').forEach(node => { node.setAttribute('aria-label', translations[next][node.dataset.i18nAria]); });
   document.querySelectorAll('[data-lang]').forEach(node => { node.setAttribute('aria-pressed', String(node.dataset.lang === next)); });
@@ -150,15 +155,36 @@ else {
   reveals.forEach(item => observer.observe(item));
 }
 const progress = document.querySelector('.scroll-line');
+const heroImage = document.querySelector('.hero-image');
+const storySteps = [...document.querySelectorAll('.story-step')];
+const storyFrames = [...document.querySelectorAll('.story-frame')];
+const storyDots = [...document.querySelectorAll('.story-dots span')];
+let storyIndex = 0;
+function updateScrollScene() {
+  const end = document.documentElement.scrollHeight - innerHeight;
+  progress.style.transform = `scaleX(${end > 0 ? scrollY / end : 0})`;
+  document.querySelector('.site-header').classList.toggle('is-scrolled', scrollY > 36);
+  if (!reduceMotion.matches && scrollY < innerHeight * 1.2) heroImage.style.transform = `translate3d(0,${Math.min(scrollY * .13, 120)}px,0) scale(1.1)`;
+  const midpoint = innerHeight * .5;
+  const next = storySteps.reduce((best, step, index) => Math.abs(step.getBoundingClientRect().top + step.offsetHeight / 2 - midpoint) < Math.abs(storySteps[best].getBoundingClientRect().top + storySteps[best].offsetHeight / 2 - midpoint) ? index : best, 0);
+  if (next !== storyIndex) {
+    storyFrames[storyIndex].classList.remove('is-active');
+    storyDots[storyIndex].classList.remove('is-active');
+    storyIndex = next;
+    storyFrames[storyIndex].classList.add('is-active');
+    storyDots[storyIndex].classList.add('is-active');
+    document.querySelector('#story-counter').textContent = `${String(storyIndex + 1).padStart(2, '0')} / 03`;
+  }
+}
 let scheduled = false;
 window.addEventListener('scroll', () => {
   if (scheduled) return;
   scheduled = true;
   requestAnimationFrame(() => {
-    const end = document.documentElement.scrollHeight - innerHeight;
-    progress.style.transform = `scaleX(${end > 0 ? scrollY / end : 0})`;
+    updateScrollScene();
     scheduled = false;
   });
 }, {passive:true});
+updateScrollScene();
 document.querySelector('#year').textContent = new Date().getFullYear();
 try { setLanguage(localStorage.getItem('taverna-language') || 'el'); } catch { setLanguage('el'); }

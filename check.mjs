@@ -9,6 +9,7 @@ if (!translationsSource || !imagesSource) throw Error('Site data is missing');
 const translations = runInNewContext(`(${translationsSource.replace(/;\s*$/, '')})`);
 const images = runInNewContext(imagesSource.replace(/;\s*$/, ''));
 if (images.length !== 24 || new Set(images).size !== 24) throw Error('Expected 24 unique images');
+if ([...html.matchAll(/data-story-step="(\d+)"/g)].map(match => Number(match[1])).join(',') !== '0,1,2') throw Error('Expected three place-story chapters');
 if ([...html.matchAll(/data-dish="(\d+)"/g)].map(match => Number(match[1])).join(',') !== '0,1,2,3') throw Error('Expected four selectable dishes');
 for (const image of images) if (statSync(`assets/images/${image}.jpg`).size < 50_000) throw Error(`Missing or small image: ${image}`);
 for (const [, image] of html.matchAll(/src="assets\/images\/([^\"]+)"/g)) statSync(`assets/images/${image}`);

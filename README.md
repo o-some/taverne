@@ -28,4 +28,6 @@ All 24 JPEGs in `assets/images/` were generated for this project using the built
 
 The complete scene prompt set is in [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md).
 
-Location research: [Municipality of Serres](https://www.serres.gr/en/agios_ioannis/), [Visit Central Macedonia](https://www.visit-centralmacedonia.gr/en/where-to-go/60/1-serres/444/ai-giannis-of-serres), [Serres tourism guide](https://tourism.serres.gr/thematikes_empiries/agios-ioannis-serres/).
+The editorial place chapter uses only documented facts: Agios Ioannis is about two kilometres from Serres; the wooded springs and flowing water form small waterfalls and ponds; the municipality hosted a Water Festival there in 2017. The available municipal material does not date or explain the construction or formation of each low water step, so the website says so explicitly. Sources: [Municipality of Serres](https://www.serres.gr/toyrismos/axiotheata/ai-giannis/), [Serres tourism guide](https://tourism.serres.gr/thematikes_empiries/ai-giannis/), [2017 Water Festival](https://www.serres.gr/apolayste-deyteri-giorti-neroy-25-26-27-maiou-ston-ai-gianni-serron/).
+
+The self-hosted Roboto variable font is distributed under the [SIL Open Font License](assets/fonts/OFL-Roboto.txt); no font service is called at runtime. The scroll chapter uses native CSS and a small amount of JavaScript, with a static mobile layout and reduced-motion fallbacks.

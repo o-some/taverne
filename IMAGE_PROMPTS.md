@@ -1,6 +1,6 @@
 # Imagegen prompt set
 
-Built-in Imagegen, 2026-10-06. All 20 current assets were generated separately after the user supplied five reference photos of Agios Ioannis. Shared prompt direction: **cinematic horizontal editorial food/travel photograph; leafy northern Greek suburban park; shallow green creek and pond, low straight stepped weirs, dark X-braced wooden footbridge and railings, plane trees and ducks; warm charcoal amber and stream green; no sea, coast, high waterfall, stone arch bridge, gorge, steep mountain, fantasy villa, sign, text, logo or watermark.** Food close-ups use the references for environmental character without showing the bridge repeatedly. The reference photos are stored in the customer `[User Input]/Ortsreferenzen` folder, not published or copied pixel-for-pixel into the website.
+Built-in Imagegen, 2026-10-06. The first 20 assets were generated separately after the user supplied five reference photos of Agios Ioannis. Shared prompt direction: **cinematic horizontal editorial food/travel photograph; leafy northern Greek suburban park; shallow green creek and pond, low straight stepped weirs, dark X-braced wooden footbridge and railings, plane trees and ducks; warm charcoal amber and stream green; no sea, coast, high waterfall, stone arch bridge, gorge, steep mountain, fantasy villa, sign, text, logo or watermark.** Food close-ups use the references for environmental character without showing the bridge repeatedly. The reference photos are stored in the customer `[User Input]/Ortsreferenzen` folder, not published or copied pixel-for-pixel into the website.
 
 | File | Scene request |
 | --- | --- |
@@ -24,3 +24,14 @@ Built-in Imagegen, 2026-10-06. All 20 current assets were generated separately a
 | 18-dusk-terrace | Blue-hour terrace, warm lamps, diners, dark wooden railing and a very low water step. |
 | 19-drink-detail | Cold carafe and glasses by souvlaki, shallow pond and plane trees out of focus. |
 | 20-last-light | After-meal table at twilight beneath plane trees, warm lamps, timber railing and low weir. |
+
+## Additional food images · 2026-10-06
+
+Built-in Imagegen, one separate generation per dish; JPEG quality 82. The dishes are visual concepts, not a confirmed menu. Prompts continued the existing natural-light, plane-tree, creek-green and blue-linen direction.
+
+| File | Final scene prompt |
+| --- | --- |
+| 21-feta-salad | Wide photoreal editorial food photograph: a generous rustic sheep's milk feta salad, a large block of Greek feta with oregano and olive oil over tomato, cucumber, pepper, red onion and olives in a ceramic bowl. Intimate table under plane trees, green leafy bokeh and checked linen, natural late-afternoon light. No sea, signage, text or watermark. |
+| 22-tomato-salad | Wide photoreal editorial food photograph: Greek tomato salad with irregular ripe red and golden tomato wedges, thin red onion, parsley, oregano and olive oil on a shallow ceramic plate. No cheese, cucumber or meat. Blue-and-white checked cloth, soft shallow-creek bokeh and plane-tree light, no sea, text or watermark. |
+| 23-soutzoukakia | Wide photoreal editorial food photograph: authentic Greek soutzoukakia, elongated cumin-seasoned meatballs simmered in rustic tomato sauce in a ceramic dish, with a few potato wedges and warm pita. Not skewers or round Italian meatballs. Shaded taverna table, leafy park bokeh, natural light, no sea, text or watermark. |
+| 24-bougatsa | Wide photoreal editorial dessert photograph: Greek custard bougatsa, golden flaky filo squares with visible creamy filling, powdered sugar and cinnamon, small fork and optional Greek coffee on a blue-and-white cloth. Taverna under plane trees, warm natural light, not baklava or croissant, no sea, text or watermark. |

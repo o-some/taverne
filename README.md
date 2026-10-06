@@ -24,7 +24,7 @@ CAF 1.21.1 / premium-web Module 146 informed the original plan. The current rede
 
 The original mark in `assets/mark.svg` combines the X-braced timber bridge, short falling-water strokes and a single ember above them. It is used in the header, invitation and favicon.
 
-All 20 JPEGs in `assets/images/` were generated for this project using the built-in Imagegen tool on 2026-10-06, then encoded at JPEG quality 82 for web use. The first series was replaced after five user-supplied Agios Ioannis reference photos showed the real setting: a flat green creek and pond, low straight weirs, wooden X-rail bridge, plane trees and ducks. The original reference files are preserved in the customer `[User Input]/Ortsreferenzen` folder and are not published. The current series avoids the sea, stone arches, mountain gorges and large rock waterfalls that appeared in the first version. These images remain *concept artwork*, not documentary photos of the actual venue or confirmed menu.
+All 24 JPEGs in `assets/images/` were generated for this project using the built-in Imagegen tool on 2026-10-06, then encoded at JPEG quality 82 for web use. The first 20-image series was replaced after five user-supplied Agios Ioannis reference photos showed the real setting: a flat green creek and pond, low straight weirs, wooden X-rail bridge, plane trees and ducks. The original reference files are preserved in the customer `[User Input]/Ortsreferenzen` folder and are not published. The current series avoids the sea, stone arches, mountain gorges and large rock waterfalls that appeared in the first version. These images remain *concept artwork*, not documentary photos of the actual venue or confirmed menu.
 
 The complete scene prompt set is in [IMAGE_PROMPTS.md](IMAGE_PROMPTS.md).
 

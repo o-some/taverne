@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Η ΛΙΜΝΗ">
+  <rect width="64" height="64" fill="#171a17"/>
+  <g fill="none" stroke="#f2eee6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 9v32M32 19 23 12M32 24 41 15M32 30 19 22M32 34 45 25" stroke-width="1.5"/>
+    <path d="M12 42h40M17 47h30M22 52h20M28 57h8" stroke-width="1.2"/>
+  </g>
+</svg>

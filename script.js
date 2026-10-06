@@ -1,190 +1,119 @@
 document.documentElement.classList.add('has-js');
+
 const translations = {
   el: {
-    pageTitle:'Ταβέρνα · Άγιος Ιωάννης Σερρών',pageDescription:'Μια πρόσκληση για φαγητό δίπλα στο νερό, στον Άγιο Ιωάννη Σερρών. Φωτιά, παρέα και γεύσεις ελληνικής ταβέρνας.',skip:'Μετάβαση στο περιεχόμενο',menuLabel:'Άνοιγμα μενού',navExperience:'Ο τόπος',navFlavours:'Γεύσεις',navGallery:'Εικόνες',navVisit:'Ελάτε κοντά μας',
-    heroEyebrow:'ΑΓΙΟΣ ΙΩΑΝΝΗΣ · ΣΕΡΡΕΣ',heroLine1:'Έλα για τη σχάρα.',heroLine2:'Μείνε για το νερό.',heroSub:'Σουβλάκι στα κάρβουνα, δροσιά κάτω από τα πλατάνια και μια παρέα που δεν βιάζεται να φύγει.',discover:'Γνωρίστε τον τόπο',heroPhotoLabel:'ΔΙΠΛΑ ΣΤΟ ΝΕΡΟ',visualNote:'Εικαστικές εικόνες · πραγματικές φωτογραφίες θα προστεθούν',
-    storyEyebrow:'ΣΗΜΕΙΩΣΕΙΣ ΑΠΟ ΤΟΝ ΑΓΙΟ ΙΩΑΝΝΗ',storyIntroTitle:'Ο τόπος έχει τον δικό του ρυθμό.',storyIntroBody:'Μόλις δύο χιλιόμετρα από τις Σέρρες, το νερό, τα πλατάνια και οι μικροί καταρράκτες αλλάζουν την αίσθηση του χρόνου.',storyOneTitle:'Δύο χιλιόμετρα. Άλλος κόσμος.',storyOneBody:'Ο Άγιος Ιωάννης βρίσκεται μόλις δύο χιλιόμετρα από την πόλη των Σερρών. Κάτω από τα αιωνόβια πλατάνια, το τρεχούμενο νερό γίνεται η πρώτη πρόσκληση για μια στάση.',storyTwoTitle:'Το νερό πέφτει σε μικρές στάσεις.',storyTwoBody:'Τα άφθονα νερά σχηματίζουν σε πολλά σημεία μικρούς καταρράκτες και λιμνούλες. Ο δήμος καταγράφει επίσης πηγές κοντά στο παρεκκλήσι του Αγίου Γεωργίου.',storyThreeTitle:'Ένα μέρος για να μείνεις.',storyThreeBody:'Λιμνούλες, πάπιες, πλατάνια και τραπέζια στη σκιά κάνουν τον Αη Γιάννη αγαπημένη απόδραση. Το 2017, ο δήμος γιόρτασε εδώ το νερό με μια τοπική γιορτή.',storyOriginLabel:'ΠΙΣΩ ΑΠΟ ΤΗΝ ΕΙΚΟΝΑ',storyOriginTitle:'Γιατί είναι ξεχωριστοί αυτοί οι μικροί καταρράκτες;',storyOriginBody:'Η ομορφιά τους βρίσκεται στην κλίμακα: πολλά χαμηλά περάσματα νερού μέσα σε έναν πράσινο χώρο δίπλα στην πόλη. Οι διαθέσιμες δημοτικές πηγές περιγράφουν το νερό και τις πηγές, δεν τεκμηριώνουν όμως πότε διαμορφώθηκε κάθε μικρή βαθμίδα.',sourceLead:'ΠΗΓΕΣ ΓΙΑ ΤΟΝ ΤΟΠΟ',sourceMunicipality:'Δήμος Σερρών',sourceTourism:'Τουριστικός οδηγός Σερρών',sourceWaterFestival:'Γιορτή Νερού, 2017',
-    experienceLabel:'Ο ΤΟΠΟΣ',introEyebrow:'ΣΤΟΝ ΑΓΙΟ ΙΩΑΝΝΗ',introTitle:'Ένα τραπέζι εκεί όπου κυλά το νερό.',introBody:'Στα νερά του Αγίου Ιωάννη, οι ξύλινες γέφυρες και τα πλατάνια δίνουν τον ρυθμό. Ο ήχος της σχάρας σε καλεί να καθίσεις. Και η παρέα σε κάνει να μείνεις.',
-    flavoursLabel:'Η ΦΩΤΙΑ',fireEyebrow:'ΑΠΟ ΤΗ ΣΧΑΡΑ',fireTitle:'Η μυρωδιά σε βρίσκει πριν βρεις το τραπέζι.',fireBody:'Σουβλάκια πάνω στα κάρβουνα, λεμόνι και ζεστό ψωμί στη μέση. Η πιο ωραία αρχή είναι αυτή που μοιράζεται.',fireCaption:'Η στιγμή πάνω στη σχάρα',flavoursTitle:'Φτιαγμένο για την παρέα.',
-    waterLabel:'ΤΟ ΝΕΡΟ',waterTitle:'Λίγα βήματα από το τραπέζι, ένας άλλος ρυθμός.',waterBody:'Μικροί καταρράκτες, ξύλινες γέφυρες, πάπιες στο νερό. Κάτω από τα πλατάνια, ο χρόνος κυλά λίγο πιο αργά.',exploreArea:'Η περιοχή στον χάρτη',
-    tableLabel:'ΣΤΟ ΤΡΑΠΕΖΙ',tableTitle:'Καθίστε. Τα υπόλοιπα ας περιμένουν.',tableLead:'Μια ελληνική ταβέρνα είναι τα πιάτα στη μέση, οι φωνές γύρω από το τραπέζι και η τελευταία μπουκιά που κανείς δεν θέλει να πάρει.',foodOne:'Για την παρέα',foodTwo:'Σουτζουκάκια',foodThree:'Ντοματοσαλάτα',menuNote:'Η πραγματική κάρτα και οι τιμές θα προστεθούν όταν δοθούν από την ταβέρνα.',
-    dishLabel:'ΓΕΥΣΕΙΣ ΓΙΑ ΜΟΙΡΑΣΜΑ',dishTitle:'Κάθε πιάτο, μια άλλη ιστορία.',dishLead:'Δροσερό, ζεστό, αλμυρό, γλυκό. Πατήστε ένα πιάτο και αφήστε την εικόνα να μιλήσει.',dishGroup:'Επιλογή πιάτου',dishImageAlt:'Εικαστική εικόνα:',dishFeta:'Σαλάτα με φέτα',dishFetaNote:'Φέτα, ντομάτα, ελαιόλαδο',dishTomato:'Ντοματοσαλάτα',dishTomatoNote:'Ώριμες ντομάτες, ρίγανη',dishSoutzoukakia:'Σουτζουκάκια',dishSoutzoukakiaNote:'Με σάλτσα ντομάτας',dishBougatsa:'Μπουγάτσα',dishBougatsaNote:'Τραγανό φύλλο, γλυκιά κρέμα',dishDisclosure:'Οι εικόνες είναι εικαστικές προτάσεις. Τα πραγματικά πιάτα και η κάρτα θα επιβεβαιωθούν από την ταβέρνα.',
-    placeLabel:'Ο ΤΟΠΟΣ',placeTitle:'Σκιά από πλατάνια. Το νερό δίπλα σου. Η παρέα απέναντι.',placeBody:'Αυτό είναι το σκηνικό του Αγίου Ιωάννη Σερρών: μικρές γέφυρες, τρεχούμενο νερό και μια ανάσα πράσινο γύρω από το τραπέζι.',
-    galleryLabel:'ΕΙΚΟΝΕΣ',galleryTitle:'Μια γεύση πριν φτάσετε.',galleryLead:'Είκοσι τέσσερις κινηματογραφικές στιγμές από τον τόπο, την κουζίνα και το τραπέζι.',galleryDisclosure:'Οι εικόνες είναι δημιουργημένες εικαστικές προσεγγίσεις και δεν απεικονίζουν πιστά τον πραγματικό χώρο ή τα πιάτα.',
-    visitLabel:'Η ΠΡΟΣΚΛΗΣΗ',visitTitle:'Έχουμε κρατήσει μια θέση για εσάς.',visitBody:'Στον Άγιο Ιωάννη Σερρών, ανάμεσα στη φωτιά και το νερό. Ελάτε να μοιραστούμε μια όμορφη στιγμή.',mapButton:'Δείτε την περιοχή',visitNote:'Η ακριβής διεύθυνση, το τηλέφωνο και οι ώρες λειτουργίας θα προστεθούν σύντομα.',backTop:'Πάνω ↑',footerDisclosure:'Προσωρινή παρουσίαση. Εικαστικές εικόνες· πραγματικά στοιχεία και φωτογραφίες θα προστεθούν.',galleryAlt:'Εικαστική εικόνα ελληνικής ταβέρνας',close:'Κλείσιμο εικόνας',previous:'Προηγούμενη εικόνα',next:'Επόμενη εικόνα'
+    pageTitle:'Η ΛΙΜΝΗ · Ταβέρνα στον Άι Γιάννη Σερρών',pageDescription:'Η ΛΙΜΝΗ — ταβέρνα δίπλα στο νερό στον Άι Γιάννη Σερρών. Ένας τόπος για φαγητό, σκιά και λίγη περισσότερη ώρα μαζί.',
+    skip:'Μετάβαση στο περιεχόμενο',brandLabel:'Η ΛΙΜΝΗ — αρχή',brandSub:'ΤΑΒΕΡΝΑ · ΣΕΡΡΕΣ',navLabel:'Κύρια πλοήγηση',navPlace:'Ο ΤΟΠΟΣ',navTaverna:'Η ΤΑΒΕΡΝΑ',navFood:'Η ΓΕΥΣΗ',navJournal:'ΣΤΙΓΜΕΣ',navVisit:'ΕΠΙΣΚΕΨΗ',languageLabel:'Γλώσσα',menuLabel:'Άνοιγμα μενού',
+    heroPlace:'ΑΪ ΓΙΑΝΝΗΣ / ΣΕΡΡΕΣ / ΕΛΛΑΔΑ',heroPretitle:'ΜΙΑ ΤΑΒΕΡΝΑ, ΕΝΑΣ ΤΟΠΟΣ.',heroSubtitle:'Δίπλα στο νερό, κάτω από τα δέντρα. Έλα όπως είσαι. Μείνε όσο θέλεις.',discoverLabel:'Ανακαλύψτε τον τόπο',heroImageNote:'Εικόνα βασισμένη σε φωτογραφίες της ταβέρνας',scrollCue:'ΚΥΛΗΣΕ ΓΙΑ ΝΑ ΑΝΑΚΑΛΥΨΕΙΣ',
+    chapterPlace:'Ο ΤΟΠΟΣ',prologueEyebrow:'ΣΤΟΝ ΑΪ ΓΙΑΝΝΗ ΣΕΡΡΩΝ',prologueTitle:'Ένας τόπος που αρχίζει από το νερό.',prologueBody:'Λίγα λεπτά από τις Σέρρες, η ταβέρνα Η Λίμνη κοιτάζει το ήσυχο νερό. Ξύλινα κάγκελα, πάπιες και σκιά από τα δέντρα γίνονται μέρος του τραπεζιού.',prologueAside:'Εδώ δεν χρειάζεται βιασύνη. Μόνο μια καλή θέση δίπλα στο νερό.',
+    waterAlt:'Θέα στη μικρή λίμνη, στο ξύλινο κιγκλίδωμα και στα δέντρα της περιοχής',waterTitle:'Η φύση κάθεται μαζί μας.',waterBody:'Το νερό μένει κοντά σου — όχι σαν θέα στο βάθος, αλλά σαν ο ήχος και η κίνηση αυτού του μέρους.',waterFact:'Ο Άι Γιάννης βρίσκεται περίπου δύο χιλιόμετρα από την πόλη των Σερρών. Τα πλατάνια και τα τρεχούμενα νερά της περιοχής σχηματίζουν μικρούς καταρράκτες.',sourceLink:'ΠΗΓΗ: ΔΗΜΟΣ ΣΕΡΡΩΝ ↗',
+    chapterTaverna:'Η ΤΑΒΕΡΝΑ',tavernaEyebrow:'Ο ΧΑΡΑΚΤΗΡΑΣ ΤΟΥ ΤΟΠΟΥ',tavernaTitle:'Ξύλο. Σκιά. Ένα τραπέζι.',tavernaBody:'Η ταβέρνα έχει τον δικό της τρόπο να σε καλωσορίζει: απλά τραπέζια, το παλιό ξύλινο κάγκελο και το νερό ακριβώς δίπλα.',terraceAlt:'Η παραλίμνια βεράντα της ταβέρνας με ξύλινο κάγκελο και πάπιες',terraceCaption:'Η βεράντα δίπλα στο νερό',ducksAlt:'Πάπιες στο ρηχό νερό μπροστά από την ταβέρνα',tavernaNote:'Δεν είναι σκηνικό. Είναι οι μικρές λεπτομέρειες που θυμάσαι όταν φύγεις.',interludeLabel:'Η λίμνη',interludeText:'ΤΟ ΝΕΡΟ · Η ΣΚΙΑ · Η ΠΑΡΕΑ',
+    chapterFood:'Η ΓΕΥΣΗ',foodEyebrow:'ΑΠΟ ΤΗΝ ΚΟΥΖΙΝΑ ΤΗΣ ΛΙΜΝΗΣ',foodTitle:'Απλό φαγητό. Καλή παρέα.',foodBody:'Στη φωτογραφία, κεφτεδάκια της ταβέρνας με κρεμμύδι, ντομάτα και λεμόνι. Ένα πιάτο με τον αληθινό χαρακτήρα της κουζίνας.',dishName:'ΚΕΦΤΕΔΑΚΙΑ',dishCaption:'Από φωτογραφία της ταβέρνας',foodAlt:'Κεφτεδάκια της ταβέρνας με κρεμμύδι, ντομάτα, σαλάτα και λεμόνι',menuThread:'Ασπρόμαυρα δέντρα στο εξώφυλλο της κάρτας. Ένας απλός τρόπος να πεις τι είναι η ταβέρνα Η Λίμνη: φαγητό μέσα στη φύση.',menuAlt:'Το εξώφυλλο της ασπρόμαυρης κάρτας Η ΛΙΜΝΗ με δέντρα',menuCaption:'Το εξώφυλλο της κάρτας',
+    chapterJournal:'ΣΤΙΓΜΕΣ',journalTitle:'Μικρές εικόνες από έναν αληθινό τόπο.',journalBody:'Λίμνη, πάπιες, νερό, βεράντα. Οι λεπτομέρειες που κάνουν αυτόν τον τόπο ξεχωριστό.',fountainAlt:'Μικρό συντριβάνι και πάπιες στη λίμνη',journalOne:'ΤΟ ΝΕΡΟ',journalTwo:'Η ΟΧΘΗ',journalThree:'Η ΒΕΡΑΝΤΑ',
+    visitEyebrow:'05 / ΕΛΑ ΝΑ ΜΑΣ ΒΡΕΙΣ',visitTitle:'Το τραπέζι είναι δίπλα στο νερό.',visitBody:'Η Λίμνη βρίσκεται στον Άι Γιάννη Σερρών. Έλα για το φαγητό, κάθισε για τη θέα και άφησε τη μέρα να πάει λίγο πιο αργά.',mapLink:'ΔΕΙΤΕ ΤΗΝ ΠΕΡΙΟΧΗ ΣΤΟΝ ΧΑΡΤΗ',backTop:'ΠΙΣΩ ΣΤΗΝ ΑΡΧΗ ↑',imageDisclosure:'Εικόνες βασισμένες σε φωτογραφίες του πελάτη· ορισμένα τμήματα έχουν ψηφιακά ανασυντεθεί.',areaSource:'ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΟΝ ΤΟΠΟ ↗',lightboxLabel:'Προβολή εικόνας',close:'Κλείσιμο εικόνας',previous:'Προηγούμενη εικόνα',next:'Επόμενη εικόνα'
   },
   en: {
-    pageTitle:'Taverna · Agios Ioannis, Serres',pageDescription:'A Greek taverna by the water in Agios Ioannis near Serres. Fire from the grill, cool shade and time together.',skip:'Skip to content',menuLabel:'Open menu',navExperience:'The place',navFlavours:'The food',navGallery:'Gallery',navVisit:'Visit us',
-    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'Come for the grill.',heroLine2:'Stay for the water.',heroSub:'Souvlaki over charcoal, cool shade under the plane trees, and company that makes you linger.',discover:'Discover the place',heroPhotoLabel:'BESIDE THE WATER',visualNote:'Concept imagery · real photographs to follow',
-    storyEyebrow:'NOTES FROM AGIOS IOANNIS',storyIntroTitle:'This place moves at its own pace.',storyIntroBody:'Just two kilometres from Serres, running water, plane trees and small cascades change the pace of the day.',storyOneTitle:'Two kilometres. Another world.',storyOneBody:'Agios Ioannis sits just two kilometres from the city of Serres. Beneath centuries-old plane trees, running water is the first invitation to pause.',storyTwoTitle:'Water, in gentle steps.',storyTwoBody:'Abundant water forms small waterfalls and ponds in several places. The municipality also describes springs near the chapel of Agios Georgios.',storyThreeTitle:'A place to linger.',storyThreeBody:'Ponds, ducks, plane trees and tables in the shade make Agios Ioannis a cherished local escape. In 2017 the municipality held a Water Festival here.',storyOriginLabel:'BEHIND THE VIEW',storyOriginTitle:'What makes these little waterfalls special?',storyOriginBody:'Their charm lies in their scale: a series of low cascades in a green refuge so close to the city. Municipal sources describe the water and springs, but do not establish when each small water step took shape.',sourceLead:'SOURCES ON THE PLACE',sourceMunicipality:'Municipality of Serres',sourceTourism:'Serres tourism guide',sourceWaterFestival:'Water Festival, 2017',
-    experienceLabel:'THE PLACE',introEyebrow:'IN AGIOS IOANNIS',introTitle:'A table where the water flows.',introBody:'In Agios Ioannis, timber footbridges and plane trees set the pace. The sound of the grill invites you to sit. Good company makes you stay.',
-    flavoursLabel:'THE FIRE',fireEyebrow:'FROM THE GRILL',fireTitle:'The aroma finds you before you find your table.',fireBody:'Souvlaki over charcoal, lemon and warm bread in the middle. The best beginning is one you share.',fireCaption:'The moment at the grill',flavoursTitle:'Made for sharing.',
-    waterLabel:'THE WATER',waterTitle:'A few steps from the table, a different rhythm.',waterBody:'Small cascades, wooden bridges, ducks on the water. Beneath the plane trees, time moves a little more slowly.',exploreArea:'Explore the area',
-    tableLabel:'AT THE TABLE',tableTitle:'Take a seat. Everything else can wait.',tableLead:'A Greek taverna is plates in the middle, voices around the table and the last bite nobody wants to take.',foodOne:'For the company',foodTwo:'Soutzoukakia',foodThree:'Tomato salad',menuNote:'The actual menu and prices will be added when supplied by the taverna.',
-    dishLabel:'MADE TO SHARE',dishTitle:'Every dish has its own moment.',dishLead:'Cool, warm, savoury, sweet. Choose a dish and let the image tell its story.',dishGroup:'Choose a dish',dishImageAlt:'Concept image:',dishFeta:'Feta salad',dishFetaNote:'Feta, tomato, olive oil',dishTomato:'Tomato salad',dishTomatoNote:'Ripe tomatoes, oregano',dishSoutzoukakia:'Soutzoukakia',dishSoutzoukakiaNote:'In tomato sauce',dishBougatsa:'Bougatsa',dishBougatsaNote:'Crisp filo, sweet custard',dishDisclosure:'These images are visual concepts. The actual dishes and menu will be confirmed by the taverna.',
-    placeLabel:'THE PLACE',placeTitle:'Shade from plane trees. Water beside you. Friends across the table.',placeBody:'This is the setting in Agios Ioannis near Serres: little bridges, running water and a breath of green around the table.',
-    galleryLabel:'GALLERY',galleryTitle:'A taste before you arrive.',galleryLead:'Twenty-four cinematic glimpses of the place, the cooking and the table.',galleryDisclosure:'These are created concept images and do not faithfully show the actual venue or dishes.',
-    visitLabel:'THE INVITATION',visitTitle:'There is a place for you here.',visitBody:'In Agios Ioannis near Serres, between fire and water. Come share a good moment with us.',mapButton:'Explore the area',visitNote:'The exact address, phone number and opening hours will be added soon.',backTop:'Back to top ↑',footerDisclosure:'Preview presentation. Concept imagery; real details and photographs will be added.',galleryAlt:'Concept image of a Greek taverna',close:'Close image',previous:'Previous image',next:'Next image'
+    pageTitle:'Η ΛΙΜΝΗ · Taverna by the water in Serres',pageDescription:'Η ΛΙΜΝΗ is a Greek taverna beside the water in Ai Giannis, Serres. A place for food, shade and time together.',
+    skip:'Skip to content',brandLabel:'Η ΛΙΜΝΗ — home',brandSub:'TAVERNA · SERRES',navLabel:'Main navigation',navPlace:'THE PLACE',navTaverna:'THE TAVERNA',navFood:'THE FOOD',navJournal:'MOMENTS',navVisit:'VISIT',languageLabel:'Language',menuLabel:'Open menu',
+    heroPlace:'AI GIANNIS / SERRES / GREECE',heroPretitle:'A TAVERNA. A PLACE.',heroSubtitle:'Beside the water, beneath the trees. Come as you are. Stay as long as you like.',discoverLabel:'Discover the place',heroImageNote:'Image based on photographs of the taverna',scrollCue:'SCROLL TO EXPLORE',
+    chapterPlace:'THE PLACE',prologueEyebrow:'IN AI GIANNIS, SERRES',prologueTitle:'A place that begins with water.',prologueBody:'Minutes from Serres, Η ΛΙΜΝΗ looks out over still water. Timber rails, ducks and shade from the trees become part of the table.',prologueAside:'There is no need to hurry here. Just find a good seat beside the water.',
+    waterAlt:'View over the small pond, wooden railing and trees',waterTitle:'Nature joins the table.',waterBody:'The water stays close — its sound and movement are part of this place, never just a distant view.',waterFact:'Ai Giannis is about two kilometres from the city of Serres. Plane trees and running water in the area form small waterfalls.',sourceLink:'SOURCE: MUNICIPALITY OF SERRES ↗',
+    chapterTaverna:'THE TAVERNA',tavernaEyebrow:'THE CHARACTER OF THE PLACE',tavernaTitle:'Timber. Shade. A table.',tavernaBody:'The taverna has its own way of welcoming you: simple tables, weathered timber rails and the water right beside them.',terraceAlt:'The waterside taverna terrace with timber rails and ducks',terraceCaption:'The terrace beside the water',ducksAlt:'Ducks in shallow water beside the taverna',tavernaNote:'It is the small details you remember after you leave.',interludeLabel:'The lake',interludeText:'WATER · SHADE · COMPANY',
+    chapterFood:'THE FOOD',foodEyebrow:'FROM THE KITCHEN AT Η ΛΙΜΝΗ',foodTitle:'Simple food. Good company.',foodBody:'In the photograph: the taverna’s grilled keftedakia with onion, tomato and lemon. A plate with the honest character of this kitchen.',dishName:'KEFTEDAKIA',dishCaption:'From a photograph of the taverna',foodAlt:'The taverna’s keftedakia with onion, tomato, salad and lemon',menuThread:'Black-and-white trees on the menu cover. A simple way to describe Η ΛΙΜΝΗ: food among nature.',menuAlt:'The real black-and-white Η ΛΙΜΝΗ menu cover with trees',menuCaption:'The menu cover',
+    chapterJournal:'MOMENTS',journalTitle:'Small scenes from a real place.',journalBody:'Water, ducks, trees, terrace. Details that give this place its character.',fountainAlt:'Small fountain and ducks in the pond',journalOne:'THE WATER',journalTwo:'THE SHORE',journalThree:'THE TERRACE',
+    visitEyebrow:'05 / COME FIND US',visitTitle:'Your table is beside the water.',visitBody:'Η ΛΙΜΝΗ is in Ai Giannis, Serres. Come for the food, take a seat for the view and let the day move a little more slowly.',mapLink:'EXPLORE THE AREA ON MAPS',backTop:'BACK TO TOP ↑',imageDisclosure:'Images are based on customer photographs; some areas have been digitally reconstructed.',areaSource:'ABOUT THE AREA ↗',lightboxLabel:'Image viewer',close:'Close image',previous:'Previous image',next:'Next image'
   },
   de: {
-    pageTitle:'Taverne · Agios Ioannis bei Serres',pageDescription:'Eine griechische Taverne am Wasser in Agios Ioannis bei Serres. Grill, Schatten unter Platanen und gemeinsame Zeit.',skip:'Zum Inhalt springen',menuLabel:'Menü öffnen',navExperience:'Der Ort',navFlavours:'Die Küche',navGallery:'Bilder',navVisit:'Besuch',
-    heroEyebrow:'AGIOS IOANNIS · SERRES',heroLine1:'Komm wegen des Grills.',heroLine2:'Bleib wegen des Wassers.',heroSub:'Souvlaki über Holzkohle, kühler Schatten unter Platanen und eine Runde, die noch lange sitzen bleibt.',discover:'Den Ort entdecken',heroPhotoLabel:'DIREKT AM WASSER',visualNote:'Visualisierungen · echte Fotos folgen',
-    storyEyebrow:'NOTIZEN AUS AGIOS IOANNIS',storyIntroTitle:'Dieser Ort hat seinen eigenen Rhythmus.',storyIntroBody:'Nur zwei Kilometer von Serres entfernt verändern Wasser, Platanen und kleine Wasserfälle das Gefühl für Zeit.',storyOneTitle:'Zwei Kilometer. Eine andere Welt.',storyOneBody:'Agios Ioannis liegt nur zwei Kilometer von der Stadt Serres entfernt. Unter jahrhundertealten Platanen lädt das fließende Wasser zuerst zum Innehalten ein.',storyTwoTitle:'Wasser in kleinen Stufen.',storyTwoBody:'Das reichlich vorhandene Wasser bildet an mehreren Stellen kleine Wasserfälle und Teiche. Die Stadt beschreibt auch Quellen nahe der Kapelle Agios Georgios.',storyThreeTitle:'Ein Ort zum Bleiben.',storyThreeBody:'Teiche, Enten, Platanen und Tische im Schatten machen Agios Ioannis zu einem beliebten Ausflugsziel. 2017 veranstaltete die Stadt hier ein Wasserfest.',storyOriginLabel:'HINTER DEM BILD',storyOriginTitle:'Was macht diese kleinen Wasserfälle besonders?',storyOriginBody:'Ihr Reiz liegt im Maßstab: mehrere niedrige Wasserstufen in einem grünen Rückzugsort direkt bei der Stadt. Die städtischen Quellen beschreiben Wasser und Quellen, belegen aber nicht, wann jede einzelne Stufe entstand.',sourceLead:'QUELLEN ZUM ORT',sourceMunicipality:'Stadt Serres',sourceTourism:'Tourismusführer Serres',sourceWaterFestival:'Wasserfest, 2017',
-    experienceLabel:'DER ORT',introEyebrow:'IN AGIOS IOANNIS',introTitle:'Ein Tisch dort, wo das Wasser fließt.',introBody:'In Agios Ioannis geben Holzbrücken und Platanen den Rhythmus vor. Der Klang vom Grill lädt zum Hinsetzen ein. Die Gesellschaft lässt dich bleiben.',
-    flavoursLabel:'DAS FEUER',fireEyebrow:'VOM GRILL',fireTitle:'Der Duft findet dich, bevor du deinen Tisch findest.',fireBody:'Souvlaki über Holzkohle, Zitrone und warmes Brot in der Mitte. Der schönste Anfang ist einer zum Teilen.',fireCaption:'Der Moment am Grill',flavoursTitle:'Für gemeinsame Stunden.',
-    waterLabel:'DAS WASSER',waterTitle:'Ein paar Schritte vom Tisch entfernt beginnt ein anderer Rhythmus.',waterBody:'Kleine Wasserstufen, Holzbrücken und Enten im Bach. Unter den Platanen vergeht die Zeit ein wenig langsamer.',exploreArea:'Die Gegend auf der Karte',
-    tableLabel:'AM TISCH',tableTitle:'Setz dich. Alles andere kann warten.',tableLead:'Eine griechische Taverne ist: Teller in der Mitte, Stimmen rund um den Tisch und der letzte Bissen, den keiner nehmen will.',foodOne:'Für die Runde',foodTwo:'Soutzoukakia',foodThree:'Tomatensalat',menuNote:'Die echte Speisekarte und Preise folgen, sobald sie von der Taverne vorliegen.',
-    dishLabel:'ZUM TEILEN',dishTitle:'Jedes Gericht hat seinen Moment.',dishLead:'Frisch, warm, herzhaft, süß. Wähle ein Gericht und lass das Bild erzählen.',dishGroup:'Gericht auswählen',dishImageAlt:'Visualisierung:',dishFeta:'Schafskäsesalat',dishFetaNote:'Feta, Tomate, Olivenöl',dishTomato:'Tomatensalat',dishTomatoNote:'Reife Tomaten, Oregano',dishSoutzoukakia:'Soutzoukakia',dishSoutzoukakiaNote:'In Tomatensauce',dishBougatsa:'Bougatsa',dishBougatsaNote:'Knuspriger Filoteig, Creme',dishDisclosure:'Diese Bilder sind Visualisierungen. Die tatsächlichen Gerichte und die Speisekarte werden von der Taverne bestätigt.',
-    placeLabel:'DER ORT',placeTitle:'Schatten von Platanen. Wasser neben dir. Freunde gegenüber.',placeBody:'Das ist die Kulisse von Agios Ioannis bei Serres: kleine Brücken, fließendes Wasser und viel Grün rund um den Tisch.',
-    galleryLabel:'BILDER',galleryTitle:'Ein Vorgeschmack vor dem Besuch.',galleryLead:'Vierundzwanzig filmische Eindrücke von Ort, Küche und Tisch.',galleryDisclosure:'Diese Bilder sind gestaltete Visualisierungen. Sie zeigen den tatsächlichen Ort und die Gerichte nicht verlässlich.',
-    visitLabel:'DIE EINLADUNG',visitTitle:'Ein Platz am Tisch wartet auf dich.',visitBody:'In Agios Ioannis bei Serres, zwischen Feuer und Wasser. Komm vorbei und teile einen schönen Moment mit uns.',mapButton:'Die Gegend ansehen',visitNote:'Die genaue Adresse, Telefonnummer und Öffnungszeiten folgen in Kürze.',backTop:'Nach oben ↑',footerDisclosure:'Vorläufige Präsentation. Visualisierungen; echte Angaben und Fotos werden ergänzt.',galleryAlt:'Visualisierung einer griechischen Taverne',close:'Bild schließen',previous:'Vorheriges Bild',next:'Nächstes Bild'
+    pageTitle:'Η ΛΙΜΝΗ · Taverne am Wasser bei Serres',pageDescription:'Η ΛΙΜΝΗ ist eine griechische Taverne direkt am Wasser in Ai Giannis bei Serres. Ein Ort für Essen, Schatten und gemeinsame Zeit.',
+    skip:'Zum Inhalt springen',brandLabel:'Η ΛΙΜΝΗ — Startseite',brandSub:'TAVERNE · SERRES',navLabel:'Hauptnavigation',navPlace:'DER ORT',navTaverna:'DIE TAVERNE',navFood:'DAS ESSEN',navJournal:'MOMENTE',navVisit:'BESUCH',languageLabel:'Sprache',menuLabel:'Menü öffnen',
+    heroPlace:'AI GIANNIS / SERRES / GRIECHENLAND',heroPretitle:'EINE TAVERNE. EIN ORT.',heroSubtitle:'Direkt am Wasser, unter den Bäumen. Komm, wie du bist. Bleib, so lange du magst.',discoverLabel:'Den Ort entdecken',heroImageNote:'Bild auf Grundlage von Fotos der Taverne',scrollCue:'WEITER SCROLLEN',
+    chapterPlace:'DER ORT',prologueEyebrow:'IN AI GIANNIS BEI SERRES',prologueTitle:'Ein Ort, der mit dem Wasser beginnt.',prologueBody:'Wenige Minuten von Serres entfernt blickt Η ΛΙΜΝΗ auf das ruhige Wasser. Holzgeländer, Enten und der Schatten der Bäume gehören hier zum Tisch dazu.',prologueAside:'Hier muss niemand eilen. Such dir einfach einen guten Platz direkt am Wasser.',
+    waterAlt:'Blick auf den kleinen See, das Holzgeländer und die Bäume',waterTitle:'Die Natur sitzt mit am Tisch.',waterBody:'Das Wasser ist ganz nah — sein Klang und seine Bewegung gehören zu diesem Ort.',waterFact:'Ai Giannis liegt etwa zwei Kilometer von der Stadt Serres entfernt. Platanen und fließendes Wasser bilden in der Gegend kleine Wasserfälle.',sourceLink:'QUELLE: STADT SERRES ↗',
+    chapterTaverna:'DIE TAVERNE',tavernaEyebrow:'DER CHARAKTER DES ORTES',tavernaTitle:'Holz. Schatten. Ein Tisch.',tavernaBody:'Die Taverne begrüßt dich auf ihre Weise: mit einfachen Tischen, dem alten Holzgeländer und dem Wasser gleich daneben.',terraceAlt:'Die Terrasse der Taverne am Wasser mit Holzgeländer und Enten',terraceCaption:'Die Terrasse direkt am Wasser',ducksAlt:'Enten im flachen Wasser vor der Taverne',tavernaNote:'Es sind die kleinen Details, an die du dich später erinnerst.',interludeLabel:'Der See',interludeText:'WASSER · SCHATTEN · GESELLSCHAFT',
+    chapterFood:'DAS ESSEN',foodEyebrow:'AUS DER KÜCHE VON Η ΛΙΜΝΗ',foodTitle:'Einfaches Essen. Gute Gesellschaft.',foodBody:'Auf dem Foto: Keftedakia aus der Taverne mit Zwiebeln, Tomate und Zitrone. Ein Teller, der den ehrlichen Charakter dieser Küche zeigt.',dishName:'KEFTEDAKIA',dishCaption:'Aus einem Foto der Taverne',foodAlt:'Keftedakia der Taverne mit Zwiebeln, Tomate, Salat und Zitrone',menuThread:'Schwarz-weiße Bäume auf dem Cover der Speisekarte. Ein einfacher Ausdruck dafür, was Η ΛΙΜΝΗ ausmacht: Essen mitten in der Natur.',menuAlt:'Das echte schwarz-weiße Speisekarten-Cover von Η ΛΙΜΝΗ mit Bäumen',menuCaption:'Das Speisekarten-Cover',
+    chapterJournal:'MOMENTE',journalTitle:'Kleine Szenen von einem echten Ort.',journalBody:'Wasser, Enten, Bäume, Terrasse. Details, die diesem Ort seinen Charakter geben.',fountainAlt:'Kleiner Springbrunnen und Enten im See',journalOne:'DAS WASSER',journalTwo:'DAS UFER',journalThree:'DIE TERRASSE',
+    visitEyebrow:'05 / KOMM VORBEI',visitTitle:'Dein Tisch steht am Wasser.',visitBody:'Η ΛΙΜΝΗ liegt in Ai Giannis bei Serres. Komm zum Essen, bleib für den Blick und lass den Tag etwas langsamer werden.',mapLink:'DIE GEGEND AUF MAPS ANSEHEN',backTop:'NACH OBEN ↑',imageDisclosure:'Die Bilder basieren auf Kundenfotos; einzelne Bereiche wurden digital rekonstruiert.',areaSource:'MEHR ÜBER DEN ORT ↗',lightboxLabel:'Bildansicht',close:'Bild schließen',previous:'Vorheriges Bild',next:'Nächstes Bild'
   }
 };
 
-const images = [
-  '01-taverna-waterfall','02-souvlaki-grill','03-waterfall','04-table-feast',
-  '05-souvlaki-plate','06-chicken-skewers','07-grill-fire','08-taverna-terrace',
-  '09-table-gathering','10-water-stone','11-waterfall-wide','12-plane-trees',
-  '13-pita-table','14-greek-salad','15-grilled-vegetables','16-lemon-potatoes',
-  '17-kitchen-hands','18-dusk-terrace','19-drink-detail','20-last-light',
-  '21-feta-salad','22-tomato-salad','23-soutzoukakia','24-bougatsa'
+const gallery = [
+  {src:'assets/limni/fountain.webp', alt:'fountainAlt', caption:'journalOne'},
+  {src:'assets/limni/ducks.webp', alt:'ducksAlt', caption:'journalTwo'},
+  {src:'assets/limni/terrace-no-person.webp', alt:'terraceAlt', caption:'journalThree'}
 ];
-
-const gallery = document.querySelector('#gallery-rail');
-const count = document.querySelector('#gallery-count');
 const dialog = document.querySelector('#lightbox');
 const dialogImage = document.querySelector('#lightbox-image');
 const dialogCaption = document.querySelector('#lightbox-caption');
 let language = 'el';
 let activeImage = 0;
-let activeDish = 0;
-let dishRequest = 0;
-const dishKeys = ['dishFeta','dishTomato','dishSoutzoukakia','dishBougatsa'];
-const dishImage = document.querySelector('#dish-image');
-const dishCaption = document.querySelector('#dish-caption');
-const dishCounter = document.querySelector('#dish-counter');
-const imagePath = index => `assets/images/${images[index]}.jpg`;
-const imageDescription = index => index >= 20 ? `${translations[language].dishImageAlt} ${translations[language][dishKeys[index - 20]]}` : `${translations[language].galleryAlt} ${index + 1}`;
 
 function setLanguage(next) {
   if (!translations[next]) return;
   language = next;
+  const t = translations[next];
   document.documentElement.lang = next;
-  document.title = translations[next].pageTitle;
-  document.querySelector('meta[name="description"]').content = translations[next].pageDescription;
-  document.querySelectorAll('[data-i18n]').forEach(node => { node.textContent = translations[next][node.dataset.i18n]; });
-  document.querySelectorAll('[data-i18n-aria]').forEach(node => { node.setAttribute('aria-label', translations[next][node.dataset.i18nAria]); });
-  document.querySelectorAll('[data-lang]').forEach(node => { node.setAttribute('aria-pressed', String(node.dataset.lang === next)); });
-  document.querySelectorAll('.gallery-item').forEach((button, index) => { button.setAttribute('aria-label', imageDescription(index)); button.querySelector('img').alt = imageDescription(index); });
-  document.querySelector('.lightbox-close').setAttribute('aria-label', translations[next].close);
-  document.querySelectorAll('.lightbox-arrow')[0].setAttribute('aria-label', translations[next].previous);
-  document.querySelectorAll('.lightbox-arrow')[1].setAttribute('aria-label', translations[next].next);
-  dishCaption.textContent = translations[next][dishKeys[activeDish]];
-  dishImage.alt = `${translations[next].dishImageAlt} ${dishCaption.textContent}`;
+  document.title = t.pageTitle;
+  document.querySelector('meta[name="description"]').content = t.pageDescription;
+  document.querySelector('meta[property="og:locale"]').content = {el:'el_GR',en:'en_US',de:'de_DE'}[next];
+  document.querySelectorAll('[data-i18n]').forEach(node => { node.textContent = t[node.dataset.i18n]; });
+  document.querySelectorAll('[data-i18n-aria]').forEach(node => { node.setAttribute('aria-label', t[node.dataset.i18nAria]); });
+  document.querySelectorAll('[data-i18n-alt]').forEach(node => { node.alt = t[node.dataset.i18nAlt]; });
+  document.querySelectorAll('[data-lang]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === next)));
   if (dialog.open) showImage(activeImage);
-  try { localStorage.setItem('taverna-language', next); } catch {}
+  try { localStorage.setItem('limni-language', next); } catch {}
 }
-
-images.forEach((name, index) => {
-  const button = document.createElement('button');
-  button.className = 'gallery-item';
-  button.type = 'button';
-  button.setAttribute('aria-label', imageDescription(index));
-  const img = document.createElement('img');
-  img.src = imagePath(index);
-  img.alt = imageDescription(index);
-  img.loading = 'lazy';
-  img.width = 1672;
-  img.height = 941;
-  const label = document.createElement('span');
-  label.textContent = `${String(index + 1).padStart(2, '0')} / ${images.length}`;
-  button.append(img, label);
-  button.addEventListener('click', () => { showImage(index); dialog.showModal(); document.body.classList.add('lightbox-open'); });
-  gallery.append(button);
-});
-
-async function selectDish(index) {
-  const request = ++dishRequest;
-  if (index === activeDish || index < 0 || index >= dishKeys.length) return;
-  const preview = new Image();
-  preview.src = imagePath(20 + index);
-  try { await preview.decode(); } catch { return; }
-  if (request !== dishRequest) return;
-  activeDish = index;
-  dishImage.src = preview.src;
-  dishCaption.textContent = translations[language][dishKeys[index]];
-  dishImage.alt = `${translations[language].dishImageAlt} ${dishCaption.textContent}`;
-  dishCounter.textContent = `${String(index + 1).padStart(2, '0')} / 04`;
-  document.querySelectorAll('.dish-choice').forEach((button, i) => button.setAttribute('aria-pressed', String(i === index)));
-  dishImage.getAnimations().forEach(animation => animation.cancel());
-  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) dishImage.animate([{opacity:.3,transform:'scale(1.06)'},{opacity:1,transform:'scale(1)'}],{duration:520,easing:'cubic-bezier(.2,.8,.2,1)'});
-}
-document.querySelectorAll('.dish-choice').forEach(button => button.addEventListener('click', () => selectDish(Number(button.dataset.dish))));
 
 function showImage(index) {
-  activeImage = (index + images.length) % images.length;
-  dialogImage.src = imagePath(activeImage);
-  dialogImage.alt = imageDescription(activeImage);
-  dialogCaption.textContent = `${String(activeImage + 1).padStart(2, '0')} / ${images.length}`;
+  activeImage = (index + gallery.length) % gallery.length;
+  const item = gallery[activeImage];
+  dialogImage.src = item.src;
+  dialogImage.alt = translations[language][item.alt];
+  dialogCaption.textContent = `${String(activeImage + 1).padStart(2, '0')} / 03 — ${translations[language][item.caption]}`;
 }
-function updateGalleryCount() {
-  const items = [...gallery.children];
-  const middle = gallery.scrollLeft + gallery.clientWidth / 2;
-  const nearest = items.reduce((best, item, index) => Math.abs(item.offsetLeft + item.clientWidth / 2 - middle) < Math.abs(items[best].offsetLeft + items[best].clientWidth / 2 - middle) ? index : best, 0);
-  count.textContent = `${String(nearest + 1).padStart(2, '0')} / ${images.length}`;
-}
+
 document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
-document.querySelector('#gallery-prev').addEventListener('click', () => gallery.scrollBy({left: -gallery.clientWidth * .8, behavior:'smooth'}));
-document.querySelector('#gallery-next').addEventListener('click', () => gallery.scrollBy({left: gallery.clientWidth * .8, behavior:'smooth'}));
-gallery.addEventListener('scroll', updateGalleryCount, {passive:true});
+document.querySelectorAll('[data-gallery]').forEach(button => button.addEventListener('click', () => { showImage(Number(button.dataset.gallery)); dialog.showModal(); document.body.classList.add('lightbox-open'); }));
 document.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
 document.querySelector('.lightbox-arrow.prev').addEventListener('click', () => showImage(activeImage - 1));
 document.querySelector('.lightbox-arrow.next').addEventListener('click', () => showImage(activeImage + 1));
 dialog.addEventListener('close', () => document.body.classList.remove('lightbox-open'));
 dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
 dialog.addEventListener('keydown', event => { if (event.key === 'ArrowLeft') showImage(activeImage - 1); if (event.key === 'ArrowRight') showImage(activeImage + 1); });
+
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
-menuButton.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') !== 'true'; menuButton.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open); });
+menuButton.addEventListener('click', () => {
+  const open = menuButton.getAttribute('aria-expanded') !== 'true';
+  menuButton.setAttribute('aria-expanded', String(open));
+  nav.classList.toggle('open', open);
+});
 nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }));
+document.addEventListener('keydown', event => { if (event.key === 'Escape') { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); } });
+
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-const reveals = document.querySelectorAll('.reveal,.reveal-image');
-if (reduceMotion.matches || !('IntersectionObserver' in window)) reveals.forEach(item => item.classList.add('is-visible'));
+const revealItems = document.querySelectorAll('.reveal,.media-reveal,.line-draw');
+if (reduceMotion.matches || !('IntersectionObserver' in window)) revealItems.forEach(item => item.classList.add('is-visible'));
 else {
-  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), {threshold:.06,rootMargin:'0px 0px -30px 0px'});
-  reveals.forEach(item => observer.observe(item));
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), {threshold:.08,rootMargin:'0px 0px -35px 0px'});
+  revealItems.forEach(item => observer.observe(item));
 }
-const progress = document.querySelector('.scroll-line');
+
+const header = document.querySelector('.site-header');
+const hero = document.querySelector('.hero');
 const heroImage = document.querySelector('.hero-image');
-const storySteps = [...document.querySelectorAll('.story-step')];
-const storyFrames = [...document.querySelectorAll('.story-frame')];
-const storyDots = [...document.querySelectorAll('.story-dots span')];
-let storyIndex = 0;
-function updateScrollScene() {
+const progress = document.querySelector('.scroll-progress');
+let scrollQueued = false;
+function updateScroll() {
   const end = document.documentElement.scrollHeight - innerHeight;
   progress.style.transform = `scaleX(${end > 0 ? scrollY / end : 0})`;
-  document.querySelector('.site-header').classList.toggle('is-scrolled', scrollY > 36);
-  if (!reduceMotion.matches && scrollY < innerHeight * 1.2) heroImage.style.transform = `translate3d(0,${Math.min(scrollY * .13, 120)}px,0) scale(1.1)`;
-  const midpoint = innerHeight * .5;
-  const next = storySteps.reduce((best, step, index) => Math.abs(step.getBoundingClientRect().top + step.offsetHeight / 2 - midpoint) < Math.abs(storySteps[best].getBoundingClientRect().top + storySteps[best].offsetHeight / 2 - midpoint) ? index : best, 0);
-  if (next !== storyIndex) {
-    storyFrames[storyIndex].classList.remove('is-active');
-    storyDots[storyIndex].classList.remove('is-active');
-    storyIndex = next;
-    storyFrames[storyIndex].classList.add('is-active');
-    storyDots[storyIndex].classList.add('is-active');
-    document.querySelector('#story-counter').textContent = `${String(storyIndex + 1).padStart(2, '0')} / 03`;
+  header.classList.toggle('is-scrolled', scrollY > 42);
+  if (!reduceMotion.matches) {
+    hero.classList.toggle('is-color', scrollY > 95);
+    if (scrollY < innerHeight * 1.2) heroImage.style.transform = `translate3d(0,${Math.min(scrollY * .12, 95)}px,0) scale(1.07)`;
   }
+  scrollQueued = false;
 }
-let scheduled = false;
-window.addEventListener('scroll', () => {
-  if (scheduled) return;
-  scheduled = true;
-  requestAnimationFrame(() => {
-    updateScrollScene();
-    scheduled = false;
-  });
-}, {passive:true});
-updateScrollScene();
+window.addEventListener('scroll', () => { if (!scrollQueued) { scrollQueued = true; requestAnimationFrame(updateScroll); } }, {passive:true});
+updateScroll();
 document.querySelector('#year').textContent = new Date().getFullYear();
-try { setLanguage(localStorage.getItem('taverna-language') || 'el'); } catch { setLanguage('el'); }
+try { setLanguage(localStorage.getItem('limni-language') || 'el'); } catch { setLanguage('el'); }

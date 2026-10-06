@@ -12,7 +12,7 @@ for (const [, anchor] of html.matchAll(/href="#([^"]+)"/g)) if (!html.includes(`
 if (!html.includes('Η ΛΙΜΝΗ') || html.includes('noindex')) throw Error('Brand or indexability is incorrect');
 if ([...html.matchAll(/data-gallery="(\d+)"/g)].map(match => Number(match[1])).join(',') !== '0,1,2') throw Error('Expected three gallery scenes');
 for (const [, image] of html.matchAll(/(?:src|href)="(assets\/limni\/[^\"]+)"/g)) statSync(image);
-for (const image of ['hero-pond.webp','hero-pond-960.webp','terrace-no-person.webp','ducks.webp','fountain.webp','keftedakia.webp','keftedakia-800.webp','menu-cover.webp']) if (statSync(`assets/limni/${image}`).size < 20_000) throw Error(`Missing or small image: ${image}`);
+for (const image of ['hero-pond.webp','hero-pond-960.webp','stream-bridge.webp','stream-bridge-960.webp','terrace-no-person.webp','ducks.webp','fountain.webp','across-pond.webp','opposite-bank.webp','visit-table.webp','keftedakia-two-plates.webp','keftedakia-two-plates-800.webp','menu-cover.webp']) if (statSync(`assets/limni/${image}`).size < 20_000) throw Error(`Missing or small image: ${image}`);
 const data = JSON.parse(html.match(/<script type="application\/ld\+json">([^<]+)<\/script>/)?.[1] || '{}');
 if (data.name !== 'Η ΛΙΜΝΗ' || data['@type'] !== 'Restaurant') throw Error('Restaurant structured data missing');
 console.log('Η ΛΙΜΝΗ: assets, gallery, structured data and EL/EN/DE content OK');

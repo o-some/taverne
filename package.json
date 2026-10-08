@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "build:water": "esbuild src/water-three.js --bundle --minify --format=esm --target=es2020 --outfile=assets/limni/water-three.js"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

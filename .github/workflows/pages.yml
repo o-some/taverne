@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Build water layer
+        run: npm ci && npm run build:water
       - name: Check content and assets
         run: node check.mjs
       - uses: actions/configure-pages@v5

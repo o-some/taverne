@@ -214,6 +214,14 @@ document.querySelectorAll('[data-scene]').forEach(button => button.addEventListe
 }));
 const progress = document.querySelector('.scroll-progress');
 const journey = document.querySelector('.journey-transition');
+if ('WebGL2RenderingContext' in window && 'IntersectionObserver' in window && !navigator.connection?.saveData) {
+  const waterLoader = new IntersectionObserver(([entry]) => {
+    if (!entry.isIntersecting || reduceMotion.matches) return;
+    waterLoader.disconnect();
+    import('./assets/limni/water-three.js').then(({ mountWater }) => mountWater(journey, reduceMotion)).catch(() => {});
+  }, { rootMargin: '250px' });
+  waterLoader.observe(journey);
+}
 const parallaxFrames = document.querySelectorAll('[data-parallax]');
 let scrollQueued = false;
 function updateScroll() {

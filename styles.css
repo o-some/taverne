@@ -387,3 +387,9 @@ body{background:var(--lake-paper)}
 @media(max-width:760px){.hero-route{width:100%;font-size:10px;margin-top:16px;padding:12px 14px}}
 @media(min-width:761px){.hero-main.page-grid{height:min(70vh,640px);min-height:560px}.hero-glimpse img{height:clamp(210px,20vw,280px)}}
 @media(min-width:761px) and (max-width:1100px){.hero-main.page-grid{height:min(60vh,540px);min-height:500px}}
+
+/* The optional Three.js layer paints only light over the real place image. */
+.water-three-canvas{position:absolute;z-index:1;inset:0;width:100%;height:100%;opacity:0;pointer-events:none;mix-blend-mode:screen;transition:opacity .8s ease;-webkit-mask-image:linear-gradient(180deg,transparent 4%,#000 48%,#000 94%,transparent);mask-image:linear-gradient(180deg,transparent 4%,#000 48%,#000 94%,transparent)}
+.journey-transition.has-water-three .water-three-canvas{opacity:.92}
+.journey-transition>span{z-index:2}.journey-transition p{z-index:3}
+@media(prefers-reduced-motion:reduce){.water-three-canvas{display:none}}

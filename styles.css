@@ -240,3 +240,11 @@ img{display:block;max-width:100%}figure{margin:0}button{font:inherit}a{color:inh
   .journal-chapter{padding:50px 0 70px}.journal-head{margin-top:32px}.journal-grid{margin-top:35px}.journal-item>span{bottom:42px}
 }
 @media(prefers-reduced-motion:reduce){.hero-media img,[data-parallax] img,.has-js .place-story-photo.media-reveal img{transform:none!important;will-change:auto!important}}
+
+/* A translucent watercolor of the actual small cascades gives the paper chapters a sense of place. */
+.prologue,.journal-chapter{position:relative;isolation:isolate;overflow:hidden}
+.prologue::after,.journal-chapter::before{content:"";position:absolute;z-index:0;pointer-events:none;background-image:url('assets/limni/watercolor-cascade.webp');background-repeat:no-repeat;filter:saturate(.72)}
+.prologue::after{left:-90px;bottom:0;width:560px;height:260px;background-size:820px auto;background-position:right bottom;opacity:.13;-webkit-mask-image:radial-gradient(ellipse at 45% 70%,#000 18%,transparent 75%);mask-image:radial-gradient(ellipse at 45% 70%,#000 18%,transparent 75%)}
+.journal-chapter::before{top:30px;right:-4%;width:min(67vw,960px);height:650px;background-size:contain;background-position:right center;opacity:.18}
+.prologue>.section-rule,.prologue-grid,.journal-chapter>.section-rule,.journal-head,.journal-grid{position:relative;z-index:1}
+@media(max-width:760px){.prologue::after{display:none}.journal-chapter::before{top:80px;right:-30%;width:115vw;height:430px;opacity:.1}}

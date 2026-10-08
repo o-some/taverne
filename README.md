@@ -13,6 +13,8 @@ Die Seite verwendet HTML, CSS und wenig JavaScript. Es gibt kein Framework und k
 
 Die hellen Kapitel erhalten eine sehr feine Papierstruktur. Ortsansicht, Speisetafel, Galerie und Besuchsabschluss wechseln zwischen ruhigen Textflächen und großformatigen Bildern. Das Wasserfallkapitel und ein zweites Ortsbild werden beim Scrollen von oben nach unten freigelegt. Die Kapitelbilder bewegen sich beim Scrollen um höchstens 80 Pixel auf großen und 38 Pixel auf schmalen Bildschirmen; das Titelbild um höchstens 125 Pixel. Bei `prefers-reduced-motion` entfällt die Bewegung. Weiche Fotokanten verbinden die Bilder mit Papierweiß und Dunkelgrün. Die Inhalte bleiben ohne JavaScript sichtbar.
 
+Ein transparentes, aus der Ortsreferenz entwickeltes Aquarell der kleinen Kaskaden liegt dezent hinter dem Kapitel „Momente“. Ein stark beschnittener Wasserfarbausschnitt setzt im ersten hellen Kapitel einen zweiten, leiseren Akzent. Die Illustration bleibt dekorativ und liegt hinter dem lesbaren HTML-Text.
+
 Im Einstieg können Gäste zwischen einer Tagesansicht und der gestalteten Abendstimmung desselben Ufers wechseln. Die fünf Speisenbilder öffnen sich in der bestehenden Bildansicht; Pfeiltasten wechseln das Motiv, Escape schließt sie. Beide Interaktionen sind mit Tastatur und in allen drei Sprachen nutzbar. Bei reduzierter Bewegung entfällt die Überblendung.
 
 ## Identität und Bilder

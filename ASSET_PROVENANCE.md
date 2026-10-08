@@ -46,3 +46,7 @@ Fünf weitere, bewusst unterschiedliche Imagegen-Kompositionen wurden aus dem re
 | `horiatiki-editorial.webp` | Große griechische Bauernsalat-Schüssel mit Tomate, Gurke, Oliven und Feta. |
 
 Die Ortsbeschreibung stützt sich auf [Stadt Serres](https://www.serres.gr/toyrismos/axiotheata/ai-giannis/), [Tourismusführer Serres](https://tourism.serres.gr/thematikes_empiries/ai-giannis/) und [Visit Central Macedonia](https://www.visit-centralmacedonia.gr/en/where-to-go/60/1-serres). Diese Quellen belegen Nähe zur Stadt, Platanen, Teiche, kleine Wasserfälle und Erholungsnutzung sowie den Landschaftscharakter der Region. Eine genaue geologische oder bauliche Entstehungsgeschichte der Kaskaden wird dort nicht belegt und deshalb auf der Website nicht behauptet.
+
+## Aquarellakzent (2026-10-08)
+
+`watercolor-cascade.webp` wurde mit dem integrierten Imagegen-Werkzeug aus `stream-bridge-960.webp` als Ortsreferenz gestaltet: die niedrigen Kaskaden, das X-Holzgeländer und Platanengrün sind als lockeres Aquarell abstrahiert. Die Illustration besitzt transparente Ränder; sie ist eine gestalterische Interpretation und keine historische oder aktuelle Zustandsaufnahme. Der RGBA-PNG-Master liegt unter `../../[Website Assets]/masters/watercolor-cascade.png`, die 467-KB-WebP-Fassung im Repository. Sie erscheint nur als schwacher Hintergrundakzent in den hellen Kapiteln.

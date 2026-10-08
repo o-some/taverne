@@ -339,3 +339,51 @@ body{background:var(--lake-paper)}
 .flavour-open>span::before,.journal-item>span i::before,.visit-link span:last-child::before,.water-fact a::after,.place-sources a::after,.footer-bottom a::after{content:"";display:block;width:18px;height:18px;background:currentColor;-webkit-mask:url('assets/limni/arrow-up-right.svg') center/contain no-repeat;mask:url('assets/limni/arrow-up-right.svg') center/contain no-repeat}
 .journal-item>span i,.visit-link span:last-child{display:grid;place-items:center;width:24px;height:24px}
 .water-fact a::after,.place-sources a::after,.footer-bottom a::after{display:inline-block;width:12px;height:12px;margin-left:7px;vertical-align:-1px}
+
+/* One journey: a direct invitation, three real place views, then water into fire. */
+.hero-route{display:inline-flex;align-items:center;gap:9px;align-self:flex-start;margin-top:23px;padding:0 0 7px;border-bottom:1px solid #829487;color:#214638;font-size:10px;font-weight:750;letter-spacing:.14em;line-height:1.4;transition:color .2s,border-color .2s}
+.hero-route::after{content:"";display:block;width:13px;height:13px;background:currentColor;-webkit-mask:url('assets/limni/arrow-up-right.svg') center/contain no-repeat;mask:url('assets/limni/arrow-up-right.svg') center/contain no-repeat}
+.hero-route:hover{color:#4c8068;border-color:currentColor}
+.hero-glimpse{position:absolute;z-index:2;right:clamp(30px,5vw,90px);bottom:clamp(44px,7vh,95px);width:min(30vw,440px);margin:0;padding:8px 8px 0;background:#f7f8ef;box-shadow:0 24px 65px #071a14a1;transform:rotate(1.5deg)}
+.hero-glimpse img{display:block;width:100%;aspect-ratio:1.62;object-fit:cover;object-position:center 46%}
+.hero-glimpse figcaption{padding:12px 7px 13px;color:#294d40;font-size:9px;font-weight:750;letter-spacing:.16em}
+.place-explorer{display:grid;grid-template-columns:minmax(250px,.74fr) minmax(0,1.35fr);gap:clamp(35px,6vw,110px);align-items:start;margin-top:clamp(90px,10vw,170px);padding-top:clamp(34px,4vw,65px);border-top:1px solid #9bb6a8}
+.place-explorer-intro{padding-top:clamp(10px,2vw,30px)}
+.place-explorer-number{display:block;color:#5a796a;font-size:10px;font-weight:750;letter-spacing:.18em}
+.place-explorer h3{font:400 clamp(48px,5.3vw,82px)/.98 LimniDidot,Georgia,serif;letter-spacing:-.04em;max-width:10ch;margin:28px 0}
+.place-explorer-intro p{max-width:34ch;font-size:clamp(16px,1.35vw,19px);line-height:1.6;color:#38594b}
+.place-explorer-stage{min-width:0}
+.place-explorer-images{position:relative;aspect-ratio:1.55;overflow:hidden;background:#17382f}
+.place-explorer-panel{position:absolute;inset:0;margin:0;opacity:0;visibility:hidden;transition:opacity .68s cubic-bezier(.2,.7,.2,1),visibility .68s;pointer-events:none}
+.place-explorer-panel.is-active{opacity:1;visibility:visible;z-index:1;pointer-events:auto}
+.place-explorer-panel img{width:100%;height:100%;object-fit:cover}
+.place-explorer-panel::after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,#09241bcc);pointer-events:none}
+.place-explorer-panel figcaption{position:absolute;z-index:1;bottom:clamp(16px,2.5vw,35px);left:clamp(17px,2.5vw,35px);right:clamp(17px,2.5vw,35px);color:#fffef7;font:400 clamp(21px,2.2vw,34px)/1.15 LimniDidot,Georgia,serif;text-shadow:0 2px 14px #09241b}
+.place-explorer-controls{display:none;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid #a5bcae}
+.has-js .place-explorer-controls{display:grid}
+.place-explorer-controls button{position:relative;display:flex;align-items:center;gap:12px;padding:20px 10px 18px 0;border:0;background:none;color:#426455;text-align:left;cursor:pointer;transition:color .2s}
+.place-explorer-controls button::after{content:"";position:absolute;left:0;right:18px;bottom:-1px;height:2px;background:#153e32;transform:scaleX(0);transform-origin:left;transition:transform .36s cubic-bezier(.2,.7,.2,1)}
+.place-explorer-controls button[aria-pressed="true"]{color:#102f25}
+.place-explorer-controls button[aria-pressed="true"]::after{transform:scaleX(1)}
+.place-explorer-controls button span{display:grid;place-items:center;flex:none;width:27px;height:27px;border:1px solid currentColor;border-radius:50%;font-size:9px;font-weight:750}
+.place-explorer-controls button strong{font-size:10px;letter-spacing:.12em;line-height:1.3}
+.place-explorer-note{margin:15px 0 0;color:#567367;font-size:10px;letter-spacing:.04em;line-height:1.5}
+.journey-transition{--heat:.4;height:clamp(380px,54svh,610px);background:#102820;color:#fffef7;border:0;isolation:isolate}
+.journey-transition::before,.journey-transition::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none}
+.journey-transition::before{background:url('assets/limni/stream-bridge.webp') center 55%/cover no-repeat;filter:saturate(.65) brightness(.51);opacity:1}
+.journey-transition::after{background:url('assets/limni/grill-editorial.webp') center 48%/cover no-repeat;filter:saturate(.82) brightness(.53);opacity:var(--heat);-webkit-mask-image:linear-gradient(180deg,transparent 2%,#000 66%);mask-image:linear-gradient(180deg,transparent 2%,#000 66%)}
+.journey-transition>span{z-index:1;color:#fffdf4;text-shadow:0 5px 35px #061812a8;font-size:clamp(110px,16vw,240px)}
+.journey-transition p{z-index:2;bottom:clamp(23px,4vw,58px);padding:14px 22px 12px;background:#102820dc;color:#fffef7;letter-spacing:.18em}
+.visit-location{display:block!important;margin:0 0 20px!important;color:#dce9db!important;font-size:11px!important;font-weight:750;letter-spacing:.19em;line-height:1.5}
+@media(max-width:1100px){.hero-glimpse{width:27vw;right:3vw}.place-explorer{grid-template-columns:minmax(230px,.72fr) minmax(0,1.28fr);gap:35px}}
+@media(max-width:920px){.hero-glimpse{display:none}}
+@media(max-width:760px){.hero-main.page-grid{min-height:465px}.hero-route{margin-top:17px;font-size:9px}.place-explorer{display:block;margin-top:75px;padding-top:32px}.place-explorer-intro{padding-top:0;margin-bottom:34px}.place-explorer h3{font-size:clamp(50px,12vw,72px);margin:19px 0}.place-explorer-intro p{font-size:16px}.place-explorer-images{aspect-ratio:1.05}.place-explorer-panel figcaption{font-size:26px}.place-explorer-controls button{display:block;padding:16px 5px 13px 0}.place-explorer-controls button span{width:24px;height:24px;margin-bottom:9px}.place-explorer-controls button strong{font-size:9px;letter-spacing:.06em}.place-explorer-controls button::after{right:10px}.place-explorer-note{font-size:9px}.journey-transition{height:340px}.journey-transition>span{font-size:clamp(78px,19vw,135px)}.journey-transition p{bottom:15px;width:max-content;max-width:calc(100% - 30px);font-size:9px}.visit-location{font-size:9px!important;letter-spacing:.12em}}
+@media(max-width:390px){.hero-main.page-grid{min-height:440px}.hero-route{font-size:8px}.place-explorer-controls button strong{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.place-explorer-panel,.place-explorer-controls button::after{transition:none}.journey-transition{--heat:.55!important}}
+
+/* Make the route an unmistakable action within the first viewport. */
+.hero-route{min-height:44px;margin-top:20px;padding:13px 17px;border:1px solid #173b2d;background:#173b2d;color:#fffef7;justify-content:space-between;font-size:10px}
+.hero-route:hover{background:#2d5b49;border-color:#2d5b49;color:#fffef7}
+@media(max-width:760px){.hero-route{width:100%;font-size:10px;margin-top:16px;padding:12px 14px}}
+@media(min-width:761px){.hero-main.page-grid{height:min(70vh,640px);min-height:560px}.hero-glimpse img{height:clamp(210px,20vw,280px)}}
+@media(min-width:761px) and (max-width:1100px){.hero-main.page-grid{height:min(60vh,540px);min-height:500px}}

@@ -29,6 +29,7 @@ const translations = {
     foodCollectionEyebrow:"ΓΕΥΣΕΙΣ ΓΙΑ ΤΗ ΜΕΣΗ",
     foodCollectionTitle:"Το τραπέζι γεμίζει.",
     foodCollectionIntro:"Από τη σχάρα ως τη σαλάτα: πιάτα που δίνουν στην παρέα έναν λόγο να μείνει λίγο ακόμη.",
+    courseFire:"Από τη φωτιά.",courseTable:"Για τη μέση.",courseSweet:"Κάτι γλυκό στο τέλος.",
     souvlakiaAlt:"Γενναιόδωρη πιατέλα με ψημένα σουβλάκια, λεμόνι και σαλάτα δίπλα στη λίμνη",
     souvlakiaName:"Σουβλάκια",
     soutzoukakiaAlt:"Σουτζουκάκια με σάλτσα ντομάτας σε μεγάλη πήλινη γάστρα",
@@ -68,6 +69,7 @@ const translations = {
     foodCollectionEyebrow:"MADE TO SHARE",
     foodCollectionTitle:"The table fills up.",
     foodCollectionIntro:"From the grill to the salad in the middle: the kind of food that makes everyone stay a little longer.",
+    courseFire:"From the fire.",courseTable:"To share.",courseSweet:"Something sweet to finish.",
     souvlakiaAlt:"Generous platter of grilled souvlakia, lemon and salad beside the pond",
     souvlakiaName:"Souvlakia",
     soutzoukakiaAlt:"Soutzoukakia in tomato sauce in a large terracotta pan",
@@ -107,6 +109,7 @@ const translations = {
     foodCollectionEyebrow:"ZUM TEILEN",
     foodCollectionTitle:"Der Tisch füllt sich.",
     foodCollectionIntro:"Vom Grill bis zum Salat in der Tischmitte: Essen, bei dem alle noch ein bisschen länger bleiben.",
+    courseFire:"Vom Grill.",courseTable:"Für die Mitte.",courseSweet:"Zum süßen Schluss.",
     souvlakiaAlt:"Großzügiger Teller mit gegrillten Souvlakia, Zitrone und Salat am Teich",
     souvlakiaName:"Souvlakia",
     soutzoukakiaAlt:"Soutzoukakia in Tomatensauce in einer großen Tonschale",
@@ -125,8 +128,8 @@ const gallery = [
   {src:'assets/limni/across-pond.webp', alt:'acrossAlt', caption:'journalTwo'},
   {src:'assets/limni/opposite-bank.webp', alt:'bankAlt', caption:'journalThree'},
   {src:'assets/limni/souvlakia-editorial.webp', alt:'souvlakiaAlt', caption:'souvlakiaName'},
-  {src:'assets/limni/soutzoukakia-editorial.webp', alt:'soutzoukakiaAlt', caption:'soutzoukakiaName'},
   {src:'assets/limni/panseta-editorial.webp', alt:'pansetaAlt', caption:'pansetaName'},
+  {src:'assets/limni/soutzoukakia-editorial.webp', alt:'soutzoukakiaAlt', caption:'soutzoukakiaName'},
   {src:'assets/limni/sheep-cheese-editorial.webp', alt:'sheepCheeseAlt', caption:'sheepCheeseName'},
   {src:'assets/limni/horiatiki-editorial.webp', alt:'horiatikiAlt', caption:'horiatikiName'}
 ];

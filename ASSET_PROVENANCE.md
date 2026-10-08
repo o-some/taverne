@@ -31,4 +31,18 @@ Die aktuelle Startseite verwendet sechs zusätzliche **inszenierte** Bildkomposi
 | `grill-editorial.webp` | `IMG_0571.jpeg`, altes Konzept `02-souvlaki-grill.jpg`; neue Perspektive auf Grillgut vor schlichter Markise, Mauerwerk, Holzgeländer und Süßwasser. | Konzeptionelle Komposition, kein Beleg für eine konkrete Grillsituation. |
 | `bougatsa-editorial.webp` | `visit-table-from-customer.png`, altes Konzept `24-bougatsa.jpg`; neues Serviermotiv am tatsächlichen weißen Tisch und Teich. | Illustrative Speisenszene; Verfügbarkeit vor Ort prüfen. |
 
-Das neue Logo `assets/limni/mark.svg` ist ein eigenständiges gefülltes Η-Zeichen in Olivgrün, mit Wasser- und Glutakzent. Die frühere gezeichnete Baum-/Horizontmarke und die CSS-Zeichnung wurden ersetzt. Die alten Konzeptbilder bleiben als Quellen im Repository erhalten; sie sind keine direkt eingebundenen Dokumentarfotos.
+Das aktuelle Logo verwendet ein gefülltes griechisches **Λ** für „ΛΙΜΝΗ“, mit einer ruhigen Wasserform darunter. `mark.svg` ist die helle Fassung für dunkle Flächen, `mark-dark.svg` die dunkle Fassung für helle Flächen und das Favicon. Zusammen mit der sichtbaren griechischen Wortmarke „Η ΛΙΜΝΗ“ bildet es das neue Logo. Es ersetzt das frühere eckige Η-Signet mit Glutakzent. Die alten Konzeptbilder bleiben als Quellen im Repository erhalten; sie sind keine direkt eingebundenen Dokumentarfotos.
+
+## Zusätzliche Speisenserie (2026-10-08)
+
+Fünf weitere, bewusst unterschiedliche Imagegen-Kompositionen wurden aus dem realen Tischmotiv `visit-table-from-customer.png` als Ortsreferenz erzeugt. Ihre PNG-Master liegen unter `../../[Website Assets]/masters/`; die eingebundenen WebP-Dateien sind jeweils etwa 238–301 KB groß. Tisch, schwarzer Korbstuhl, X-Holzgeländer, kleiner Süßwasserteich und Platanen halten die Bildwelt zusammen. Die Speisen und ihre Anrichtung sind **illustrativ und keine bestätigte Speisekarte**.
+
+| Webbild | Motiv / redaktionelle Aufgabe |
+| --- | --- |
+| `souvlakia-editorial.webp` | Große Souvlaki-Platte als großzügiges Grillmotiv. Zusätzlich `feast-editorial.png` als Licht- und Farbreferenz. |
+| `soutzoukakia-editorial.webp` | Nahes Motiv eines großen Tontopfs mit Soutzoukakia in Tomatensauce. |
+| `panseta-editorial.webp` | Deutlich unterscheidbares Grillmotiv mit kräftigen Stücken Panceta und Zitrone. |
+| `sheep-cheese-editorial.webp` | Helle Schafskäsecreme mit Olivenöl und Brot als ruhiger Gegenpol zu den Fleischmotiven. |
+| `horiatiki-editorial.webp` | Große griechische Bauernsalat-Schüssel mit Tomate, Gurke, Oliven und Feta. |
+
+Die Ortsbeschreibung stützt sich auf [Stadt Serres](https://www.serres.gr/toyrismos/axiotheata/ai-giannis/), [Tourismusführer Serres](https://tourism.serres.gr/thematikes_empiries/ai-giannis/) und [Visit Central Macedonia](https://www.visit-centralmacedonia.gr/en/where-to-go/60/1-serres). Diese Quellen belegen Nähe zur Stadt, Platanen, Teiche, kleine Wasserfälle und Erholungsnutzung sowie den Landschaftscharakter der Region. Eine genaue geologische oder bauliche Entstehungsgeschichte der Kaskaden wird dort nicht belegt und deshalb auf der Website nicht behauptet.

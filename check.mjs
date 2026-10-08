@@ -12,9 +12,10 @@ for (const [, anchor] of html.matchAll(/href="#([^"]+)"/g)) if (!html.includes(`
 if (!html.includes('Η ΛΙΜΝΗ') || html.includes('noindex')) throw Error('Brand or indexability is incorrect');
 if ([...html.matchAll(/data-gallery="(\d+)"/g)].map(match => Number(match[1])).join(',') !== '0,1,2') throw Error('Expected three gallery scenes');
 for (const [, image] of html.matchAll(/(?:src|href)="(assets\/limni\/[^\"]+)"/g)) statSync(image);
-for (const image of ['hero-dusk-editorial.webp','hero-dusk-editorial-960.webp','weir-editorial.webp','weir-editorial-960.webp','feast-editorial.webp','terrace-editorial.webp','grill-editorial.webp','bougatsa-editorial.webp','mark.svg']) if (statSync(`assets/limni/${image}`).size < (image.endsWith('.svg') ? 100 : 20_000)) throw Error(`Missing or small image: ${image}`);
+for (const image of ['hero-dusk-editorial.webp','hero-dusk-editorial-960.webp','weir-editorial.webp','weir-editorial-960.webp','feast-editorial.webp','terrace-editorial.webp','grill-editorial.webp','bougatsa-editorial.webp','souvlakia-editorial.webp','soutzoukakia-editorial.webp','panseta-editorial.webp','sheep-cheese-editorial.webp','horiatiki-editorial.webp','mark.svg','mark-dark.svg']) if (statSync(`assets/limni/${image}`).size < (image.endsWith('.svg') ? 100 : 20_000)) throw Error(`Missing or small image: ${image}`);
 if (statSync('assets/texture-grain.svg').size < 100) throw Error('Paper texture missing');
 if (html.includes('mark-horizon') || html.includes('keftedakia-two-plates.webp') || !html.includes('foodDisclosure')) throw Error('Old visual direction remains');
+if (!html.includes('place-story') || !html.includes('https://tourism.serres.gr/thematikes_empiries/ai-giannis/') || [...html.matchAll(/class="flavour flavour-/g)].length !== 5) throw Error('Place story or five food scenes missing');
 const data = JSON.parse(html.match(/<script type="application\/ld\+json">([^<]+)<\/script>/)?.[1] || '{}');
 if (data.name !== 'Η ΛΙΜΝΗ' || data['@type'] !== 'Restaurant') throw Error('Restaurant structured data missing');
 console.log('Η ΛΙΜΝΗ: assets, gallery, structured data and EL/EN/DE content OK');

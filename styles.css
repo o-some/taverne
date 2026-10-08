@@ -140,3 +140,29 @@ img{display:block;max-width:100%}figure{margin:0}button{font:inherit}a{color:inh
   [data-parallax] img{transform:none!important;will-change:auto!important}
   .has-js [data-parallax].media-reveal{clip-path:none!important}
 }
+
+/* The Lambda and its small pool replace the former boxed mark. */
+.brand img{width:39px;height:39px}.hero-card-top img{width:34px;height:34px}.prologue-mark img{box-shadow:none;width:min(165px,100%)}
+.prologue-mark{margin-left:-8px}.footer-brand{display:flex;align-items:center;gap:clamp(12px,2vw,30px)}.footer-brand img{width:clamp(45px,6vw,86px);height:auto}
+
+/* A quiet editorial guide to the actual landscape, before the taverna chapter. */
+.place-story{background:#f9f8f1 url('assets/texture-grain.svg') repeat;padding:clamp(90px,10vw,165px) 0 clamp(85px,9vw,145px);color:#243d35}
+.place-story-head{display:grid;grid-template-columns:2fr 3fr 2fr;gap:clamp(20px,3vw,55px);align-items:end;padding-bottom:clamp(70px,8vw,125px)}
+.place-story-head .eyebrow{align-self:start;margin:12px 0 0;color:#517469}
+.place-story h2{font:400 clamp(65px,7vw,120px)/.94 LimniDidot,Georgia,serif;letter-spacing:-.065em;margin:0;max-width:9.5ch}
+.place-story-head>p:last-child{font-size:clamp(16px,1.3vw,20px);line-height:1.55;max-width:29ch;margin:0;color:#52645a}
+.place-story-grid{display:grid;grid-template-columns:.65fr repeat(3,1.35fr);gap:clamp(16px,2.6vw,44px)}
+.place-story-rail{display:flex;flex-direction:column;justify-content:space-between;min-height:350px;font-size:10px;font-weight:750;letter-spacing:.18em;color:#5c7c70;writing-mode:vertical-rl;transform:rotate(180deg)}
+.place-story-note{border-top:1px solid #8fa49a;padding-top:20px}.place-story-note:nth-of-type(2){margin-top:75px}.place-story-note:nth-of-type(3){margin-top:145px}
+.story-index{font-size:10px;letter-spacing:.18em;color:#6e8e81}.place-story-note h3{font:400 clamp(31px,3vw,50px)/1.03 LimniDidot,Georgia,serif;letter-spacing:-.045em;max-width:12ch;margin:55px 0 23px}.place-story-note p{font-size:15px;line-height:1.72;color:#536359;max-width:39ch;margin:0}
+.place-sources{border-top:1px solid #aab9ae;display:flex;flex-wrap:wrap;gap:18px 32px;align-items:baseline;margin-top:clamp(95px,10vw,160px);padding-top:17px;font-size:10px;font-weight:700;letter-spacing:.11em}.place-sources span{color:#6c8275;margin-right:auto}.place-sources a{text-decoration:underline;text-underline-offset:5px;text-decoration-color:#8ca99e}.place-sources a:hover{color:#397e78}
+
+/* The five plates form a paced photographic story, not a menu claim. */
+.food-collection{margin-top:clamp(100px,11vw,180px)}.food-collection-head{display:grid;grid-template-columns:1fr 2.1fr 1fr;gap:clamp(18px,3vw,60px);align-items:end;margin-bottom:clamp(48px,6vw,95px)}
+.food-collection-head .eyebrow{margin:7px 0 auto;color:#b8d0c5}.food-collection h3{font:400 clamp(57px,6.3vw,105px)/.95 LimniDidot,Georgia,serif;letter-spacing:-.055em;max-width:9ch;margin:0}.food-collection-head>p:last-child{font-size:16px;line-height:1.6;color:#ccddd3;max-width:30ch;margin:0}
+.food-collection-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,3vw,52px);align-items:start}
+.flavour{min-width:0}.flavour img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.flavour figcaption{display:flex;gap:20px;align-items:baseline;justify-content:space-between;border-top:1px solid #9bb6a7;margin-top:13px;padding-top:12px}.flavour figcaption span{font-size:10px;letter-spacing:.16em;color:#b3ccbd;white-space:nowrap}.flavour figcaption strong{font:400 clamp(21px,2vw,33px)/1.08 LimniDidot,Georgia,serif;text-align:right}
+.flavour-a{grid-column:1/8}.flavour-b{grid-column:9/13;margin-top:clamp(70px,10vw,165px)}.flavour-c{grid-column:2/7;margin-top:-20px}.flavour-d{grid-column:8/13;margin-top:clamp(50px,7vw,110px)}.flavour-e{grid-column:3/11;margin-top:clamp(10px,2vw,35px)}
+@media(hover:hover) and (pointer:fine){.has-js .flavour.media-reveal.is-visible:hover img{transform:scale(1.035);transition-duration:.65s}}
+@media(max-width:1100px){.place-story-head{grid-template-columns:1fr 2fr}.place-story-head>p:last-child{grid-column:2}.place-story-grid{grid-template-columns:repeat(3,1fr)}.place-story-rail{display:none}.food-collection-head{grid-template-columns:1fr 2fr}.food-collection-head>p:last-child{grid-column:2}}
+@media(max-width:760px){.brand img{width:30px;height:30px}.hero-main.page-grid{min-height:440px;bottom:35px}.hero-main .hero-pretitle{margin-top:0}.prologue-mark{margin-left:-4px}.place-story{padding:75px 0 88px}.place-story-head{display:block;padding-bottom:55px}.place-story-head .eyebrow{margin:0 0 22px}.place-story h2{font-size:clamp(53px,12vw,78px);max-width:10ch}.place-story-head>p:last-child{font-size:17px;margin:24px 0 0}.place-story-grid{display:block}.place-story-note,.place-story-note:nth-of-type(2),.place-story-note:nth-of-type(3){margin:0 0 48px}.place-story-note h3{margin:23px 0 15px;font-size:39px}.place-story-note p{font-size:15px}.place-sources{margin-top:45px;gap:14px 26px}.place-sources span{display:block;width:100%}.food-collection{margin-top:85px}.food-collection-head{display:block;margin-bottom:45px}.food-collection-head .eyebrow{margin:0 0 20px}.food-collection h3{font-size:clamp(58px,12vw,79px)}.food-collection-head>p:last-child{font-size:16px;margin:23px 0 0}.food-collection-grid{display:block}.flavour,.flavour-a,.flavour-b,.flavour-c,.flavour-d,.flavour-e{width:100%;margin:0 0 40px}.flavour-b,.flavour-d{width:86%;margin-left:auto}.flavour-c{width:90%}.flavour-e{margin-bottom:0}.flavour figcaption strong{font-size:26px}.footer-brand img{width:45px}}

@@ -16,6 +16,7 @@ for (const image of ['hero-dusk-editorial.webp','hero-dusk-editorial-960.webp','
 if (statSync('assets/texture-grain.svg').size < 100) throw Error('Paper texture missing');
 if (html.includes('mark-horizon') || html.includes('keftedakia-two-plates.webp') || !html.includes('foodDisclosure')) throw Error('Old visual direction remains');
 if (!html.includes('place-story') || !html.includes('https://tourism.serres.gr/thematikes_empiries/ai-giannis/') || [...html.matchAll(/class="flavour flavour-/g)].length !== 5) throw Error('Place story or five food scenes missing');
+if (!html.includes('class="water-chapter media-reveal"') || !html.includes('class="place-story-photo page-grid media-reveal"')) throw Error('Waterfall reveal triggers missing');
 const data = JSON.parse(html.match(/<script type="application\/ld\+json">([^<]+)<\/script>/)?.[1] || '{}');
 if (data.name !== 'Η ΛΙΜΝΗ' || data['@type'] !== 'Restaurant') throw Error('Restaurant structured data missing');
 console.log('Η ΛΙΜΝΗ: assets, gallery, structured data and EL/EN/DE content OK');

@@ -5,7 +5,7 @@ Die elf Kundendateien unter `../../[Bilder Mutter]/` und die fünf vom Nutzer ge
 | Webbild | Kundenquelle | Bearbeitung |
 | --- | --- | --- |
 | `hero-pond.webp` (+ 960er Variante) | `IMG_0567.jpeg`, Referenzen `IMG_0568.jpeg`, `IMG_0569.jpeg` | Weite Komposition des kleinen Teichs; iPhone-Oberfläche und Texteinblendung entfernt, Sichtfeld behutsam erweitert. |
-| `stream-bridge.webp` (+ 960er Variante) | `[User Input]/Ortsreferenzen/01-bach-wehre-holzbruecke.png` | Kleiner Bach und Holzbrücke in Ai Giannis; niedrige Wasserstufen, Ufer und Bäume beibehalten, Auflösung und Tonwerte redaktionell bearbeitet. Ortsmotiv, nicht als Innen- oder Außenansicht der Taverne ausgegeben. |
+| `stream-bridge.webp` (+ 960er Variante) | `[User Input]/Ortsreferenzen/01-bach-wehre-holzbruecke.png` | Kleiner Bach und Holzbrücke in Ai Giannis; niedrige Wasserstufen, Ufer und Bäume beibehalten, Auflösung und Tonwerte redaktionell bearbeitet. Im Ortsteil als fotografischer Wasserfall-Übergang eingesetzt, nicht als Ansicht der Taverne ausgegeben. |
 | `terrace-no-person.webp` | `IMG_0571.jpeg` | Bedienoberfläche entfernt; die erkennbare Person aus Privatsphäregründen entfernt. Markise, Grill, Geländer und Enten bleiben erhalten. |
 | `ducks.webp` | `IMG_0569.jpeg` | Bedienoberfläche und Texteinblendung entfernt; Ufer, Holzgeländer und Enten erhalten. |
 | `fountain.webp` | `IMG_0572.jpeg` | Wiedergabeleiste entfernt; kleiner Springbrunnen, flacher Teich und Enten erhalten. |

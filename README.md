@@ -11,7 +11,7 @@ python3 -m http.server 8080
 
 Die Seite verwendet HTML, CSS und wenig JavaScript. Es gibt kein Framework und keinen Build-Schritt. Pushes auf `main` veröffentlichen über `.github/workflows/pages.yml` auf `https://o-some.github.io/taverne/`.
 
-Die hellen Kapitel erhalten eine sehr feine Papierstruktur. Ortsansicht, Speisetafel, Galerie und Besuchsabschluss wechseln zwischen ruhigen Textflächen und großformatigen Bildern. Die Scrollbewegung der Bildkapitel bleibt auf 42 Pixel begrenzt, entfällt auf schmalen Bildschirmen und bei `prefers-reduced-motion`; die Inhalte bleiben ohne JavaScript sichtbar.
+Die hellen Kapitel erhalten eine sehr feine Papierstruktur. Ortsansicht, Speisetafel, Galerie und Besuchsabschluss wechseln zwischen ruhigen Textflächen und großformatigen Bildern. Das Wasserfallkapitel und ein zweites Ortsbild werden beim Scrollen von oben nach unten freigelegt; die Bildbewegung bleibt auf 42 Pixel begrenzt und entfällt auf schmalen Bildschirmen und bei `prefers-reduced-motion`. Die Inhalte bleiben ohne JavaScript sichtbar.
 
 ## Identität und Bilder
 

@@ -183,7 +183,7 @@ img{display:block;max-width:100%}figure{margin:0}button{font:inherit}a{color:inh
 @media(max-width:760px){.place-story-head{padding-bottom:40px}.place-story-photo{height:60svh;min-height:370px}.place-story-photo img,.has-js .place-story-photo.media-reveal img{top:0;height:100%;object-position:51% center;transform:none!important;will-change:auto}.place-story-photo figcaption{display:block;left:19px;right:19px;bottom:18px}.place-story-photo figcaption span{display:block}.place-story-photo figcaption span:last-child{text-align:left;margin-top:6px;font-size:11px}.place-story-grid{margin-top:50px}.place-sources{margin-top:45px}}
 @media(prefers-reduced-motion:reduce){.has-js .water-image.media-reveal{clip-path:none!important}.has-js .place-story-photo::after{display:none}.place-story-photo img,.has-js .place-story-photo.media-reveal img{transform:none!important;will-change:auto}}
 
-/* Two views of the same waterside terrace, with a restrained photographic dissolve. */
+/* The waterside terrace photographs keep clean edges within the editorial grid. */
 .hero-media-day{opacity:0;pointer-events:none;transition:opacity .8s cubic-bezier(.22,.8,.25,1)}
 .hero.is-day .hero-media-day{opacity:1}
 .hero-media-day img,.hero.is-color .hero-media-day img{filter:saturate(.9) contrast(1.03) brightness(.85)}
@@ -220,13 +220,11 @@ img{display:block;max-width:100%}figure{margin:0}button{font:inherit}a{color:inh
 .place-story-photo figcaption{left:clamp(25px,5vw,90px);right:clamp(25px,5vw,90px);bottom:clamp(58px,7vw,92px)}
 .place-story-grid{margin-top:clamp(35px,4vw,60px)}.place-story-note:nth-of-type(2){margin-top:48px}.place-story-note:nth-of-type(3){margin-top:90px}.place-story-note h3{margin-top:32px}.place-sources{margin-top:clamp(48px,6vw,90px)}
 .taverna-chapter{padding:70px 0 105px}.taverna-grid{padding-top:42px}.taverna-photo{margin-top:15px}.taverna-photo img{height:min(58vw,760px)}.taverna-side{margin-top:205px}
-.taverna-photo img,.ducks-photo img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent);mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent)}
 .interlude{height:280px}
 .food-grid::after{background:linear-gradient(180deg,#17342f 0%,transparent 12%,transparent 81%,#17342f 100%),linear-gradient(90deg,#10231ee8 0%,#11251fbd 29%,#10231e3d 61%,#10231e18 100%)}
-.food-scene img,.flavour-open img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent);mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent)}
 .food-scenes{margin-top:clamp(28px,3vw,56px)}.dessert-scene{margin-top:clamp(30px,5vw,80px)}.menu-thread{margin-top:80px}.food-collection{margin-top:clamp(62px,7vw,105px)}.food-collection-head{margin-bottom:clamp(28px,4vw,65px)}.flavour-b{margin-top:clamp(32px,5vw,85px)}.flavour-d{margin-top:clamp(25px,4vw,70px)}
 .journal-chapter{padding:65px 0 105px}.journal-head{margin-top:48px}.journal-grid{margin-top:55px}
-.journal-item{background:#f8f8f2}.journal-item img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 88%,transparent);mask-image:linear-gradient(180deg,transparent,#000 9%,#000 88%,transparent)}
+.journal-item{background:#f8f8f2}.journal-item-a img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 88%,transparent);mask-image:linear-gradient(180deg,transparent,#000 9%,#000 88%,transparent)}
 .journal-item::after{inset:50% 0 0;background:linear-gradient(transparent,#0b160ec4 55%,transparent)}.journal-item>span{bottom:clamp(58px,7vw,100px)}
 @media(max-width:760px){
   .hero-media img{top:-10%;height:120%}

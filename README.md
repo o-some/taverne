@@ -5,17 +5,21 @@ Statische Website in Griechisch, Englisch und Deutsch für die Taverne Η ΛΙΜ
 ## Lokal prüfen
 
 ```sh
+npm ci
+npm run build:water
 node check.mjs
 python3 -m http.server 8080
 ```
 
-Die Seite verwendet HTML, CSS und wenig JavaScript. Es gibt kein Framework und keinen Build-Schritt. Pushes auf `main` veröffentlichen über `.github/workflows/pages.yml` auf `https://o-some.github.io/taverne/`.
+Die Seite verwendet HTML, CSS und JavaScript ohne Frontend-Framework. Nur die optionale Three.js-Wasserschicht wird lokal gebündelt; der bestehende Pages-Workflow baut sie vor der Veröffentlichung. Pushes auf `main` veröffentlichen über `.github/workflows/pages.yml` auf `https://o-some.github.io/taverne/`.
 
 Die hellen Kapitel erhalten eine sehr feine Papierstruktur. Ortsansicht, Speisetafel, Galerie und Besuchsabschluss wechseln zwischen ruhigen Textflächen und großformatigen Bildern. Das Wasserfallkapitel und ein zweites Ortsbild werden beim Scrollen von oben nach unten freigelegt. Die Kapitelbilder bewegen sich beim Scrollen um höchstens 80 Pixel auf großen und 38 Pixel auf schmalen Bildschirmen; das Titelbild um höchstens 125 Pixel. Bei `prefers-reduced-motion` entfällt die Bewegung. Weiche Fotokanten verbinden die Bilder mit Papierweiß und Dunkelgrün. Die Inhalte bleiben ohne JavaScript sichtbar.
 
 Ein transparentes, aus der Ortsreferenz entwickeltes Aquarell der kleinen Kaskaden liegt dezent hinter dem Kapitel „Momente“. Ein stark beschnittener Wasserfarbausschnitt setzt im ersten hellen Kapitel einen zweiten, leiseren Akzent. Die Illustration bleibt dekorativ und liegt hinter dem lesbaren HTML-Text.
 
 Im Einstieg können Gäste zwischen einer Tagesansicht und der gestalteten Abendstimmung desselben Ufers wechseln. Die fünf Speisenbilder öffnen sich in der bestehenden Bildansicht; Pfeiltasten wechseln das Motiv, Escape schließt sie. Beide Interaktionen sind mit Tastatur und in allen drei Sprachen nutzbar. Bei reduzierter Bewegung entfällt die Überblendung.
+
+Eine stumme, elfsekündige Bildmontage zeigt Brücke, Teich, Grill und Tisch. Im großen Titelbild läuft sie nach dem Laden einmal in einer kleinen Vorschau; Pause und Wiederaufnahme sind steuerbar. Auf schmalen Ansichten wird erst nach einem bewussten Klick auf „Die kurze Geschichte ansehen“ ein Videoplayer geladen. Ein statisches Ortsbild ist der Rückfall. Drei feine Wasserlinien verbinden Kapitelgrenzen; die Linie wird vor dem Grill wärmer. Am großen Tischbild lassen sich Souvlakia, Bauernsalat und Soutzoukakia per Maus, Tastatur oder Berührung erkunden. Die Hinweise sind in allen drei Sprachen verfügbar und beschreiben illustrative Speisen, keine bestätigte Karte.
 
 ## Identität und Bilder
 

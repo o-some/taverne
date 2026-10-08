@@ -41,6 +41,8 @@ const translations = {
     sheepCheeseName:"Χτυπητή με πρόβειο τυρί",
     horiatikiAlt:"Μεγάλη χωριάτικη σαλάτα με ντομάτα, αγγούρι, ελιές και φέτα",
     horiatikiName:"Χωριάτικη σαλάτα",
+    filmOpen:'ΔΕΣ ΤΗ ΜΙΚΡΗ ΙΣΤΟΡΙΑ',filmPause:'Παύση ταινίας',filmPlay:'Συνέχεια ταινίας',filmClose:'Κλείσιμο ταινίας',filmTitle:'Από το νερό στο τραπέζι.',filmNote:'Κινηματογραφική σύνθεση από επεξεργασμένες εικόνες του τόπου και ενδεικτικές εικόνες φαγητού. Χωρίς ήχο.',
+    tableExplore:'ΕΞΕΡΕΥΝΗΣΕ ΤΟ ΤΡΑΠΕΖΙ',tableSouvlakia:'Η φωτιά δίνει τον ρυθμό. Τα σουβλάκια έρχονται στη μέση, δίπλα στο νερό.',tableHoriatiki:'Ντομάτα, ελιές και φέτα φέρνουν τα χρώματα του καλοκαιριού στο τραπέζι.',tableSoutzoukakia:'Τα σουτζουκάκια με σάλτσα ντομάτας προσθέτουν μια ζεστή, πλούσια νότα στην παρέα.',tableNote:'Ενδεικτική σκηνή, όχι τρέχουσα κάρτα.',
   },
   en: {
     explorerEyebrow:'AI GIANNIS / THREE VIEWS',heroRoute:'SEE THE AREA ON MAPS',heroGlimpse:'FROM THE PLACE TO THE TABLE',visitLocation:'AI GIANNIS · SERRES · GREECE',explorerTitle:'Stay a moment. Look around.',explorerIntro:'The bridge, the water and the taverna make up their own little world. Choose a view and get to know it.',explorerLabel:'Views of the place',explorerBridge:'THE BRIDGE',explorerWater:'THE WATER',explorerTable:'THE TAVERNA',explorerBridgeAlt:'Low cascades beneath the timber bridge',explorerWaterAlt:'Ducks and water in the small pond',explorerTableAlt:'The taverna seen from the opposite bank',explorerBridgeCaption:'A timber bridge over the low cascades.',explorerWaterCaption:'The small pond, ducks and the shade of the trees.',explorerTableCaption:'The taverna, seen from across the water.',explorerNote:'Three views of the place — this is not a route or a map.',
@@ -82,6 +84,8 @@ const translations = {
     sheepCheeseName:"Whipped sheep cheese",
     horiatikiAlt:"Generous Greek village salad with tomatoes, cucumber, olives and feta",
     horiatikiName:"Greek village salad",
+    filmOpen:'WATCH THE SHORT STORY',filmPause:'Pause film',filmPlay:'Resume film',filmClose:'Close film',filmTitle:'From the water to the table.',filmNote:'A cinematic sequence made from edited views of the place and illustrative food images. Silent.',
+    tableExplore:'EXPLORE THE TABLE',tableSouvlakia:'The grill sets the rhythm. Souvlakia take centre stage beside the water.',tableHoriatiki:'Tomatoes, olives and feta bring summer colour to the shared table.',tableSoutzoukakia:'Soutzoukakia in tomato sauce add a rich, warm note to the gathering.',tableNote:'Illustrative scene, not the current menu.',
   },
   de: {
     explorerEyebrow:'AI GIANNIS / DREI ANSICHTEN',heroRoute:'DIE GEGEND AUF MAPS ANSEHEN',heroGlimpse:'VOM ORT AN DEN TISCH',visitLocation:'AI GIANNIS · SERRES · GRIECHENLAND',explorerTitle:'Bleib kurz. Schau dich um.',explorerIntro:'Brücke, Wasser und Taverne bilden hier eine kleine eigene Welt. Wähle eine Ansicht und entdecke den Ort.',explorerLabel:'Ansichten des Ortes',explorerBridge:'DIE BRÜCKE',explorerWater:'DAS WASSER',explorerTable:'DIE TAVERNE',explorerBridgeAlt:'Niedrige Kaskaden unter der Holzbrücke',explorerWaterAlt:'Enten und Wasser in der kleinen Teichanlage',explorerTableAlt:'Die Taverne vom gegenüberliegenden Ufer gesehen',explorerBridgeCaption:'Eine Holzbrücke über den niedrigen Kaskaden.',explorerWaterCaption:'Der kleine Teich, Enten und der Schatten der Bäume.',explorerTableCaption:'Die Taverne vom anderen Ufer aus gesehen.',explorerNote:'Drei Ansichten des Ortes — keine Route und kein Lageplan.',
@@ -123,6 +127,8 @@ const translations = {
     sheepCheeseName:"Schafskäsecreme",
     horiatikiAlt:"Großer griechischer Bauernsalat mit Tomaten, Gurke, Oliven und Feta",
     horiatikiName:"Griechischer Bauernsalat",
+    filmOpen:'DIE KURZE GESCHICHTE ANSEHEN',filmPause:'Film pausieren',filmPlay:'Film fortsetzen',filmClose:'Film schließen',filmTitle:'Vom Wasser an den Tisch.',filmNote:'Filmische Bildfolge aus bearbeiteten Ansichten des Ortes und illustrativen Speisen. Ohne Ton.',
+    tableExplore:'DEN TISCH ENTDECKEN',tableSouvlakia:'Der Grill gibt den Takt vor. Souvlakia stehen am Wasser im Mittelpunkt.',tableHoriatiki:'Tomaten, Oliven und Feta bringen sommerliche Farben auf den gemeinsamen Tisch.',tableSoutzoukakia:'Soutzoukakia in Tomatensauce bringen eine warme, kräftige Note in die Runde.',tableNote:'Inszenierte Szene, keine aktuelle Speisekarte.',
   }
 };
 
@@ -198,7 +204,66 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
 document.addEventListener('keydown', event => { if (event.key === 'Escape') { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); } });
 
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-const revealItems = document.querySelectorAll('.reveal,.media-reveal');
+const filmDialog = document.querySelector('#arrival-film');
+const filmVideo = filmDialog.querySelector('video');
+const preview = document.querySelector('.arrival-preview');
+const previewToggle = document.querySelector('.preview-toggle');
+const filmSource = 'assets/limni/arrival-film.mp4';
+let previewVisible = false;
+let previewWanted = true;
+function updatePreviewLabel() {
+  previewToggle.dataset.i18nAria = previewWanted ? 'filmPause' : 'filmPlay';
+  previewToggle.setAttribute('aria-label', translations[language][previewToggle.dataset.i18nAria]);
+  previewToggle.setAttribute('aria-pressed', String(!previewWanted));
+  previewToggle.textContent = previewWanted ? 'Ⅱ' : '▷';
+}
+function updatePreview() {
+  const canPlay = previewVisible && previewWanted && !reduceMotion.matches && !navigator.connection?.saveData && !document.hidden && !filmDialog.open;
+  if (!canPlay) { preview.pause(); return; }
+  if (!preview.src) preview.src = filmSource;
+  preview.play().catch(() => { previewWanted = false; updatePreviewLabel(); });
+}
+if ('IntersectionObserver' in window) {
+  new IntersectionObserver(([entry]) => { previewVisible = entry.isIntersecting; updatePreview(); }).observe(preview);
+}
+preview.addEventListener('ended', () => { previewWanted = false; updatePreviewLabel(); });
+previewToggle.addEventListener('click', () => {
+  previewWanted = !previewWanted;
+  if (previewWanted && preview.ended) preview.currentTime = 0;
+  updatePreviewLabel();
+  updatePreview();
+});
+document.querySelectorAll('[data-film-open]').forEach(button => button.addEventListener('click', () => {
+  filmDialog.showModal();
+  document.body.classList.add('film-open');
+  preview.pause();
+  if (!filmVideo.src) filmVideo.src = filmSource;
+  filmVideo.currentTime = 0;
+  filmVideo.play().catch(() => {});
+}));
+filmDialog.querySelector('.film-close').addEventListener('click', () => filmDialog.close());
+filmDialog.addEventListener('click', event => { if (event.target === filmDialog) filmDialog.close(); });
+filmDialog.addEventListener('close', () => { filmVideo.pause(); document.body.classList.remove('film-open'); updatePreview(); });
+document.addEventListener('visibilitychange', updatePreview);
+reduceMotion.addEventListener('change', updatePreview);
+
+const tableTitle = document.querySelector('.table-note-title');
+const tableBody = document.querySelector('.table-note-body');
+const tableNote = document.querySelector('.table-note');
+const tableKeys = { souvlakia:['souvlakiaName','tableSouvlakia'], horiatiki:['horiatikiName','tableHoriatiki'], soutzoukakia:['soutzoukakiaName','tableSoutzoukakia'] };
+document.querySelectorAll('[data-table-note]').forEach(button => button.addEventListener('click', () => {
+  const [title, body] = tableKeys[button.dataset.tableNote];
+  tableTitle.dataset.i18n = title;
+  tableBody.dataset.i18n = body;
+  tableTitle.textContent = translations[language][title];
+  tableBody.textContent = translations[language][body];
+  document.querySelectorAll('[data-table-note]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+  tableNote.classList.remove('is-changing');
+  void tableNote.offsetWidth;
+  tableNote.classList.add('is-changing');
+}));
+
+const revealItems = document.querySelectorAll('.reveal,.media-reveal,.flow-seam');
 if (reduceMotion.matches || !('IntersectionObserver' in window)) revealItems.forEach(item => item.classList.add('is-visible'));
 else {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), {threshold:.08,rootMargin:'0px 0px -35px 0px'});

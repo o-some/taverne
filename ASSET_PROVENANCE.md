@@ -50,3 +50,7 @@ Die Ortsbeschreibung stützt sich auf [Stadt Serres](https://www.serres.gr/toyri
 ## Aquarellakzent (2026-10-08)
 
 `watercolor-cascade.webp` wurde mit dem integrierten Imagegen-Werkzeug aus `stream-bridge-960.webp` als Ortsreferenz gestaltet: die niedrigen Kaskaden, das X-Holzgeländer und Platanengrün sind als lockeres Aquarell abstrahiert. Die Illustration besitzt transparente Ränder; sie ist eine gestalterische Interpretation und keine historische oder aktuelle Zustandsaufnahme. Der RGBA-PNG-Master liegt unter `../../[Website Assets]/masters/watercolor-cascade.png`, die 467-KB-WebP-Fassung im Repository. Sie erscheint nur als schwacher Hintergrundakzent in den hellen Kapiteln.
+
+## Filmische Bildfolge (2026-10-09)
+
+`assets/limni/arrival-film.mp4` ist eine stumme, etwa 11,6 Sekunden lange H.264-Montage aus den bereits dokumentierten Webbildern `stream-bridge.webp`, `fountain.webp`, `grill-editorial.webp` und `feast-editorial.webp`. FFmpeg erzeugte leichte Kamerabewegung und weiche Überblendungen. Es handelt sich ausdrücklich **nicht um vor Ort aufgenommenes Video**. Die Ortsmotive sind bearbeitet, die Speisen illustrativ. Der Player und die Website kennzeichnen diese Bildfolge entsprechend. Das Standbild kommt aus `stream-bridge-960.webp`.

@@ -4,7 +4,7 @@ const translations = {
   el: {
     pageTitle:'Η ΛΙΜΝΗ · Ταβέρνα στον Άι Γιάννη Σερρών',pageDescription:'Η ΛΙΜΝΗ — ταβέρνα δίπλα στο νερό στον Άι Γιάννη Σερρών. Ένας τόπος για φαγητό, σκιά και λίγη περισσότερη ώρα μαζί.',
     skip:'Μετάβαση στο περιεχόμενο',brandLabel:'Η ΛΙΜΝΗ — αρχή',brandSub:'ΤΑΒΕΡΝΑ · ΣΕΡΡΕΣ',navLabel:'Κύρια πλοήγηση',navPlace:'Ο ΤΟΠΟΣ',navTaverna:'Η ΤΑΒΕΡΝΑ',navFood:'Η ΓΕΥΣΗ',navJournal:'ΣΤΙΓΜΕΣ',navVisit:'ΕΠΙΣΚΕΨΗ',languageLabel:'Γλώσσα',menuLabel:'Άνοιγμα μενού',
-    heroPlace:'ΑΪ ΓΙΑΝΝΗΣ / ΣΕΡΡΕΣ / ΕΛΛΑΔΑ',heroPretitle:'ΜΙΑ ΤΑΒΕΡΝΑ, ΕΝΑΣ ΤΟΠΟΣ.',heroSubtitle:'Δίπλα στο νερό, κάτω από τα δέντρα. Έλα όπως είσαι. Μείνε όσο θέλεις.',discoverLabel:'Ανακαλύψτε τον τόπο',heroImageNote:'Εικόνα βασισμένη σε φωτογραφίες της ταβέρνας',scrollCue:'ΚΥΛΗΣΕ ΓΙΑ ΝΑ ΑΝΑΚΑΛΥΨΕΙΣ',
+    heroPlace:'ΑΪ ΓΙΑΝΝΗΣ / ΣΕΡΡΕΣ / ΕΛΛΑΔΑ',heroPretitle:'ΜΙΑ ΤΑΒΕΡΝΑ, ΕΝΑΣ ΤΟΠΟΣ.',heroSubtitle:'Δίπλα στο νερό, κάτω από τα δέντρα. Έλα όπως είσαι. Μείνε όσο θέλεις.',discoverLabel:'Ανακαλύψτε τον τόπο',heroImageNote:'Εικόνα βασισμένη σε φωτογραφίες της ταβέρνας',scrollCue:'ΚΥΛΗΣΕ ΓΙΑ ΝΑ ΑΝΑΚΑΛΥΨΕΙΣ',sceneLabel:'Φωτισμός εικόνας',sceneDay:'ΗΜΕΡΑ',sceneDusk:'ΣΟΥΡΟΥΠΟ',
     chapterPlace:'Ο ΤΟΠΟΣ',prologueEyebrow:'ΣΤΟΝ ΑΪ ΓΙΑΝΝΗ ΣΕΡΡΩΝ',prologueTitle:'Ένας τόπος που αρχίζει από το νερό.',prologueBody:'Λίγα λεπτά από τις Σέρρες, η ταβέρνα Η Λίμνη κοιτάζει το ήσυχο νερό. Ξύλινα κάγκελα, πάπιες και σκιά από τα δέντρα γίνονται μέρος του τραπεζιού.',prologueAside:'Εδώ δεν χρειάζεται βιασύνη. Μόνο μια καλή θέση δίπλα στο νερό.',
     waterAlt:'Ρηχό ρέμα με δύο μικρά σκαλοπάτια νερού και ξύλινη γέφυρα στον Άι Γιάννη Σερρών',waterTitle:'Η φύση κάθεται μαζί μας.',waterBody:'Ο Άι Γιάννης έχει και μια άλλη όψη του νερού: το ρέμα, τις χαμηλές πτώσεις και την ξύλινη γέφυρα κάτω από τα δέντρα.',waterFact:'Ο Άι Γιάννης βρίσκεται περίπου δύο χιλιόμετρα από την πόλη των Σερρών. Το τρεχούμενο νερό σχηματίζει μικρούς καταρράκτες κάτω από τα πλατάνια.',sourceLink:'ΠΗΓΗ: ΔΗΜΟΣ ΣΕΡΡΩΝ ↗',
     chapterTaverna:'Η ΤΑΒΕΡΝΑ',tavernaEyebrow:'Ο ΧΑΡΑΚΤΗΡΑΣ ΤΟΥ ΤΟΠΟΥ',tavernaTitle:'Ξύλο. Σκιά. Ένα τραπέζι.',tavernaBody:'Η ταβέρνα έχει τον δικό της τρόπο να σε καλωσορίζει: απλά τραπέζια, το παλιό ξύλινο κάγκελο και το νερό ακριβώς δίπλα.',terraceAlt:'Η παραλίμνια βεράντα της ταβέρνας με ξύλινο κάγκελο και πάπιες',terraceCaption:'Η βεράντα δίπλα στο νερό',ducksAlt:'Πάπιες στο ρηχό νερό μπροστά από την ταβέρνα',tavernaNote:'Δεν είναι σκηνικό. Είναι οι μικρές λεπτομέρειες που θυμάσαι όταν φύγεις.',interludeLabel:'Η λίμνη',interludeText:'ΤΟ ΝΕΡΟ · Η ΣΚΙΑ · Η ΠΑΡΕΑ',
@@ -43,7 +43,7 @@ const translations = {
   en: {
     pageTitle:'Η ΛΙΜΝΗ · Taverna by the water in Serres',pageDescription:'Η ΛΙΜΝΗ is a Greek taverna beside the water in Ai Giannis, Serres. A place for food, shade and time together.',
     skip:'Skip to content',brandLabel:'Η ΛΙΜΝΗ — home',brandSub:'TAVERNA · SERRES',navLabel:'Main navigation',navPlace:'THE PLACE',navTaverna:'THE TAVERNA',navFood:'THE FOOD',navJournal:'MOMENTS',navVisit:'VISIT',languageLabel:'Language',menuLabel:'Open menu',
-    heroPlace:'AI GIANNIS / SERRES / GREECE',heroPretitle:'A TAVERNA. A PLACE.',heroSubtitle:'Beside the water, beneath the trees. Come as you are. Stay as long as you like.',discoverLabel:'Discover the place',heroImageNote:'Image based on photographs of the taverna',scrollCue:'SCROLL TO EXPLORE',
+    heroPlace:'AI GIANNIS / SERRES / GREECE',heroPretitle:'A TAVERNA. A PLACE.',heroSubtitle:'Beside the water, beneath the trees. Come as you are. Stay as long as you like.',discoverLabel:'Discover the place',heroImageNote:'Image based on photographs of the taverna',scrollCue:'SCROLL TO EXPLORE',sceneLabel:'Image lighting',sceneDay:'DAY',sceneDusk:'DUSK',
     chapterPlace:'THE PLACE',prologueEyebrow:'IN AI GIANNIS, SERRES',prologueTitle:'A place that begins with water.',prologueBody:'Minutes from Serres, Η ΛΙΜΝΗ looks out over still water. Timber rails, ducks and shade from the trees become part of the table.',prologueAside:'There is no need to hurry here. Just find a good seat beside the water.',
     waterAlt:'Shallow stream with two low cascades and a timber footbridge in Ai Giannis, Serres',waterTitle:'Nature joins the table.',waterBody:'Ai Giannis has another side to its water: the stream, low cascades and a timber bridge beneath the trees.',waterFact:'Ai Giannis is about two kilometres from the city of Serres. Running water forms small waterfalls beneath the plane trees.',sourceLink:'SOURCE: MUNICIPALITY OF SERRES ↗',
     chapterTaverna:'THE TAVERNA',tavernaEyebrow:'THE CHARACTER OF THE PLACE',tavernaTitle:'Timber. Shade. A table.',tavernaBody:'The taverna has its own way of welcoming you: simple tables, weathered timber rails and the water right beside them.',terraceAlt:'The waterside taverna terrace with timber rails and ducks',terraceCaption:'The terrace beside the water',ducksAlt:'Ducks in shallow water beside the taverna',tavernaNote:'It is the small details you remember after you leave.',interludeLabel:'The lake',interludeText:'WATER · SHADE · COMPANY',
@@ -82,7 +82,7 @@ const translations = {
   de: {
     pageTitle:'Η ΛΙΜΝΗ · Taverne am Wasser bei Serres',pageDescription:'Η ΛΙΜΝΗ ist eine griechische Taverne direkt am Wasser in Ai Giannis bei Serres. Ein Ort für Essen, Schatten und gemeinsame Zeit.',
     skip:'Zum Inhalt springen',brandLabel:'Η ΛΙΜΝΗ — Startseite',brandSub:'TAVERNE · SERRES',navLabel:'Hauptnavigation',navPlace:'DER ORT',navTaverna:'DIE TAVERNE',navFood:'DAS ESSEN',navJournal:'MOMENTE',navVisit:'BESUCH',languageLabel:'Sprache',menuLabel:'Menü öffnen',
-    heroPlace:'AI GIANNIS / SERRES / GRIECHENLAND',heroPretitle:'EINE TAVERNE. EIN ORT.',heroSubtitle:'Direkt am Wasser, unter den Bäumen. Komm, wie du bist. Bleib, so lange du magst.',discoverLabel:'Den Ort entdecken',heroImageNote:'Bild auf Grundlage von Fotos der Taverne',scrollCue:'WEITER SCROLLEN',
+    heroPlace:'AI GIANNIS / SERRES / GRIECHENLAND',heroPretitle:'EINE TAVERNE. EIN ORT.',heroSubtitle:'Direkt am Wasser, unter den Bäumen. Komm, wie du bist. Bleib, so lange du magst.',discoverLabel:'Den Ort entdecken',heroImageNote:'Bild auf Grundlage von Fotos der Taverne',scrollCue:'WEITER SCROLLEN',sceneLabel:'Lichtstimmung des Bildes',sceneDay:'TAG',sceneDusk:'ABEND',
     chapterPlace:'DER ORT',prologueEyebrow:'IN AI GIANNIS BEI SERRES',prologueTitle:'Ein Ort, der mit dem Wasser beginnt.',prologueBody:'Wenige Minuten von Serres entfernt blickt Η ΛΙΜΝΗ auf das ruhige Wasser. Holzgeländer, Enten und der Schatten der Bäume gehören hier zum Tisch dazu.',prologueAside:'Hier muss niemand eilen. Such dir einfach einen guten Platz direkt am Wasser.',
     waterAlt:'Flacher Bach mit zwei kleinen Stufen und Holzbrücke in Ai Giannis bei Serres',waterTitle:'Die Natur sitzt mit am Tisch.',waterBody:'Ai Giannis zeigt noch eine andere Seite des Wassers: den Bach, die niedrigen Kaskaden und eine Holzbrücke unter den Bäumen.',waterFact:'Ai Giannis liegt etwa zwei Kilometer von der Stadt Serres entfernt. Fließendes Wasser bildet unter den Platanen kleine Wasserfälle.',sourceLink:'QUELLE: STADT SERRES ↗',
     chapterTaverna:'DIE TAVERNE',tavernaEyebrow:'DER CHARAKTER DES ORTES',tavernaTitle:'Holz. Schatten. Ein Tisch.',tavernaBody:'Die Taverne begrüßt dich auf ihre Weise: mit einfachen Tischen, dem alten Holzgeländer und dem Wasser gleich daneben.',terraceAlt:'Die Terrasse der Taverne am Wasser mit Holzgeländer und Enten',terraceCaption:'Die Terrasse direkt am Wasser',ducksAlt:'Enten im flachen Wasser vor der Taverne',tavernaNote:'Es sind die kleinen Details, an die du dich später erinnerst.',interludeLabel:'Der See',interludeText:'WASSER · SCHATTEN · GESELLSCHAFT',
@@ -123,7 +123,12 @@ const translations = {
 const gallery = [
   {src:'assets/limni/fountain.webp', alt:'fountainAlt', caption:'journalOne'},
   {src:'assets/limni/across-pond.webp', alt:'acrossAlt', caption:'journalTwo'},
-  {src:'assets/limni/opposite-bank.webp', alt:'bankAlt', caption:'journalThree'}
+  {src:'assets/limni/opposite-bank.webp', alt:'bankAlt', caption:'journalThree'},
+  {src:'assets/limni/souvlakia-editorial.webp', alt:'souvlakiaAlt', caption:'souvlakiaName'},
+  {src:'assets/limni/soutzoukakia-editorial.webp', alt:'soutzoukakiaAlt', caption:'soutzoukakiaName'},
+  {src:'assets/limni/panseta-editorial.webp', alt:'pansetaAlt', caption:'pansetaName'},
+  {src:'assets/limni/sheep-cheese-editorial.webp', alt:'sheepCheeseAlt', caption:'sheepCheeseName'},
+  {src:'assets/limni/horiatiki-editorial.webp', alt:'horiatikiAlt', caption:'horiatikiName'}
 ];
 const dialog = document.querySelector('#lightbox');
 const dialogImage = document.querySelector('#lightbox-image');
@@ -152,7 +157,7 @@ function showImage(index) {
   const item = gallery[activeImage];
   dialogImage.src = item.src;
   dialogImage.alt = translations[language][item.alt];
-  dialogCaption.textContent = `${String(activeImage + 1).padStart(2, '0')} / 03 — ${translations[language][item.caption]}`;
+  dialogCaption.textContent = `${String(activeImage + 1).padStart(2, '0')} / ${String(gallery.length).padStart(2, '0')} — ${translations[language][item.caption]}`;
 }
 
 document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
@@ -184,7 +189,11 @@ else {
 
 const header = document.querySelector('.site-header');
 const hero = document.querySelector('.hero');
-const heroImage = document.querySelector('.hero-image');
+const heroImages = document.querySelectorAll('.hero-image');
+document.querySelectorAll('[data-scene]').forEach(button => button.addEventListener('click', () => {
+  hero.classList.toggle('is-day', button.dataset.scene === 'day');
+  document.querySelectorAll('[data-scene]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+}));
 const progress = document.querySelector('.scroll-progress');
 const parallaxFrames = document.querySelectorAll('[data-parallax]');
 let scrollQueued = false;
@@ -194,7 +203,7 @@ function updateScroll() {
   header.classList.toggle('is-scrolled', scrollY > 42);
   if (!reduceMotion.matches) {
     hero.classList.toggle('is-color', scrollY > 95);
-    if (scrollY < innerHeight * 1.2) heroImage.style.transform = `translate3d(0,${Math.min(scrollY * .12, 95)}px,0) scale(1.07)`;
+    if (scrollY < innerHeight * 1.2) for (const image of heroImages) image.style.transform = `translate3d(0,${Math.min(scrollY * .12, 95)}px,0) scale(1.07)`;
     if (innerWidth > 760) for (const frame of parallaxFrames) {
       const rect = frame.getBoundingClientRect();
       if (rect.bottom < 0 || rect.top > innerHeight) continue;

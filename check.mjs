@@ -10,7 +10,8 @@ const keys = [...html.matchAll(/data-i18n(?:-aria|-alt)?="([^"]+)"/g)].map(match
 for (const lang of ['el','en','de']) for (const key of keys) if (!translations[lang][key]) throw Error(`Missing ${lang} translation: ${key}`);
 for (const [, anchor] of html.matchAll(/href="#([^"]+)"/g)) if (!html.includes(`id="${anchor}"`)) throw Error(`Missing anchor: ${anchor}`);
 if (!html.includes('Η ΛΙΜΝΗ') || html.includes('noindex')) throw Error('Brand or indexability is incorrect');
-if ([...html.matchAll(/data-gallery="(\d+)"/g)].map(match => Number(match[1])).join(',') !== '0,1,2') throw Error('Expected three gallery scenes');
+if ([...html.matchAll(/data-gallery="(\d+)"/g)].map(match => Number(match[1])).join(',') !== '3,4,5,6,7,0,1,2') throw Error('Expected eight gallery scenes');
+if ([...html.matchAll(/data-scene="(day|dusk)"/g)].map(match => match[1]).join(',') !== 'day,dusk' || !script.includes("hero.classList.toggle('is-day'")) throw Error('Hero scene switch missing');
 for (const [, image] of html.matchAll(/(?:src|href)="(assets\/limni\/[^\"]+)"/g)) statSync(image);
 for (const image of ['hero-dusk-editorial.webp','hero-dusk-editorial-960.webp','weir-editorial.webp','weir-editorial-960.webp','feast-editorial.webp','terrace-editorial.webp','grill-editorial.webp','bougatsa-editorial.webp','souvlakia-editorial.webp','soutzoukakia-editorial.webp','panseta-editorial.webp','sheep-cheese-editorial.webp','horiatiki-editorial.webp','mark.svg','mark-dark.svg']) if (statSync(`assets/limni/${image}`).size < (image.endsWith('.svg') ? 100 : 20_000)) throw Error(`Missing or small image: ${image}`);
 if (statSync('assets/texture-grain.svg').size < 100) throw Error('Paper texture missing');

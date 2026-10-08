@@ -182,3 +182,23 @@ img{display:block;max-width:100%}figure{margin:0}button{font:inherit}a{color:inh
 .place-story-grid{margin-top:clamp(56px,6vw,94px)}.place-sources{margin-top:clamp(75px,8vw,120px)}
 @media(max-width:760px){.place-story-head{padding-bottom:40px}.place-story-photo{height:60svh;min-height:370px}.place-story-photo img,.has-js .place-story-photo.media-reveal img{top:0;height:100%;object-position:51% center;transform:none!important;will-change:auto}.place-story-photo figcaption{display:block;left:19px;right:19px;bottom:18px}.place-story-photo figcaption span{display:block}.place-story-photo figcaption span:last-child{text-align:left;margin-top:6px;font-size:11px}.place-story-grid{margin-top:50px}.place-sources{margin-top:45px}}
 @media(prefers-reduced-motion:reduce){.has-js .water-image.media-reveal{clip-path:none!important}.has-js .place-story-photo::after{display:none}.place-story-photo img,.has-js .place-story-photo.media-reveal img{transform:none!important;will-change:auto}}
+
+/* Two views of the same waterside terrace, with a restrained photographic dissolve. */
+.hero-media-day{opacity:0;pointer-events:none;transition:opacity .8s cubic-bezier(.22,.8,.25,1)}
+.hero.is-day .hero-media-day{opacity:1}
+.hero-media-day img,.hero.is-color .hero-media-day img{filter:saturate(.9) contrast(1.03) brightness(.85)}
+.hero.is-day.is-color .hero-media-day img{filter:saturate(1) contrast(1.03) brightness(.92)}
+.scene-switch{display:none;position:absolute;z-index:3;top:clamp(155px,19vh,230px);right:clamp(26px,4.2vw,78px);align-items:center;gap:10px;color:#fffef7;text-shadow:0 2px 12px #102018;letter-spacing:.16em;font-size:10px;font-weight:750}
+.has-js .scene-switch{display:flex}
+.scene-switch button{position:relative;border:0;padding:10px 0;background:none;color:inherit;letter-spacing:inherit;font-size:inherit;font-weight:inherit;opacity:.62;cursor:pointer;transition:opacity .2s}
+.scene-switch button:hover,.scene-switch button[aria-pressed=true]{opacity:1}
+.scene-switch button[aria-pressed=true]::after{content:"";position:absolute;left:0;right:0;bottom:5px;border-bottom:1px solid currentColor}
+.scene-switch button:focus-visible{outline-color:#fff}
+
+/* The image itself is the gallery control; captions retain the editorial rhythm. */
+.flavour-open{display:block;position:relative;width:100%;padding:0;border:0;background:none;overflow:hidden;cursor:zoom-in;text-align:left}
+.flavour-open img{display:block}
+.flavour-open>span{position:absolute;right:14px;bottom:14px;display:grid;place-items:center;width:39px;height:39px;border:1px solid #fff9;border-radius:50%;background:#10251e91;color:#fff;font-size:19px;line-height:1;transition:background .2s,transform .2s}
+.flavour-open:hover>span,.flavour-open:focus-visible>span{background:#10251ee8;transform:translate(2px,-2px)}
+@media(max-width:760px){.scene-switch{top:151px;right:20px;font-size:9px}.flavour-open>span{width:35px;height:35px}}
+@media(prefers-reduced-motion:reduce){.hero-media-day{transition:none}.hero-media-day img,.hero.is-color .hero-media-day img{filter:saturate(.9) contrast(1.03) brightness(.85)!important}}

@@ -13,7 +13,22 @@ Die elf Kundendateien unter `../../[Bilder Mutter]/` und die fünf vom Nutzer ge
 | `opposite-bank.webp` | `IMG_0568.jpeg` | Blick vom Holzgeländer zur gegenüberliegenden Seite; Handy-Oberfläche und Texteinblendung entfernt. |
 | `visit-table.webp` | `IMG_0566.jpeg` | Leerer Tisch am Wasser als Besuchsmotiv; Handy-Oberfläche und Texteinblendung entfernt. |
 | `keftedakia.webp` (+ 800er Variante) | `8652b5f7-6d6f-4f8b-90be-f6b509673578.jpeg` | Eingeblendeten Text entfernt, enger Zuschnitt des wirklichen Gerichts. |
-| `keftedakia-two-plates.webp` (+ 800er Variante) | `8652b5f7-6d6f-4f8b-90be-f6b509673578.jpeg` | Beide tatsächlichen Teller zusammen als breite Food-Komposition; Text/Emoji entfernt, Blitzlicht gemildert, einfache weiße Teller und Edelstahlfläche erhalten. Diese Variante ist auf der Website sichtbar. |
+| `keftedakia-two-plates.webp` (+ 800er Variante) | `8652b5f7-6d6f-4f8b-90be-f6b509673578.jpeg` | Beide tatsächlichen Teller zusammen als breite Food-Komposition; Text/Emoji entfernt, Blitzlicht gemildert, einfache weiße Teller und Edelstahlfläche erhalten. Diese Variante wird im aktuellen Layout nicht verwendet. |
 | `menu-cover.webp` | `4d345e2e-85c7-4272-a892-c8103c0acd50.jpeg` | Nur WebP-Kompression und Größenanpassung; keine generative Bearbeitung. |
 
-Die zehn bearbeiteten Motive wurden mit dem integrierten Imagegen-Werkzeug erstellt. Die jeweiligen Prompts verlangten ausdrücklich, die reale niedrige Wasserlandschaft, Holzgeländer, Uferkanten, schlichte Taverne und Speise zu erhalten; nur Bedienoberflächen, eingeblendete Texte und störende Screenshot-Ränder zu entfernen; keine Küste, Berge, großen Wasserfälle, zusätzlichen Räume oder erfundenen Gerichte einzufügen. Die PNG-Ausgaben sind bearbeitete Rekonstruktionen, keine unveränderten Dokumentarfotos. `cwebp` erzeugte daraus die ausgelieferten Dateien. Das Logo `assets/limni/mark.svg` ist eine eigenständige, abstrahierte Baum-und-Wasser-Grafik aus Code; es kopiert die Speisekartengrafik nicht.
+Die ursprünglich bearbeiteten Ortsmotive wurden mit dem integrierten Imagegen-Werkzeug erstellt und erhalten die realen Anker des Orts. Die PNG-Ausgaben sind bearbeitete Rekonstruktionen, keine unveränderten Dokumentarfotos. `cwebp` erzeugte daraus die Webdateien. Die frühere Baum-und-Wasser-Grafik wurde durch das unten dokumentierte Monogramm ersetzt. Ältere Orts- und Speisemotive bleiben im Projekt erhalten, erscheinen aber nicht alle im aktuellen Layout.
+
+## Neue Bildserie (2026-10-08)
+
+Die aktuelle Startseite verwendet sechs zusätzliche **inszenierte** Bildkompositionen. Sie wurden mit Imagegen neu gesetzt, nicht als 1:1-Kopie der Quellen und nicht als Dokumentarfotos. Die unveränderten PNG-Master liegen im Kundenordner unter `[Website Assets]/masters/`; die Website liefert optimierte WebP-Dateien aus.
+
+| Webbild | Referenzen und Gestaltung | Aussagegrenze |
+| --- | --- | --- |
+| `hero-dusk-editorial.webp` (+ 960er Variante) | `hero-pond-from-customer.png`, `IMG_0566.jpeg`; neue tiefere Wasserperspektive und Abendlicht; Holzgeländer, flacher Teich und Bäume als Ortsanker. | Die Abendstimmung und Beleuchtung sind inszeniert. |
+| `weir-editorial.webp` (+ 960er Variante) | `stream-bridge-from-locality-reference.png`, altes Konzept `08-taverna-terrace.jpg`; diagonale tiefe Bachperspektive, gleiche kleine Wasserstufen/Brücke, kein Küstenmotiv. | Ortsrekonstruktion, keine aktuelle Zustandsdokumentation. |
+| `terrace-editorial.webp` | `IMG_0571.jpeg`, `hero-dusk-editorial.png`; neue Uferperspektive mit realen Ankern Markise, Backstein-Grill, X-Holzgeländer, einfachen Tischen und Enten. | Atmosphärisch rekonstruiert; keine unveränderte Fotografie. |
+| `feast-editorial.webp` | `visit-table-from-customer.png`, altes Konzept `04-table-feast.jpg`; große Tafel mit den vom Auftraggeber genannten Speisen und erkennbarer echter Tisch-/Geländer-/Teichumgebung. | Illustrative Speisenszene; keine verifizierte aktuelle Karte. |
+| `grill-editorial.webp` | `IMG_0571.jpeg`, altes Konzept `02-souvlaki-grill.jpg`; neue Perspektive auf Grillgut vor schlichter Markise, Mauerwerk, Holzgeländer und Süßwasser. | Konzeptionelle Komposition, kein Beleg für eine konkrete Grillsituation. |
+| `bougatsa-editorial.webp` | `visit-table-from-customer.png`, altes Konzept `24-bougatsa.jpg`; neues Serviermotiv am tatsächlichen weißen Tisch und Teich. | Illustrative Speisenszene; Verfügbarkeit vor Ort prüfen. |
+
+Das neue Logo `assets/limni/mark.svg` ist ein eigenständiges gefülltes Η-Zeichen in Olivgrün, mit Wasser- und Glutakzent. Die frühere gezeichnete Baum-/Horizontmarke und die CSS-Zeichnung wurden ersetzt. Die alten Konzeptbilder bleiben als Quellen im Repository erhalten; sie sind keine direkt eingebundenen Dokumentarfotos.

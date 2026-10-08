@@ -267,6 +267,60 @@ img{display:block;max-width:100%}figure{margin:0}button{font:inherit}a{color:inh
 @media(max-width:760px){.food-story{margin-top:64px}.food-story .food-collection-head{margin-bottom:38px}.food-course{margin-top:55px;padding-top:20px}.food-course-fire{display:block;margin-top:0}.food-course-heading h4{font-size:clamp(37px,9vw,50px);margin:12px 0 0}.food-course-fire>.food-course-heading{padding:0;margin:0 0 26px}.food-story .grill-scene img{aspect-ratio:3/2}.food-course-pair,.food-course-trio{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.food-course-pair .flavour:last-child{margin-top:0}.food-course-pair .flavour img,.food-course-trio .flavour img,.food-course-trio .flavour:first-child img{aspect-ratio:4/5}.food-course-trio .flavour:last-child{grid-column:1/3;width:100%;margin:0}.food-course-trio .flavour:last-child img{aspect-ratio:3/2}.food-course-sweet{display:block}.food-course-sweet>.food-course-heading{margin-bottom:27px}.food-story .dessert-scene{width:100%;margin:0}.food-story .flavour figcaption{display:block;margin-top:8px;padding-top:9px}.food-story .flavour figcaption span{display:block;margin-bottom:8px;font-size:8px}.food-story .flavour figcaption strong{font-size:clamp(19px,5vw,27px);text-align:left}.food-story .food-scene figcaption{font-size:9px}}
 @media(max-width:420px){.food-course-pair,.food-course-trio{gap:14px}.food-story .flavour figcaption strong{font-size:19px}}
 
+/* The deep green and restrained shade come from the closing waterside scene. */
+:root{--lake-deep:#18362e;--lake-dark:#0b211c;--lake-paper:#e9f0e9;--lake-line:#abc1b2}
+body{background:var(--lake-paper)}
+.site-header.is-scrolled,.site-nav.open{background:#102820f2}
+.prologue{background:linear-gradient(125deg,#f9fbf7 0%,#eaf1e9 100%)}
+.place-story{background-color:#e9f0e9;color:var(--lake-deep)}
+.taverna-chapter{background:#e9f0e9;color:var(--lake-deep)}
+.taverna-heading>p:last-child,.taverna-note{color:#385549}
+.interlude{background:#e1ebe1;color:var(--lake-deep);border-color:var(--lake-line)}
+.food-chapter{background:var(--lake-deep)}
+.journal-chapter{background:linear-gradient(150deg,#dce9dd 0%,#eef3eb 54%,#e5eee5 100%);color:var(--lake-deep)}
+.journal-head>p{color:#486256}
+.site-footer{background:#102820}
+.hero-vignette{background:linear-gradient(180deg,#0b211c85,transparent 38%),linear-gradient(0deg,#0b211cb8,transparent 50%),linear-gradient(90deg,#0b211c35,transparent 62%)}
+
+/* Text tiles make the landscape story feel part of the same material palette. */
+.place-story-grid{align-items:stretch}
+.place-story-note{display:flex;flex-direction:column;padding:clamp(22px,2.2vw,36px);background:#dbe8dc;border-top:2px solid #5e8372;min-height:clamp(340px,31vw,480px)}
+.place-story-note:first-of-type{background:var(--lake-deep);color:#f8faf5;border-color:#a6c4ae}
+.place-story-note:first-of-type .story-index{color:#c6dbc9}
+.place-story-note:first-of-type p{color:#e4eee4}
+.place-story-note h3{margin-top:clamp(35px,5vw,80px)}
+.place-story-note p{margin-top:auto;padding-top:20px}
+
+/* Image tiles retain hard outer edges; the green veil lives inside the image. */
+.taverna-photo,.ducks-photo,.food-story .food-scene,.food-story .flavour,.journal-item{position:relative;isolation:isolate;overflow:hidden;background:var(--lake-deep)}
+.taverna-photo::after,.ducks-photo::after,.food-story .food-scene::after,.food-story .flavour::after,.journal-item::after{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(180deg,#0b211c19 0%,#0b211c16 45%,#0b211cc4 100%);pointer-events:none}
+.taverna-photo figcaption,.ducks-photo figcaption,.food-story .food-scene figcaption,.food-story .flavour figcaption{position:absolute;z-index:2;left:0;right:0;bottom:0;display:flex;align-items:end;justify-content:space-between;gap:14px;margin:0;padding:clamp(16px,2vw,28px);border:0;background:none;color:#fffef7;pointer-events:none;text-shadow:0 2px 14px #061a15b0}
+.taverna-photo figcaption span,.ducks-photo figcaption,.food-story .food-scene figcaption span,.food-story .flavour figcaption span{color:#e3eee5}
+.food-story .flavour figcaption strong{color:#fffef7}
+.food-story .flavour-open>span{z-index:3;top:15px;bottom:auto;background:#0b211ca8}
+.food-story .flavour figcaption{min-height:105px}
+.food-story .food-scene figcaption{min-height:85px;border:0}
+.journal-item::after{background:linear-gradient(180deg,#0b211c24 0%,#0b211c17 42%,#0b211cb8 100%)}
+.journal-item>span{z-index:2}
+
+/* Each tile opens as it enters the viewport, then settles under its green veil. */
+@media(prefers-reduced-motion:no-preference){
+  .has-js .taverna-photo.media-reveal::before,.has-js .ducks-photo.media-reveal::before,.has-js .food-story .media-reveal::before,.has-js .journal-item.media-reveal::before{content:"";position:absolute;z-index:4;inset:0;background:linear-gradient(160deg,#315846,var(--lake-deep) 65%);transform:translateY(0);transition:transform .9s cubic-bezier(.2,.74,.2,1);pointer-events:none}
+  .has-js .taverna-photo.media-reveal.is-visible::before,.has-js .ducks-photo.media-reveal.is-visible::before,.has-js .food-story .media-reveal.is-visible::before,.has-js .journal-item.media-reveal.is-visible::before{transform:translateY(-101%)}
+  .has-js .food-course-pair .flavour:nth-child(2)::before,.has-js .food-course-trio .flavour:nth-child(2)::before{transition-delay:.12s}
+  .has-js .food-course-trio .flavour:nth-child(3)::before{transition-delay:.2s}
+}
+@media(max-width:760px){
+  .place-story-note{min-height:0;padding:24px;margin-bottom:16px!important}
+  .place-story-note h3{margin:28px 0 0}
+  .place-story-note p{margin:0;padding-top:20px}
+  .taverna-photo figcaption,.ducks-photo figcaption{padding:15px;font-size:9px}
+  .food-story .flavour figcaption{position:relative;display:block;min-height:0;padding:11px 12px 13px;background:#102820;text-shadow:none}
+  .food-story .flavour figcaption span{margin-bottom:5px}
+  .food-story .food-scene figcaption{padding:16px 12px 12px;min-height:0}
+  .food-story .flavour-open>span{top:10px;right:10px}
+}
+
 /* A translucent watercolor of the actual small cascades gives the paper chapters a sense of place. */
 .prologue,.journal-chapter{position:relative;isolation:isolate;overflow:hidden}
 .prologue::after,.journal-chapter::before{content:"";position:absolute;z-index:0;pointer-events:none;background-image:url('assets/limni/watercolor-cascade.webp');background-repeat:no-repeat;filter:saturate(.72)}

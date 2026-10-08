@@ -334,3 +334,7 @@ body{background:var(--lake-paper)}
 .prologue::before{content:"";position:absolute;z-index:0;top:0;right:0;width:min(72vw,1100px);height:100%;background:url('assets/limni/stream-bridge.webp') center 46%/cover no-repeat;filter:grayscale(1);opacity:.075;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 38%);mask-image:linear-gradient(90deg,transparent 0%,#000 38%)}
 .journal-chapter::before{top:0;right:0;width:100%;height:clamp(340px,42vw,620px);background:url('assets/limni/fountain.webp') center 48%/cover no-repeat;filter:grayscale(1);opacity:.085;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 36%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 36%,transparent 100%)}
 @media(max-width:760px){.interlude p{bottom:18px;padding:10px 13px;font-size:10px;letter-spacing:.12em}.prologue::before{width:100%;height:72%;opacity:.055;-webkit-mask-image:linear-gradient(180deg,#000,transparent 100%);mask-image:linear-gradient(180deg,#000,transparent 100%)}.journal-chapter::before{width:100%;height:360px;opacity:.065}}
+
+/* Draw gallery arrows as an icon so iOS cannot substitute a colored emoji. */
+.flavour-open>span::before,.journal-item>span i::before,.visit-link span:last-child::before{content:"";display:block;width:18px;height:18px;background:currentColor;-webkit-mask:url('assets/limni/arrow-up-right.svg') center/contain no-repeat;mask:url('assets/limni/arrow-up-right.svg') center/contain no-repeat}
+.journal-item>span i,.visit-link span:last-child{display:grid;place-items:center;width:24px;height:24px}

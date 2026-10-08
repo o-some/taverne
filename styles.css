@@ -328,3 +328,9 @@ body{background:var(--lake-paper)}
 .journal-chapter::before{top:30px;right:-4%;width:min(67vw,960px);height:650px;background-size:contain;background-position:right center;opacity:.18}
 .prologue>.section-rule,.prologue-grid,.journal-chapter>.section-rule,.journal-head,.journal-grid{position:relative;z-index:1}
 @media(max-width:760px){.prologue::after{display:none}.journal-chapter::before{top:80px;right:-30%;width:115vw;height:430px;opacity:.1}}
+
+/* The monochrome place photographs act as quiet chapter transitions. */
+.interlude p{z-index:2;bottom:8px;max-width:calc(100% - 28px);padding:10px 17px 9px;background:var(--lake-deep);color:#fffef7;font-size:11px;line-height:1.35;letter-spacing:.19em;text-align:center;white-space:normal}
+.prologue::before{content:"";position:absolute;z-index:0;top:0;right:0;width:min(72vw,1100px);height:100%;background:url('assets/limni/stream-bridge.webp') center 46%/cover no-repeat;filter:grayscale(1);opacity:.075;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 38%);mask-image:linear-gradient(90deg,transparent 0%,#000 38%)}
+.journal-chapter::before{top:0;right:0;width:100%;height:clamp(340px,42vw,620px);background:url('assets/limni/fountain.webp') center 48%/cover no-repeat;filter:grayscale(1);opacity:.085;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 36%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 36%,transparent 100%)}
+@media(max-width:760px){.interlude p{bottom:18px;padding:10px 13px;font-size:10px;letter-spacing:.12em}.prologue::before{width:100%;height:72%;opacity:.055;-webkit-mask-image:linear-gradient(180deg,#000,transparent 100%);mask-image:linear-gradient(180deg,#000,transparent 100%)}.journal-chapter::before{width:100%;height:360px;opacity:.065}}

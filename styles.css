@@ -202,3 +202,41 @@ img{display:block;max-width:100%}figure{margin:0}button{font:inherit}a{color:inh
 .flavour-open:hover>span,.flavour-open:focus-visible>span{background:#10251ee8;transform:translate(2px,-2px)}
 @media(max-width:760px){.scene-switch{top:151px;right:20px;font-size:9px}.flavour-open>span{width:35px;height:35px}}
 @media(prefers-reduced-motion:reduce){.hero-media-day{transition:none}.hero-media-day img,.hero.is-color .hero-media-day img{filter:saturate(.9) contrast(1.03) brightness(.85)!important}}
+
+/* More depth needs enough photograph beyond each frame to avoid exposed edges. */
+.hero-media img{position:absolute;top:-12%;height:124%;transform:scale(1.035)}
+.water-image img,.food-photo img,.visit-image img,.place-story-photo img,.has-js .place-story-photo.media-reveal img{top:-14%;height:128%;transform:translate3d(0,var(--parallax-y),0) scale(1.015)}
+
+/* Photographs dissolve into the paper and forest-green surfaces. */
+.prologue{padding-bottom:105px}.prologue-grid{padding-top:62px}.prologue-aside{margin-top:145px}
+.water-chapter{background:linear-gradient(180deg,#f9f8f1,#344e43 12%,#344e43 88%,#f9f8f1)}
+.water-image img,.place-story-photo img,.food-photo img{-webkit-mask-image:linear-gradient(180deg,transparent 8%,#000 19%,#000 78%,transparent 92%);mask-image:linear-gradient(180deg,transparent 8%,#000 19%,#000 78%,transparent 92%)}
+.water-chapter::after{-webkit-mask-image:linear-gradient(180deg,transparent,#000 12%,#000 87%,transparent);mask-image:linear-gradient(180deg,transparent,#000 12%,#000 87%,transparent)}
+.water-fact{bottom:83px}
+.place-story{padding-top:clamp(64px,7vw,108px);padding-bottom:clamp(62px,7vw,108px)}
+.place-story-head{padding-bottom:clamp(36px,4vw,62px)}
+.place-story-photo.page-grid{width:100%;max-width:none;background:#f9f8f1}
+.place-story-photo::before{background:linear-gradient(180deg,transparent,#10251e9c 65%,transparent)}
+.place-story-photo figcaption{left:clamp(25px,5vw,90px);right:clamp(25px,5vw,90px);bottom:clamp(58px,7vw,92px)}
+.place-story-grid{margin-top:clamp(35px,4vw,60px)}.place-story-note:nth-of-type(2){margin-top:48px}.place-story-note:nth-of-type(3){margin-top:90px}.place-story-note h3{margin-top:32px}.place-sources{margin-top:clamp(48px,6vw,90px)}
+.taverna-chapter{padding:70px 0 105px}.taverna-grid{padding-top:42px}.taverna-photo{margin-top:15px}.taverna-photo img{height:min(58vw,760px)}.taverna-side{margin-top:205px}
+.taverna-photo img,.ducks-photo img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent);mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent)}
+.interlude{height:280px}
+.food-grid::after{background:linear-gradient(180deg,#17342f 0%,transparent 12%,transparent 81%,#17342f 100%),linear-gradient(90deg,#10231ee8 0%,#11251fbd 29%,#10231e3d 61%,#10231e18 100%)}
+.food-scene img,.flavour-open img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent);mask-image:linear-gradient(180deg,transparent,#000 9%,#000 89%,transparent)}
+.food-scenes{margin-top:clamp(28px,3vw,56px)}.dessert-scene{margin-top:clamp(30px,5vw,80px)}.menu-thread{margin-top:80px}.food-collection{margin-top:clamp(62px,7vw,105px)}.food-collection-head{margin-bottom:clamp(28px,4vw,65px)}.flavour-b{margin-top:clamp(32px,5vw,85px)}.flavour-d{margin-top:clamp(25px,4vw,70px)}
+.journal-chapter{padding:65px 0 105px}.journal-head{margin-top:48px}.journal-grid{margin-top:55px}
+.journal-item{background:#f8f8f2}.journal-item img{-webkit-mask-image:linear-gradient(180deg,transparent,#000 9%,#000 88%,transparent);mask-image:linear-gradient(180deg,transparent,#000 9%,#000 88%,transparent)}
+.journal-item::after{inset:50% 0 0;background:linear-gradient(transparent,#0b160ec4 55%,transparent)}.journal-item>span{bottom:clamp(58px,7vw,100px)}
+@media(max-width:760px){
+  .hero-media img{top:-10%;height:120%}
+  .prologue{padding-bottom:68px}.prologue-grid{padding-top:42px}.prologue-aside{margin-top:34px}
+  .water-fact{bottom:82px}
+  .place-story{padding:60px 0 65px}.place-story-head{padding-bottom:30px}.place-story-photo{height:56svh;min-height:370px}.place-story-photo img,.has-js .place-story-photo.media-reveal img{top:-12%;height:124%;transform:translate3d(0,var(--parallax-y),0) scale(1.01)!important;will-change:transform}.place-story-photo figcaption{left:20px;right:20px;bottom:58px}.place-story-grid{margin-top:30px}.place-story-note:nth-of-type(2),.place-story-note:nth-of-type(3){margin-top:0}.place-story-note h3{margin-top:23px}.place-sources{margin-top:36px}
+  .taverna-chapter{padding:50px 0 70px}.taverna-grid{padding-top:28px}.taverna-photo{margin-top:28px}.taverna-photo img{height:112vw}.taverna-side{margin-top:24px}
+  .interlude{height:230px}
+  .food-photo img,.has-js .food-photo.media-reveal img,.water-image img,.has-js .water-image.media-reveal img,.visit-image img{top:-12%;height:124%;transform:translate3d(0,var(--parallax-y),0) scale(1.01)!important;will-change:transform}
+  .food-scenes{margin-top:25px}.dessert-scene{margin-top:34px}.menu-thread{margin-top:62px}.food-collection{margin-top:65px}.food-collection-head{margin-bottom:30px}.flavour-b,.flavour-d{margin-top:0}
+  .journal-chapter{padding:50px 0 70px}.journal-head{margin-top:32px}.journal-grid{margin-top:35px}.journal-item>span{bottom:42px}
+}
+@media(prefers-reduced-motion:reduce){.hero-media img,[data-parallax] img,.has-js .place-story-photo.media-reveal img{transform:none!important;will-change:auto!important}}

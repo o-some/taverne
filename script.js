@@ -203,11 +203,12 @@ function updateScroll() {
   header.classList.toggle('is-scrolled', scrollY > 42);
   if (!reduceMotion.matches) {
     hero.classList.toggle('is-color', scrollY > 95);
-    if (scrollY < innerHeight * 1.2) for (const image of heroImages) image.style.transform = `translate3d(0,${Math.min(scrollY * .12, 95)}px,0) scale(1.07)`;
-    if (innerWidth > 760) for (const frame of parallaxFrames) {
+    if (scrollY < innerHeight * 1.2) for (const image of heroImages) image.style.transform = `translate3d(0,${Math.min(scrollY * .19, 125)}px,0) scale(1.035)`;
+    for (const frame of parallaxFrames) {
       const rect = frame.getBoundingClientRect();
       if (rect.bottom < 0 || rect.top > innerHeight) continue;
-      const offset = Math.max(-42, Math.min(42, (innerHeight / 2 - rect.top - rect.height / 2) * .08));
+      const travel = innerWidth > 760 ? 80 : 38;
+      const offset = Math.max(-travel, Math.min(travel, (innerHeight / 2 - rect.top - rect.height / 2) * (innerWidth > 760 ? .17 : .11)));
       frame.style.setProperty('--parallax-y', `${offset.toFixed(1)}px`);
     }
   }

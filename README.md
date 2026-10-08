@@ -11,6 +11,8 @@ python3 -m http.server 8080
 
 Die Seite verwendet HTML, CSS und wenig JavaScript. Es gibt kein Framework und keinen Build-Schritt. Pushes auf `main` veröffentlichen über `.github/workflows/pages.yml` auf `https://o-some.github.io/taverne/`.
 
+Die hellen Kapitel erhalten eine sehr feine Papierstruktur. Ortsansicht, Speisetafel, Galerie und Besuchsabschluss wechseln zwischen ruhigen Textflächen und großformatigen Bildern. Die Scrollbewegung der Bildkapitel bleibt auf 42 Pixel begrenzt, entfällt auf schmalen Bildschirmen und bei `prefers-reduced-motion`; die Inhalte bleiben ohne JavaScript sichtbar.
+
 ## Identität und Bilder
 
 Der Name **Η ΛΙΜΝΗ** und die Ortsbezeichnung sind auf dem vom Kunden gelieferten Material in `[Bilder Mutter]` dokumentiert. Das echte schwarz-weiße Speisekarten-Cover lieferte die typografische und grafische Richtung. Die Ortsbilder wurden aus Kundenfotos und einer vom Nutzer gelieferten Ortsreferenz neu komponiert und als WebP optimiert. Die Speiseszenen verbinden diese tatsächliche Umgebung mit älteren Food-Konzepten. Ihre illustrative Natur wird im Footer und unter der Speisestrecke offengelegt. Die unveränderten Quellen bleiben unter `[Bilder Mutter]` und `[User Input]/Ortsreferenzen`, bearbeitete PNG-Master unter `[Website Assets]/masters` im Kundenordner. Zuordnung und Bearbeitungsbriefs: [ASSET_PROVENANCE.md](ASSET_PROVENANCE.md).

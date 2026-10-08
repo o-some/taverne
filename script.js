@@ -102,6 +102,7 @@ const header = document.querySelector('.site-header');
 const hero = document.querySelector('.hero');
 const heroImage = document.querySelector('.hero-image');
 const progress = document.querySelector('.scroll-progress');
+const parallaxFrames = document.querySelectorAll('[data-parallax]');
 let scrollQueued = false;
 function updateScroll() {
   const end = document.documentElement.scrollHeight - innerHeight;
@@ -110,10 +111,17 @@ function updateScroll() {
   if (!reduceMotion.matches) {
     hero.classList.toggle('is-color', scrollY > 95);
     if (scrollY < innerHeight * 1.2) heroImage.style.transform = `translate3d(0,${Math.min(scrollY * .12, 95)}px,0) scale(1.07)`;
+    if (innerWidth > 760) for (const frame of parallaxFrames) {
+      const rect = frame.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > innerHeight) continue;
+      const offset = Math.max(-42, Math.min(42, (innerHeight / 2 - rect.top - rect.height / 2) * .08));
+      frame.style.setProperty('--parallax-y', `${offset.toFixed(1)}px`);
+    }
   }
   scrollQueued = false;
 }
 window.addEventListener('scroll', () => { if (!scrollQueued) { scrollQueued = true; requestAnimationFrame(updateScroll); } }, {passive:true});
+window.addEventListener('resize', updateScroll, {passive:true});
 updateScroll();
 document.querySelector('#year').textContent = new Date().getFullYear();
 try { setLanguage(localStorage.getItem('limni-language') || 'el'); } catch { setLanguage('el'); }

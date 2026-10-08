@@ -75,7 +75,7 @@
     </section>
 
     <section class="water-chapter" aria-labelledby="water-title">
-      <picture class="water-image media-reveal">
+      <picture class="water-image media-reveal" data-parallax>
         <source srcset="assets/limni/weir-editorial-960.webp 960w, assets/limni/weir-editorial.webp 1536w" sizes="100vw" type="image/webp">
         <img src="assets/limni/weir-editorial.webp" width="1536" height="1024" alt="Ρηχό ρέμα με δύο μικρά σκαλοπάτια νερού και ξύλινη γέφυρα στον Άι Γιάννη Σερρών" data-i18n-alt="waterAlt" loading="lazy">
       </picture>
@@ -98,7 +98,7 @@
       <div class="section-rule page-grid light"><span>03 / <span data-i18n="chapterFood">Η ΓΕΥΣΗ</span></span><span>TABLE STORIES</span></div>
       <div class="food-grid page-grid">
         <div class="food-copy reveal"><p class="eyebrow" data-i18n="foodEyebrow">Η ΧΑΡΑ ΤΟΥ ΤΡΑΠΕΖΙΟΥ</p><h2 id="food-title" data-i18n="foodTitle">Όλοι γύρω από το τραπέζι.</h2><p data-i18n="foodBody">Σουβλάκια από τη σχάρα, ντοματοσαλάτα με φέτα, σουτζουκάκια και μεζέδες στη μέση. Μια εικόνα για όσα μας φέρνουν μαζί.</p><div class="food-detail"><span>01 / <span data-i18n="dishName">ΤΟ ΤΡΑΠΕΖΙ</span></span><span data-i18n="dishCaption">Γαστρονομική εικονογράφηση</span></div></div>
-        <figure class="food-photo media-reveal"><img src="assets/limni/feast-editorial.webp" width="1536" height="1024" alt="Πλούσιο τραπέζι δίπλα στη λίμνη με σουβλάκια, φέτα, ντομάτες, σουτζουκάκια και μεζέδες" data-i18n-alt="foodAlt" loading="lazy"><figcaption>Η ΛΙΜΝΗ — THE TABLE / 01</figcaption></figure>
+        <figure class="food-photo media-reveal" data-parallax><img src="assets/limni/feast-editorial.webp" width="1536" height="1024" alt="Πλούσιο τραπέζι δίπλα στη λίμνη με σουβλάκια, φέτα, ντομάτες, σουτζουκάκια και μεζέδες" data-i18n-alt="foodAlt" loading="eager" fetchpriority="low"><figcaption>Η ΛΙΜΝΗ — THE TABLE / 01</figcaption></figure>
       </div>
       <div class="food-scenes page-grid">
         <figure class="food-scene grill-scene media-reveal"><img src="assets/limni/grill-editorial.webp" width="1536" height="1024" alt="Σουβλάκια ψήνονται στη σχάρα κοντά στο ξύλινο κάγκελο και το μικρό ρέμα" data-i18n-alt="grillAlt" loading="lazy"><figcaption><span>02 / FIRE</span><span data-i18n="grillCaption">Η φωτιά πριν από το τραπέζι</span></figcaption></figure>
@@ -110,7 +110,7 @@
     <section class="journal-chapter" id="gallery" aria-labelledby="journal-title">
       <div class="section-rule page-grid"><span>04 / <span data-i18n="chapterJournal">ΣΤΙΓΜΕΣ</span></span><span>FIELD NOTES</span></div>
       <div class="journal-head page-grid"><h2 id="journal-title" class="reveal" data-i18n="journalTitle">Μικρές εικόνες από έναν αληθινό τόπο.</h2><p class="reveal" data-i18n="journalBody">Λίμνη, πάπιες, νερό, βεράντα. Οι λεπτομέρειες που κάνουν αυτόν τον τόπο ξεχωριστό.</p></div>
-      <div class="journal-grid page-grid">
+      <div class="journal-grid">
         <button class="journal-item journal-item-a media-reveal" type="button" data-gallery="0"><img src="assets/limni/fountain.webp" width="1600" height="1000" alt="Μικρό συντριβάνι και πάπιες στη λίμνη" data-i18n-alt="fountainAlt" loading="lazy"><span><b>01</b><span data-i18n="journalOne">ΤΟ ΝΕΡΟ</span><i aria-hidden="true">↗</i></span></button>
         <button class="journal-item journal-item-b media-reveal" type="button" data-gallery="1"><img src="assets/limni/across-pond.webp" width="1536" height="1024" alt="Η ταβέρνα και δύο πάπιες ιδωμένες από την απέναντι όχθη" data-i18n-alt="acrossAlt" loading="lazy"><span><b>02</b><span data-i18n="journalTwo">Η ΟΧΘΗ</span><i aria-hidden="true">↗</i></span></button>
         <button class="journal-item journal-item-c media-reveal" type="button" data-gallery="2"><img src="assets/limni/opposite-bank.webp" width="1536" height="1024" alt="Θέα από το ξύλινο κιγκλίδωμα προς την απέναντι πλευρά της λίμνης" data-i18n-alt="bankAlt" loading="lazy"><span><b>03</b><span data-i18n="journalThree">Η ΘΕΑ ΑΠΟ ΤΟ ΤΡΑΠΕΖΙ</span><i aria-hidden="true">↗</i></span></button>
@@ -118,8 +118,8 @@
     </section>
 
     <section class="visit-chapter" id="visit" aria-labelledby="visit-title">
-      <div class="visit-image" aria-hidden="true"><img src="assets/limni/feast-editorial.webp" width="1536" height="1024" alt="" loading="lazy"></div>
-      <div class="visit-content page-grid"><div><p class="eyebrow" data-i18n="visitEyebrow">05 / ΕΛΑ ΝΑ ΜΑΣ ΒΡΕΙΣ</p><h2 id="visit-title" data-i18n="visitTitle">Το τραπέζι είναι δίπλα στο νερό.</h2><p data-i18n="visitBody">Η Λίμνη βρίσκεται στον Άι Γιάννη Σερρών. Έλα για το φαγητό, κάθισε για τη θέα και άφησε τη μέρα να πάει λίγο πιο αργά.</p><a class="visit-link" href="https://www.google.com/maps/search/?api=1&amp;query=%CE%97%20%CE%9B%CE%99%CE%9C%CE%9D%CE%97%20%CE%86%CE%B9%20%CE%93%CE%B9%CE%AC%CE%BD%CE%BD%CE%B7%CF%82%20%CE%A3%CE%B5%CF%81%CF%81%CF%8E%CE%BD" target="_blank" rel="noopener noreferrer"><span data-i18n="mapLink">ΔΕΙΤΕ ΤΗΝ ΠΕΡΙΟΧΗ ΣΤΟΝ ΧΑΡΤΗ</span><span aria-hidden="true">↗</span></a></div><div class="visit-stamp" aria-hidden="true"><span>Η ΛΙΜΝΗ</span><small>ΑΙ ΓΙΑΝΝΗΣ · ΣΕΡΡΕΣ</small></div></div>
+      <div class="visit-image" data-parallax aria-hidden="true"><img src="assets/limni/visit-table.webp" width="1536" height="1024" alt="" loading="eager" fetchpriority="low"></div>
+      <div class="visit-content page-grid"><div><p class="eyebrow" data-i18n="visitEyebrow">05 / ΕΛΑ ΝΑ ΜΑΣ ΒΡΕΙΣ</p><h2 id="visit-title" data-i18n="visitTitle">Το τραπέζι είναι δίπλα στο νερό.</h2><p data-i18n="visitBody">Η Λίμνη βρίσκεται στον Άι Γιάννη Σερρών. Έλα για το φαγητό, κάθισε για τη θέα και άφησε τη μέρα να πάει λίγο πιο αργά.</p><a class="visit-link" href="https://www.google.com/maps/search/?api=1&amp;query=%CE%97%20%CE%9B%CE%99%CE%9C%CE%9D%CE%97%20%CE%86%CE%B9%20%CE%93%CE%B9%CE%AC%CE%BD%CE%BD%CE%B7%CF%82%20%CE%A3%CE%B5%CF%81%CF%81%CF%8E%CE%BD" target="_blank" rel="noopener noreferrer"><span data-i18n="mapLink">ΔΕΙΤΕ ΤΗΝ ΠΕΡΙΟΧΗ ΣΤΟΝ ΧΑΡΤΗ</span><span aria-hidden="true">↗</span></a></div></div>
     </section>
   </main>
 

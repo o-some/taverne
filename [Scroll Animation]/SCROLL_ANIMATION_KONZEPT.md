@@ -1,6 +1,6 @@
 # Scroll Animation · Η ΛΙΜΝΗ
 
-**Status:** Konzept und Umsetzungshandoff; noch keine Änderung an der veröffentlichten Website.
+**Status:** Konzept und zwölf Start-/Stopp-Frames für Desktop und Mobil vorbereitet. Die Scroll-Animation selbst ist noch nicht in die Website eingebaut. Bildfolge und Herkunft: [FRAMES.md](FRAMES.md).
 
 **Stand:** 9. Oktober 2026
 
@@ -31,10 +31,10 @@ Die heutige Reihenfolge zeigt das große Tischbild vor der ausführlichen Grills
 ## Asset-Brief für die Herstellung
 
 1. **Vorhandenes nutzen:** `stream-bridge.webp`/`weir-editorial.webp`, `grill-editorial.webp`, `feast-editorial.webp`, `terrace-editorial.webp`, `visit-table.webp` und die Kundenreferenzen laut `ASSET_PROVENANCE.md`. Ortsmerkmale und Größenverhältnisse sorgfältig angleichen.
-2. **Neu erstellen:** mindestens eine Grill-zu-Platte-Zwischenaufnahme und ein Menschen-/Händemotiv. Für den ersten Match-Cut bei Bedarf je ein maßgleiches Wasser- und Glut-Keyframe erstellen. Ausgangspunkt sind die bearbeiteten Ortsbilder, kein beliebiges Restaurant-Stockfoto.
+2. **Vorbereitete Keyframes:** Die Grill-zu-Platte-Zwischenaufnahme, das Menschenmotiv sowie abgestimmte Wasser- und Grillframes liegen jetzt unter `frames/desktop/` und `frames/mobile/`. Die Dateien sind als visuelle Start-/Stopp-Punkte gedacht; die Übergänge sind noch nicht programmiert.
 3. **Produktionsvorgabe:** dieselbe Kamera-/Fluchtachse, gleiche Geländerhöhe, gleiche Tischoberfläche und konsistentes spätes Tageslicht. Desktop-Crops ca. 16:9, Mobile-Crops ca. 4:5 bzw. 9:16 separat prüfen; wichtige Hände, Speisen und Brückenmerkmale bleiben im sicheren Mittelbereich.
 4. **Wahrhaftigkeit:** Neue Food- und Menschenbilder sind illustrative Kompositionen, solange keine freigegebenen echten Aufnahmen vorliegen. Die vorhandene Bildkennzeichnung der Seite muss diese Motive mit erfassen. Keine Darstellung als dokumentierte Gäste, aktuelle Speisekarte oder bestätigter Serviceablauf.
-5. **Lieferform:** optimierte WebP/AVIF-Standbilder mit fixierten Abmessungen und Posterbild; optional ein kurzes stummes Video nur, wenn es auf echten Mobilgeräten klar besser aussieht. Kein Autoplay mit Ton. Dateinamen und Herkunft in `ASSET_PROVENANCE.md` dokumentieren.
+5. **Lieferform:** zwölf optimierte WebP-Standbilder in `frames/` mit Dateinamen und Herkunft in [FRAMES.md](FRAMES.md). Bei der späteren Einbindung die sichtbaren Motive zusätzlich in `ASSET_PROVENANCE.md` dokumentieren. Ein Video ist nicht erforderlich, es sei denn, ein echter Gerätetest zeigt einen klaren Vorteil.
 
 ## Technische Regie für die spätere Umsetzung
 
